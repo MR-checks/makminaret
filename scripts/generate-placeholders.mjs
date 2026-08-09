@@ -7,7 +7,11 @@
  * fails in live mode while any placeholder remains. Both live here.
  *
  *   SITE_MODE=showcase  (default)  writes content/PLACEHOLDERS.md and passes
- *   SITE_MODE=live                 writes it and FAILS if anything is tagged
+ *   SITE_MODE=unlisted             same, but without the preview bar. Still
+ *                                  noindex, so placeholders remain permitted.
+ *   SITE_MODE=live                 writes it and FAILS if anything is tagged.
+ *                                  This is the only indexable mode, which is
+ *                                  why the gate lives here and nowhere else.
  *
  * §4.4 additionally asks for entries whose `reviewedOn` is over 12 months old
  * to be surfaced here, so the annual content pass is a list rather than a hunt.
@@ -23,8 +27,10 @@ const CONTENT = join(ROOT, "content");
 const SITE_MODE = process.env.SITE_MODE || "showcase";
 const STALE_AFTER_MONTHS = 12;
 
-if (!["showcase", "live"].includes(SITE_MODE)) {
-  console.error(`✗ SITE_MODE must be "showcase" or "live", got "${SITE_MODE}".`);
+if (!["showcase", "unlisted", "live"].includes(SITE_MODE)) {
+  console.error(
+    `✗ SITE_MODE must be "showcase", "unlisted" or "live", got "${SITE_MODE}".`
+  );
   process.exit(1);
 }
 
