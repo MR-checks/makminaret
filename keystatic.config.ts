@@ -45,10 +45,44 @@ const seo = fields.object(
   { label: "SEO" }
 );
 
+/**
+ * Storage mode.
+ *
+ * Local mode writes straight to the filesystem, which is fine in development
+ * and impossible on Vercel, where the filesystem is read only. That is why
+ * /keystatic loaded on the deployment but could never save anything.
+ *
+ * GitHub mode commits each edit to the repository instead, which is what makes
+ * the whole no-database design work: an edit is a commit, the commit triggers a
+ * deploy, and content gets version history, diffs and one-click revert for free
+ * (MASTERPLAN §8.4).
+ *
+ * This is gated on the credentials rather than on NODE_ENV, because declaring
+ * github mode without them fails the build outright. So it stays in local mode
+ * until the four variables below exist, and switches itself the moment they do:
+ * add them in Vercel, redeploy, and editing works with no code change.
+ *
+ *   KEYSTATIC_GITHUB_CLIENT_ID
+ *   KEYSTATIC_GITHUB_CLIENT_SECRET
+ *   KEYSTATIC_SECRET
+ *   NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG
+ *
+ * Editors then sign in with GitHub, so access is governed by repository
+ * permissions and there are no separate CMS passwords to manage (§10.4).
+ */
+const hasGitHubApp = Boolean(
+  process.env.KEYSTATIC_GITHUB_CLIENT_ID && process.env.KEYSTATIC_GITHUB_CLIENT_SECRET
+);
+
+const storage = hasGitHubApp
+  ? ({
+      kind: "github",
+      repo: { owner: "MR-checks", name: "makminaret" },
+    } as const)
+  : ({ kind: "local" } as const);
+
 export default config({
-  storage: {
-    kind: "local",
-  },
+  storage,
   ui: {
     brand: { name: "Minaret" },
   },
