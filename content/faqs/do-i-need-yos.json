@@ -1,0 +1,26 @@
+{
+  "question": "Do I need the YÖS exam?",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "answer": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Often not. Many private universities do not require YÖS at all, which is one reason they are the more common route for international students."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Where it is required, usually at state universities, it is a real filter and needs real preparation. We will tell you whether the universities on your shortlist ask for it."
+        }
+      ]
+    }
+  ],
+  "category": "General",
+  "order": 5,
+  "showOnHomepage": true
+}

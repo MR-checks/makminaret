@@ -1,0 +1,106 @@
+{
+  "title": "Privacy policy",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "intro": "This is a standard draft, not legal advice. It requires review by a Turkish lawyer before launch, and a second opinion on the Ghana and Nigeria registration thresholds (MASTERPLAN §10.6).",
+  "sections": [
+    {
+      "heading": "Who controls your data",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "MAK Minaret, operating as Minaret Educational Consultancy, registered and operating in Ankara, Türkiye, is the data controller for the personal data described here."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Placeholder draft. The registered entity name, registration number and registered address must be confirmed before publication."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What we collect and why",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "When you complete the eligibility check or any other form on this site, we collect the details you enter: your name, contact details, country, and the answers describing your educational background and budget. We use them to respond to your enquiry and to advise you on your options."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We do not run advertising or analytics trackers on this site, so we do not build a profile of your browsing."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The legal basis",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We process enquiry data on the basis of your explicit consent, given at the point of submission. Marketing communication requires a separate, unbundled consent which you may give or withhold independently, and neither box is pre-ticked."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "How long we keep it",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "An enquiry that does not become an application is retained for 24 months and then deleted. An application record is retained for as long as we are advising you and for a defined period afterwards."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Cross-border transfer",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "If you are in Ghana or Nigeria, your personal data is transferred to Türkiye, where we operate, and to our transactional email provider. This transfer is a necessary part of providing the service you asked for, and it is named here explicitly rather than buried."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Your rights",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Under Article 11 of KVKK, and equivalently under Ghanaian and Nigerian data protection law, you may ask what we hold about you, ask us to correct it, ask us to delete it, and withdraw consent at any time. Write to us and we will respond within 30 days."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

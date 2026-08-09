@@ -1,0 +1,26 @@
+{
+  "question": "What happens if my visa is refused?",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "answer": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "It is usually a document problem rather than a judgement about you, and the first step is establishing the stated reason."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "A refusal does not automatically end the route. This is also why we are as slow and fussy about the document stage as we are: a weak file is much easier to fix before submission than after a refusal."
+        }
+      ]
+    }
+  ],
+  "category": "General",
+  "order": 6,
+  "showOnHomepage": true
+}

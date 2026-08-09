@@ -1,0 +1,44 @@
+{
+  "name": "University merit waivers",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "type": "university",
+  "provider": "Individual universities",
+  "coverageBand": "25% to 75% of tuition, varying by university and programme",
+  "coversTuition": true,
+  "coversAccommodation": false,
+  "coversStipend": false,
+  "eligibility": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Most Turkish foundation universities operate their own tuition waivers, awarded on academic record at the point of admission. These are far more attainable than the government scholarship, and this is where the majority of our students actually receive funding."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "A waiver reduces tuition and nothing else. Accommodation, living costs, the residence permit, health insurance and travel remain the student's responsibility, and a 50% waiver on a high tuition figure can still leave a larger total than full tuition at a cheaper institution. Compare the total, not the percentage."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Placeholder entry. Waiver levels vary by university, by programme and by intake, and the specific figures must be confirmed per institution before publication."
+        }
+      ]
+    }
+  ],
+  "applicationWindowNote": "These are awarded on a rolling basis as part of the admission decision rather than through a separate application with its own deadline. Applying earlier in the cycle generally helps, because waiver budgets are finite.",
+  "officialUrl": "",
+  "howWeHelp": "We know which universities discount most readily for the grade profile you have, and we apply to a shortlist rather than to a single institution, which is what puts you in a position to compare offers.",
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

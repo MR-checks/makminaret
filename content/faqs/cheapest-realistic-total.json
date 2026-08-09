@@ -1,0 +1,26 @@
+{
+  "question": "What is the cheapest realistic total for one year?",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "answer": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "A state university outside Istanbul, in a dormitory, studying in Turkish after a language year, is the genuinely cheap route. It is also the one requiring the most preparation and patience."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "We publish cost bands rather than a single figure because the honest answer depends on the city, the university type and how you live. See the costs page."
+        }
+      ]
+    }
+  ],
+  "category": "General",
+  "order": 4,
+  "showOnHomepage": true
+}

@@ -1,0 +1,80 @@
+{
+  "title": "Tuition and costs",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "intro": "Published bands rather than a quote, in US dollars, with the date they were last reviewed. We confirm your exact total in cedis or naira during consultation, at the rate on the day.",
+  "sections": [
+    {
+      "heading": "Why bands and not exact figures",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Tuition changes annually, exchange rates change weekly, and a precise figure published on a website is wrong within months. A band that is honest about being a range is more useful than a number that looks precise and is not."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "This is also why you will not find a cost calculator here. A calculator implies a precision this information does not have, and it needs more maintenance than anything else on a site like this."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What sits on top of tuition",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Accommodation, food, transport, health insurance, the residence permit fee, one-off setup costs on arrival, and flights. For most students the non-tuition costs across a year are comparable to state university tuition, so leaving them out distorts the picture badly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Our fee",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Our fee is confirmed at your first consultation and before any payment. We tell you what it covers and what it does not, in writing, before you commit to anything."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The cheapest realistic route",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "A state university, in a city other than Istanbul, with a dormitory place, studying in Turkish after a language year. That combination is genuinely affordable. It is also the route that requires the most preparation and the most patience, and it is not what most students picture when they imagine studying abroad."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We will lay out that option honestly alongside the more expensive ones, because for some families it is the one that works."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "title": "Entry requirements",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "intro": "What Turkish universities actually ask for, what they look at closely, and what they do not care about as much as you might expect.",
+  "sections": [
+    {
+      "heading": "The secondary certificate",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "A completed secondary school certificate is the baseline for undergraduate admission. WASSCE, WAEC, NECO, SSCE, A Levels and the International Baccalaureate are all recognised routes, subject to denklik."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "The certificate itself is necessary but not sufficient. What the university does with it depends on the programme."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Subject grades matter more than the aggregate",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "This is the most common misunderstanding we correct. For competitive programmes, particularly in health sciences, the university looks at individual subject grades rather than the overall result. Biology, chemistry and mathematics carry the weight for medicine, dentistry and pharmacy."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "A strong aggregate built on humanities subjects will not open a medicine place. A moderate aggregate with strong sciences sometimes will."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "YÖS and SAT",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "YÖS is an entrance examination used by many state universities and some private ones. Where it is required, it is a real filter. Many private universities do not require it at all, which is one reason they are the more common route for international students."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "SAT results are accepted at a number of institutions and can strengthen a competitive application. Neither YÖS nor SAT replaces the secondary certificate."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Language",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "For an English-taught programme you need either an accepted external test result, usually IELTS or TOEFL, or a pass in the university's own proficiency exam taken on arrival. Students who arrive without a test result should budget for the possibility of a preparatory year rather than assume they will pass."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "For a Turkish-taught programme you need Turkish at C1, which for almost every international student means a language year first. That year has a cost and a duration, and neither appears in the tuition figure."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Postgraduate entry",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "A recognised bachelor's degree, transcripts, and usually a statement of purpose and references. Some programmes interview. Recognition of the first degree is handled through the same equivalency principle as denklik, and it is worth starting early for the same reason."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

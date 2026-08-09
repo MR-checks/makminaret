@@ -30,8 +30,12 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# env files
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
 
 # vercel
 .vercel
@@ -39,3 +43,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# vercel
+.vercel
+
+# Governing specs. Kept out of the public repo at the owner's request.
+# The constraint linter treats these two filenames as the only permitted
+# location for Payload/Supabase references, so keeping them local also keeps
+# scripts/check-constraints.mjs meaningful in CI.
+/MASTERPLAN.md
+/HANDOVER.md

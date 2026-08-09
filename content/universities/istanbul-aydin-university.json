@@ -1,0 +1,173 @@
+{
+  "name": "Istanbul Aydın University",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "city": "Istanbul",
+  "type": "foundation",
+  "yokAccredited": true,
+  "foundedYear": 2007,
+  "languagesOfInstruction": ["English", "Turkish"],
+  "tuitionBand": "$4,000 to $11,000",
+  "overview": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Istanbul Aydın University is a foundation university on the European side of Istanbul, in the Florya district of Küçükçekmece. It is one of the larger private institutions in the city, and for students coming from West Africa it is often the first Turkish university they hear about by name, usually from someone already studying there."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "children": [
+        {
+          "text": "The character of the place"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "The campus is urban rather than parkland. Buildings sit close together on a single site, which means the walk between a lecture and a lab is short, and it also means the campus feels busy in a way that a dispersed campus does not. Students who want quiet will find it in the library rather than outdoors. Students who want a dense social environment will find it immediately."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "The international population is genuinely large, not a marketing line. That matters practically. Administrative staff in the international office deal with foreign credentials daily rather than occasionally, forms exist in English, and the questions a Ghanaian or Nigerian applicant asks are questions the office has answered many times before. It also means a new arrival is unlikely to be the only person from their country on campus."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "children": [
+        {
+          "text": "Teaching and language"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Programmes run in both Turkish and English, and the language of instruction is set per programme rather than per faculty. This is the single most important thing to check before applying, because two programmes with similar names can be taught in different languages. A Turkish-taught programme will require a language year first for most international students, which adds time and cost that the published tuition figure does not include."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "For English-taught programmes, proficiency is demonstrated either through an external test or through the university's own exam, which is administered on arrival. Students who arrive without a test result should plan for the possibility of being placed into preparatory English, and should budget for that year rather than assume they will pass straight through."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "children": [
+        {
+          "text": "Facilities and city"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "The university operates its own libraries, laboratories and studios, and the health and engineering faculties have dedicated practical space. Being in Istanbul means the city itself does a lot of the work: transport is extensive, the student discount on public transport is meaningful, and part-time opportunities exist in a way they do not in smaller Turkish cities."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Istanbul is also the most expensive city in Türkiye to live in. Accommodation costs more than in Ankara, Kayseri or Eskişehir, and the gap is large enough that it should be part of the decision rather than an afterthought. Students choosing between a place here and a place in a smaller city are usually choosing between a higher total cost with more opportunity, and a lower total cost with fewer distractions."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "children": [
+        {
+          "text": "Who tends to do well here"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Students who arrive with their language sorted, who are comfortable in a crowded environment, and who intend to use Istanbul rather than just live in it. Students who need a quiet, small, closely supervised setting often find a smaller university in a smaller city suits them better, and we will say so during the consultation rather than after the deposit."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "children": [
+        {
+          "text": "Applying through us"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "We handle the application, the document set, and the denklik process that runs alongside it. We will tell you honestly whether your grades put you in range for the programme you want, and where they do not, we will suggest the programmes where they do. We do not submit applications we expect to fail in order to increase a count."
+        }
+      ]
+    }
+  ],
+  "whoItSuits": "Students who want a large campus with a substantial international cohort, and who value having English-taught options across a wide range of faculties rather than in one or two departments.",
+  "entryRequirements": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "A completed secondary school certificate is the baseline requirement. WASSCE, WAEC, NECO and SSCE results are all recognised routes, subject to denklik, which is the Turkish recognition of a foreign secondary qualification."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Competitive programmes, particularly in health sciences, look at subject grades rather than the aggregate alone. Science subjects carry the most weight for medicine, dentistry and pharmacy applications."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "YÖS is not required for most programmes here, and SAT results are accepted where a student has them. Neither replaces the secondary certificate itself."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "English-taught programmes require proof of English, either an external test result or the university's own proficiency exam taken on arrival. Turkish-taught programmes require Turkish at C1, which for most international students means completing a language year first."
+        }
+      ]
+    }
+  ],
+  "yosRequired": false,
+  "satAccepted": true,
+  "englishRequirement": "IELTS 6.0, TOEFL iBT 72, or the university's own proficiency exam",
+  "website": "https://www.aydin.edu.tr/en-us/",
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

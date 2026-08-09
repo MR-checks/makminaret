@@ -1,0 +1,80 @@
+{
+  "title": "About Minaret",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "intro": "We are a Turkish-registered education consultancy operating from Ankara, placing students from Anglophone Africa into accredited Turkish universities.",
+  "sections": [
+    {
+      "heading": "Where we are, and why it matters",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Almost every consultancy a Ghanaian or Nigerian student meets is based in Accra, Kumasi, Lagos or Abuja. They take a fee, forward documents to a partner in Türkiye, and lose visibility the moment the student lands."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We are in Ankara. When denklik stalls, when a university changes a requirement, when an ikamet appointment is missed, we can walk into the office in question. That is the whole proposition, and it is the reason the business is structured the way it is."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What we do",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Eligibility assessment, university and programme shortlisting, document preparation, denklik, university applications, visa support, and everything after arrival: enrolment, the residence permit, and the practical set-up of a life in a new country."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "How we work",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We publish our cost bands, we publish our process, and we tell applicants when a route will not work for them. A negative assessment costs us a fee today and earns the referral that arrives next year."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We apply to a shortlist rather than a single institution, because a student with several offers is in a position to choose and a student with one is not."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The rest of the group",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Minaret also operates in skills training, business consultancy, import and export advisory, publishing and printing, and school supplies. Education is the flagship and carries most of our attention. The other divisions exist because they serve the same institutions and the same relationships."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

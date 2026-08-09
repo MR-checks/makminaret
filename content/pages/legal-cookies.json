@@ -1,0 +1,54 @@
+{
+  "title": "Cookie policy",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "intro": "This is a standard draft, not legal advice. It requires review by a Turkish lawyer before launch, and a second opinion on the Ghana and Nigeria registration thresholds (MASTERPLAN §10.6).",
+  "sections": [
+    {
+      "heading": "We do not track you",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "This site runs no analytics, no advertising pixels and no third-party tracking scripts. There is no consent banner because there is nothing to consent to."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "If that changes, this page changes first, and a genuine consent mechanism is added that blocks the scripts until you accept, with rejecting exactly as easy as accepting."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What is stored on your device",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "The eligibility check saves your answers in your browser's local storage so that you can leave and come back without starting again. That data stays on your device and is cleared when you submit. It is not a cookie and it is not sent anywhere until you submit the form."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "A dismissal of the preview notice is stored for the length of your browsing session so it does not reappear on every page."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

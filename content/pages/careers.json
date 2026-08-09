@@ -1,0 +1,46 @@
+{
+  "title": "Careers",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "intro": "We hire occasionally, mostly in Ankara, and we are always interested in hearing from people who have been through this process themselves.",
+  "sections": [
+    {
+      "heading": "What we look for",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Counsellors who have studied abroad themselves and remember what it felt like to arrive somewhere with no language and no network. That experience is not a nice-to-have in this work, it is the job."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We also look for people who are comfortable telling an applicant that a route will not work for them. Anyone who finds that conversation difficult will not last here."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Open roles",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Placeholder. There are no roles advertised at present. Send us a note if you think you would fit and we will keep it on file."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "title": "Book Publishing",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "division": "Minaret Publishing & Printing",
+  "summary": "Book publishing including ISBN registration, layout and print runs, alongside commercial printing.",
+  "whoItIsFor": "Authors, schools and institutions that need print production handled end to end.",
+  "serviceItems": [
+    "Book publishing, ISBN and layout",
+    "Print runs",
+    "Commercial printing"
+  ],
+  "whatWeDo": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Book publishing including ISBN registration, layout and print runs, alongside commercial printing."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Placeholder page. The capability described here is real in outline, but the detail, the case example and the process below must be confirmed with the division before this page goes live."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "We work from Ankara, which means the verification and coordination steps happen where the supplier or the printer actually is, rather than being passed to a third party and reported back."
+        }
+      ]
+    }
+  ],
+  "process": [
+    {
+      "title": "Enquiry",
+      "description": "You tell us what you need and the constraints you are working within."
+    },
+    {
+      "title": "Scope and quote",
+      "description": "We come back with what is achievable, what it involves, and what it costs."
+    },
+    {
+      "title": "Delivery",
+      "description": "We carry out the work and report on it directly rather than through an intermediary."
+    }
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Türkiye Bursları",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "type": "government",
+  "provider": "Republic of Türkiye",
+  "coverageBand": "Full tuition, accommodation, monthly stipend, health insurance and one return flight",
+  "coversTuition": true,
+  "coversAccommodation": true,
+  "coversStipend": true,
+  "eligibility": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Türkiye Bursları is the Turkish government scholarship programme. It is the most generous funding available to international students in Türkiye, and correspondingly the most competitive. Applicants are assessed on academic record, and the process includes an interview stage for shortlisted candidates."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "It is a full scholarship rather than a tuition discount. Successful applicants are placed at a university by the programme rather than choosing freely, which is the trade-off for the level of funding."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Placeholder entry. The eligibility detail here is written to a realistic shape and must be checked against the official programme before publication."
+        }
+      ]
+    }
+  ],
+  "applicationWindowNote": "The application window opens once a year and runs for a fixed period. We do not publish the dates here because they move, and a stale deadline on this page would be worse than no deadline at all. Check the official site for the current window, and talk to us well before it opens, because a strong application takes weeks to assemble rather than days.",
+  "officialUrl": "https://www.turkiyeburslari.gov.tr/",
+  "howWeHelp": "We review whether your record is genuinely competitive before you invest time in the application, help assemble the document set, and prepare you for the interview stage. We will tell you if we think your time is better spent on a university tuition waiver instead.",
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

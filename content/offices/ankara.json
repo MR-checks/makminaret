@@ -1,0 +1,12 @@
+{
+  "name": "Ankara",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "addressLines": ["Ankara", "Türkiye"],
+  "city": "Ankara",
+  "country": "Türkiye",
+  "mapsUrl": "",
+  "hours": "09:00 to 18:00 GMT+3, Monday to Friday",
+  "phone": "",
+  "note": "Placeholder. The street address, the landline and a photograph of the actual premises must be added before launch. These carry the claim that we are physically in Türkiye, which is the central trust signal on this site, so they cannot be approximated."
+}

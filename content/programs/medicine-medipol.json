@@ -1,0 +1,68 @@
+{
+  "title": "Medicine",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "university": "istanbul-medipol-university",
+  "level": "bachelor",
+  "field": "medicine-and-health",
+  "language": "English",
+  "durationYears": 6,
+  "tuitionBand": "$20,000 to $24,000",
+  "scholarshipAvailable": true,
+  "description": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "A six-year undergraduate medical degree taught in English, with clinical exposure through the university's affiliated hospital network. This is the most competitive route in the institution and applications are assessed primarily on science subject grades."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Placeholder description. The programme structure, module list and assessment pattern below are written to a realistic shape but have not been verified against the university's current catalogue, and must be replaced with the real syllabus before this page goes live."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Teaching runs across two semesters a year. The language of instruction is set at programme level rather than faculty level, so it should be confirmed for this specific programme before an application is submitted."
+        }
+      ]
+    }
+  ],
+  "entryRequirements": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "A completed secondary certificate with denklik, and evidence of English for this English-taught programme, either an accepted external test result or a pass in the university's own proficiency exam."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Where the programme is competitive, subject grades are examined rather than the aggregate alone."
+        }
+      ]
+    }
+  ],
+  "careerOutcomes": "Graduates enter clinical practice, subject to the licensing requirements of the country they practise in. Students intending to return home should confirm their own regulator's recognition process before applying, and we will help with that check.",
+  "documentsRequired": [
+    "Secondary school certificate",
+    "Academic transcript",
+    "Passport, valid for the full duration of study where possible",
+    "Passport photographs",
+    "English proficiency evidence, where held"
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

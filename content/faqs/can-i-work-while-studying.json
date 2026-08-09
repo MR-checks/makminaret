@@ -1,0 +1,26 @@
+{
+  "question": "Can I work while studying?",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "answer": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Work rights for international students in Türkiye are limited, and wages in the jobs realistically open to a student are low."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "If your plan depends on covering tuition from part-time work, the plan will not survive contact with reality. Budget as though you cannot work, and treat anything you do earn as a bonus."
+        }
+      ]
+    }
+  ],
+  "category": "General",
+  "order": 2,
+  "showOnHomepage": true
+}

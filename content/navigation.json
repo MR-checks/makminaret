@@ -1,0 +1,12 @@
+{
+  "primary": [
+    {
+      "label": "Universities",
+      "href": "/universities"
+    },
+    {
+      "label": "Programs",
+      "href": "/programs"
+    }
+  ]
+}
