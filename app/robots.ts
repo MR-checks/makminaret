@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getSiteUrl, isShowcase } from "@/lib/site-mode";
+import { getSiteUrl, isIndexable } from "@/lib/site-mode";
 
 /**
  * Programmatic robots.txt (MASTERPLAN §10.7, HANDOVER §3.4).
@@ -12,7 +12,9 @@ export default function robots(): MetadataRoute.Robots {
   const siteUrl = getSiteUrl();
   const isPreview = process.env.VERCEL_ENV !== "production";
 
-  if (isShowcase() || isPreview) {
+  // Only `live` is indexable, and `live` is unreachable while any placeholder
+  // remains. Preview deployments are always blocked regardless of mode.
+  if (!isIndexable() || isPreview) {
     return {
       rules: { userAgent: "*", disallow: "/" },
     };

@@ -7,15 +7,15 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileActionBar } from "@/components/layout/MobileActionBar";
 import { PreviewBar } from "@/components/layout/PreviewBar";
-import { getSiteUrl, isShowcase } from "@/lib/site-mode";
+import { getSiteUrl, isIndexable, showsPreviewBar } from "@/lib/site-mode";
 import { getSiteSettings } from "@/lib/content/reader";
 import "../globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
-  // Showcase builds must not be indexed anywhere, and robots.txt alone is not
+  // Anything short of `live` must not be indexed, and robots.txt alone is not
   // enough: a page reached directly still needs the meta signal (HANDOVER §3.4).
-  robots: isShowcase() ? { index: false, follow: false } : undefined,
+  robots: isIndexable() ? undefined : { index: false, follow: false },
   title: {
     default: "Minaret Educational Consultancy | Study in Türkiye",
     template: "%s | Minaret Educational Consultancy",
@@ -71,7 +71,7 @@ export default async function RootLayout({
           separable from the navigation helpers.
         */}
         <NextIntlClientProvider>
-          {isShowcase() && <PreviewBar />}
+          {showsPreviewBar() && <PreviewBar />}
           <Header
             phone={settings?.primaryPhone}
             whatsappNumber={settings?.whatsappNumber}
