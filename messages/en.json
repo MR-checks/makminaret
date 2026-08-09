@@ -1,0 +1,42 @@
+{
+  "siteTitle": "Minaret Educational Consultancy | Study in Türkiye",
+  "siteDescription": "We place students from Africa and the Middle East into accredited Turkish universities, and we handle the paperwork that stops most applications: denklik, apostille, visa, and residence permit.",
+  "nav": {
+    "studyInTurkiye": "Study in Türkiye",
+    "skillsAcademy": "Skills Academy",
+    "services": "Services",
+    "insights": "Insights",
+    "about": "About",
+    "eligibility": "Check your eligibility",
+    "contact": "Contact"
+  },
+  "utilityBar": {
+    "whatsapp": "WhatsApp"
+  },
+  "hero": {
+    "eyebrow": "Minaret Educational Consultancy",
+    "h1": "Study in Türkiye.",
+    "subheadline": "We place students from Africa and the Middle East into accredited Turkish universities, and we handle the paperwork that stops most applications: denklik, apostille, visa, and residence permit.",
+    "formButton": "See my options",
+    "microcopy": "Free. Two minutes. No documents needed yet.",
+    "whatsappLink": "Or message us on WhatsApp"
+  },
+  "footer": {
+    "privacy": "Privacy",
+    "cookies": "Cookies",
+    "terms": "Terms",
+    "kvkk": "KVKK Notice"
+  },
+  "notFound": {
+    "heading": "That page is not here",
+    "body": "It may have moved. The program finder and the eligibility check are the two things most people are looking for."
+  },
+  "verification": {
+    "heading": "Design System Verification",
+    "bodyText": "This page verifies that all design tokens, fonts, and accessibility requirements render correctly. It is not part of the public site.",
+    "turkishGlyphs": "Turkish diacritics: ı İ ğ Ğ ş Ş ç Ç ö Ö ü Ü",
+    "sampleLabel": "Your full name",
+    "samplePlaceholder": "e.g. Ayşe Yılmaz",
+    "sampleButton": "Submit verification"
+  }
+}

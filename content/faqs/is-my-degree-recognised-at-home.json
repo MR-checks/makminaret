@@ -1,0 +1,26 @@
+{
+  "question": "Is a Turkish degree recognised in my home country?",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "answer": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "A degree from a YÖK-accredited Turkish university is widely recognised, but recognition at home is a process run by your own country's regulator rather than something Türkiye grants."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "For regulated professions, medicine and dentistry above all, settle this question before you apply rather than after you graduate. We will tell you what the process looks like for your country."
+        }
+      ]
+    }
+  ],
+  "category": "General",
+  "order": 3,
+  "showOnHomepage": true
+}

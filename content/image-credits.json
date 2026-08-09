@@ -1,0 +1,83 @@
+{
+  "$comment": "Image licence register and shot list (HANDOVER §1.5, §3.6). Every image shipped on the site has an entry here recording its source URL, photographer and licence. Entries with file: null are open slots: they describe what the page needs and double as the brief for the real photo shoot in MASTERPLAN §6.9.",
+  "rules": {
+    "permittedSources": ["Unsplash", "Pexels", "Pixabay"],
+    "permittedSubjects": "Place and atmosphere only: Turkish campuses, Istanbul and Ankara streets, architecture, textures, study desks, documents.",
+    "neverPermitted": [
+      "A stock photo of a person presented as a Minaret student, staff member, or testimonial.",
+      "AI-generated images of any kind.",
+      "Images pulled from web search or Google Images.",
+      "Posed groups around a laptop, graduation cap throws, handshakes, white-background isolated people.",
+      "Unsplash+ / plus.unsplash.com premium photos. Those carry a paid licence, not the free Unsplash License."
+    ],
+    "note": "Images are downloaded and committed to public/images/ and served through next/image. The site CSP is img-src 'self' data: blob:, so a hotlinked remote image is blocked at the browser rather than merely discouraged."
+  },
+  "images": [
+    {
+      "slot": "home.hero",
+      "file": "public/images/istanbul-skyline.jpg",
+      "placeholder": true,
+      "subject": "Istanbul skyline over the Bosphorus with mosques and minarets, at dusk. No identifiable people.",
+      "source": "https://unsplash.com/photos/view-of-istanbul-skyline-with-mosques-and-bosphorus-strait-UM_YUJUGK6g",
+      "photographer": "Spenser Sembrat",
+      "licence": "Unsplash License, free for commercial use",
+      "verified": "Downloaded and visually checked: place and atmosphere only, no people, no political or religious messaging in frame.",
+      "usedBy": "components/home/HeroSection.tsx",
+      "status": "in use. Replace with a commissioned photograph when the real shoot happens."
+    },
+    {
+      "slot": "page.hero.generic",
+      "file": "public/images/ankara-building.jpg",
+      "placeholder": true,
+      "subject": "Ankara rooftops with a mosque and minaret, city beyond. No identifiable people.",
+      "source": "https://unsplash.com/photos/a-building-with-a-tower--zDQRfHGtw8",
+      "photographer": "ekrem osmanoglu",
+      "licence": "Unsplash License, free for commercial use",
+      "verified": "Downloaded and visually checked: place and atmosphere only, no people.",
+      "usedBy": "app/[locale]/why-turkiye, /about, /from/[country]",
+      "status": "in use. Replace with a photograph of the actual Ankara office when one exists."
+    },
+    {
+      "slot": "rejected.istanbul-street",
+      "file": null,
+      "placeholder": true,
+      "subject": "Istanbul street scene",
+      "source": "https://unsplash.com/photos/beautiful-street-scene-in-istanbul-turkey-rrOLQzRccDo",
+      "photographer": "Musa Ortaç",
+      "licence": "Unsplash License",
+      "status": "REJECTED after visual check. Several identifiable people in the foreground, and a large political portrait on the building. Identifiable strangers risk being read as students, and political imagery has no place on a commercial education site."
+    },
+    {
+      "slot": "process.background",
+      "file": null,
+      "placeholder": true,
+      "brief": "Document detail: a stamped transcript, an acceptance letter on a desk, shallow depth of field. This is the texture the registry direction wants. Note that the obvious Unsplash results for this subject are Unsplash+ premium and cannot be used.",
+      "usedBy": "components/home/ProcessSection.tsx",
+      "status": "open. The section currently uses the paper-grain texture instead."
+    },
+    {
+      "slot": "university.detail.campus",
+      "file": null,
+      "placeholder": true,
+      "brief": "One campus or city photograph per university page. Architecture and grounds, not people.",
+      "usedBy": "app/[locale]/universities/[slug]/page.tsx",
+      "status": "open"
+    },
+    {
+      "slot": "about.office",
+      "file": null,
+      "placeholder": true,
+      "brief": "The real Ankara office, interior and exterior with a visible street sign or building number. This one cannot be sourced from stock: it carries the 'we are actually in Türkiye' claim and must be a real photograph of the real premises.",
+      "usedBy": "app/[locale]/about/offices",
+      "status": "open. Commission, do not substitute."
+    },
+    {
+      "slot": "stories.*",
+      "file": null,
+      "placeholder": true,
+      "brief": "Real placed students, named, with signed release. MASTERPLAN §6.9 shot list item 1.",
+      "usedBy": "app/[locale]/stories",
+      "status": "open. Stock people are never permitted here under any circumstances. The cards render an explicit 'photograph pending consent' block instead."
+    }
+  ]
+}

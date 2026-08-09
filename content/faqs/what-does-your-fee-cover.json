@@ -1,0 +1,34 @@
+{
+  "question": "What exactly does your fee cover, and what does it not?",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "answer": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "It covers the eligibility assessment, the shortlist, document preparation and checking, denklik support, the university applications themselves, visa guidance, and support after arrival including enrolment and the residence permit."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "It does not cover tuition, accommodation, the visa fee, the residence permit fee, health insurance, translation and notarisation charges, or flights. Those are paid to the universities and the authorities directly, not to us."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Our fee is confirmed at your first consultation and before any payment."
+        }
+      ]
+    }
+  ],
+  "category": "General",
+  "order": 7,
+  "showOnHomepage": true
+}

@@ -1,0 +1,70 @@
+{
+  "name": "Ghana",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "isoCode": "GH",
+  "dialCode": "+233",
+  "secondaryCertificate": "WASSCE / WAEC",
+  "certificateNotes": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "WASSCE results are a recognised route into Turkish universities, subject to denklik. Aggregate matters less than most applicants expect, and subject grades matter more, particularly for health sciences where biology and chemistry are looked at directly."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Placeholder entry. The grade mapping used here must be confirmed against current practice before publication."
+        }
+      ]
+    }
+  ],
+  "denklikRoute": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Denklik is the Turkish recognition of a foreign secondary qualification. It is the step that delays more applications than any other, and it runs in parallel with the university application rather than after it."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "The process requires the original certificate and transcript, authenticated in Ghana before they are submitted in Türkiye. Starting it late is the single most common reason a student misses an intake."
+        }
+      ]
+    }
+  ],
+  "denklikTimingNote": "Denklik typically takes several weeks rather than days, and the range is wide enough that planning to the optimistic end is a mistake. Start it as early as your results allow.",
+  "authenticationOffice": {
+    "name": "Ministry of Foreign Affairs and Regional Integration",
+    "address": "Accra",
+    "process": "Original WAEC certificate and transcript are submitted for verification and stamping. Do not laminate documents before they are stamped.",
+    "timingNote": "Turnaround varies by season and by volume. Allow more time than the counter estimate, particularly in the months after results are released."
+  },
+  "turkishEmbassy": {
+    "city": "Accra",
+    "address": "Placeholder. Confirm the current embassy address before publication.",
+    "appointmentNotes": "Student visa appointments are booked in advance and availability tightens considerably in the months before the September intake. Book as soon as your acceptance letter is issued rather than waiting until the documents are complete."
+  },
+  "flightRoutings": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Accra has reasonable connections to Istanbul, with onward domestic connections to other Turkish cities. Fares vary widely by season and by how far in advance the ticket is booked."
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "title": "Terms of service",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "intro": "This is a standard draft, not legal advice. It requires review by a Turkish lawyer before launch, and a second opinion on the Ghana and Nigeria registration thresholds (MASTERPLAN §10.6).",
+  "sections": [
+    {
+      "heading": "What we provide",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We provide advisory and application support services for students seeking admission to universities in Türkiye. We are a consultancy. We are not a university, we do not make admission decisions, and we do not issue visas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What we cannot promise",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We cannot guarantee admission to any institution, the award of any scholarship, or the issue of any visa or residence permit. Those decisions are made by universities, by scholarship bodies and by the Turkish authorities respectively."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Anyone who guarantees those outcomes is describing something they do not control. Treat such a guarantee as a warning sign, from us or from anybody else."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Fees",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Our fee is confirmed in writing at your first consultation and before any payment is taken. What it covers and what it excludes is set out at the same time."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Placeholder draft. The refund position and the cancellation terms must be settled and stated here before launch."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Your responsibilities",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "The information and documents you give us must be accurate and genuine. A fabricated or altered document ends the engagement immediately and without refund, and we report it where we are required to."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

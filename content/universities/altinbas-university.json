@@ -1,0 +1,165 @@
+{
+  "name": "Altınbaş University",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "city": "Istanbul",
+  "type": "foundation",
+  "yokAccredited": true,
+  "foundedYear": 2008,
+  "languagesOfInstruction": ["English", "Turkish"],
+  "tuitionBand": "$5,000 to $22,000",
+  "overview": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Altınbaş University is a foundation university in Istanbul, with its main activity split across sites in the Bağcılar and Esenyurt areas and a presence in the centre of the city. Among students from Anglophone Africa it is best known for its health sciences faculties, and a large share of the enquiries we receive naming this university are for medicine or dentistry."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "children": [
+        {
+          "text": "Health sciences, and why the competition is real"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "The medicine and dentistry programmes are the reason most international applicants look here, and they are correspondingly the hardest to get into and the most expensive to study. Applicants should treat these as competitive rather than assured, regardless of what an agent tells them. Strong science grades matter, and a strong overall certificate without strong science grades is usually not enough."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Dentistry and pharmacy sit alongside medicine and are worth considering seriously rather than as consolation choices. Both are five-year professional degrees with clear career paths, both are less oversubscribed than medicine, and both are recognised on return in most of the markets our students come from, subject to the usual local licensing process."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "children": [
+        {
+          "text": "Engineering and the practical emphasis"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "The engineering faculty runs civil, software, electrical and mechanical programmes, mostly with English-taught options. The teaching emphasis leans practical: laboratory and project work carries real weight in assessment rather than sitting as a token component beside written examinations. For a student who learns by building things, that is a genuine difference from a more theoretical department."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Software and computer engineering attract a growing share of international applicants, partly because the entry requirements are more attainable than medicine and partly because the work is portable afterwards. Students who want to work remotely after graduating tend to end up in these programmes."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "children": [
+        {
+          "text": "Language and preparation"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "English-taught programmes require evidence of English, either an accepted external test or the university's own exam on arrival. Preparatory English exists for students who need it, and it is better to plan for that year than to gamble on the placement exam. Turkish-taught programmes require Turkish at C1 and effectively require a language year for international students."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "children": [
+        {
+          "text": "Living in Istanbul"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "The practical realities are the same as for any Istanbul university: extensive transport, high accommodation costs relative to the rest of Türkiye, and a large enough international community that a new student is not isolated. Commutes can be long depending on where a student lives relative to their faculty, and that is worth planning before signing an accommodation contract rather than after."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "children": [
+        {
+          "text": "An honest note on cost"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Medicine here sits at the upper end of the private range, and the total cost across five or six years is substantial. Families should look at the full duration rather than the first year in isolation, and should include living costs, the residence permit, health insurance and travel. We publish bands rather than quotes precisely so that this conversation happens early. If the full figure does not work, there are state universities and other routes worth discussing, and it is better to have that conversation before an application than after an acceptance."
+        }
+      ]
+    }
+  ],
+  "whoItSuits": "Applicants aiming at medicine, dentistry or pharmacy who want an English-taught route, and engineering students who want laboratory time rather than a purely theoretical degree.",
+  "entryRequirements": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "A completed secondary certificate is required, with denklik. WASSCE, WAEC, NECO and SSCE are recognised routes."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "For medicine, dentistry and pharmacy, subject grades in biology, chemistry and mathematics are examined specifically, and the bar is higher than for other faculties."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "YÖS is not required for most programmes. SAT results are accepted where held and can strengthen a competitive application."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "English-taught programmes require an accepted test result or a pass in the university's own proficiency exam. Students who do not pass are placed into preparatory English for a year."
+        }
+      ]
+    }
+  ],
+  "yosRequired": false,
+  "satAccepted": true,
+  "englishRequirement": "IELTS 6.0, TOEFL iBT 78, or the university's own proficiency exam",
+  "website": "https://www.altinbas.edu.tr/en",
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

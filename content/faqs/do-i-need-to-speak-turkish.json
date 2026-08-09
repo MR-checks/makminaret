@@ -1,0 +1,26 @@
+{
+  "question": "Do I need to speak Turkish to study in Türkiye?",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "answer": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Not if you study on an English-taught programme, and there are many of them, particularly at private universities."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "You will need Turkish for daily life outside campus, and you will pick some up whether you plan to or not. For a Turkish-taught programme you need Turkish at C1, which means a language year first for almost every international student."
+        }
+      ]
+    }
+  ],
+  "category": "General",
+  "order": 0,
+  "showOnHomepage": true
+}

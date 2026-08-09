@@ -1,0 +1,21 @@
+{
+  "title": "Placeholder student story",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "studentName": "",
+  "homeCountry": "ghana",
+  "university": "altinbas-university",
+  "program": "software-engineering-altinbas",
+  "quote": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Placeholder story. This card is deliberately unnamed and carries no photograph. It will be replaced with a real student account, published with written consent, a real name and a real photograph, or removed entirely."
+        }
+      ]
+    }
+  ],
+  "consentOnFile": false,
+  "featured": true
+}

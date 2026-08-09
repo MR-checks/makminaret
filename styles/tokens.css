@@ -1,0 +1,117 @@
+/* ============================================================
+   MINARET — Design Tokens
+   Source of truth for all visual values.
+   Referenced by Tailwind v4 @theme in globals.css.
+   See MASTERPLAN §6.4, §6.5, §6.7 and HANDOVER §1.1, §1.2, §1.8
+
+   Every colour pairing below was measured, not estimated.
+   Re-measure any value you change. Do not eyeball contrast.
+   ============================================================ */
+
+:root {
+  /* ── Core ──────────────────────────────────────────────────
+     --navy is sampled from logo.jpeg, per HANDOVER §1.1 which
+     asks for the true logo blue where it passes 4.5:1 on white.
+     It measures 15.70:1, so the sampled value is used directly
+     rather than the illustrative #16294A in the handover text. */
+  --navy: #01224d; /* primary. Hero panel, headings, footer. White on this: 15.70:1 */
+  --navy-deep: #01162f; /* layering within dark panels, footer base. White: 18.15:1 */
+  --navy-soft: #12386b; /* hover states, secondary dark surfaces. White: 11.64:1 */
+
+  --ink: #131a1e; /* near-black, cool cast. Body text. 15.8:1 on paper */
+  --ink-soft: #2e3a40; /* secondary text on light */
+
+  /* ── Accent (use sparingly, max 3× per viewport) ───────────
+     --seal is the only accent permitted as a CTA fill.
+     White on --seal: 6.65:1. --seal on --paper: 5.95:1. */
+  --seal: #a8322b;
+
+  /* ── Gold: DARK SURFACES ONLY ──────────────────────────────
+     Sampled from the logo. Permitted on --navy (5.47:1) and
+     --navy-deep (6.32:1) only.
+     BANNED on --paper (2.57:1) and on --navy-soft (4.05:1):
+     both fail WCAG AA. HANDOVER §1.8 permits gold on dark
+     surfaces; --navy-soft is dark but still fails, so it is
+     excluded. scripts/check-constraints.mjs enforces this. */
+  --gold: #b99257;
+
+  /* ── Ground ────────────────────────────────────────────── */
+  --paper: #f4f2ed; /* warm off-white page background */
+  --paper-raised: #fbfaf7; /* cards sitting on paper */
+  --rule: #d6d0c4; /* 1.36:1. Decorative hairlines ONLY, never an input boundary */
+  --sand: #e8e2d6; /* subtle fills, table header rows */
+
+  /* ── Utility ───────────────────────────────────────────── */
+  --slate: #5a676b; /* 5.23:1 on --paper. Do NOT lighten. */
+  --border-input: #9aa0a0; /* 3.02:1 on --paper. Form inputs use this, never --rule. */
+  --success: #2f6b4f;
+  --warning: #8a6217;
+
+  /* ── WhatsApp ──────────────────────────────────────────────
+     For the dedicated Button variant in MASTERPLAN §6.10. A third-party brand
+     colour rather than one of ours, so it lives here as a named token instead
+     of a raw hex behind a linter escape hatch, and is used on that one button
+     and nowhere else.
+
+     NOT WhatsApp's light green #25D366, which the button previously used:
+     white on it measures 1.98:1 and fails the WCAG AA non-negotiable in
+     HANDOVER §5 outright. #075E54 is WhatsApp's own dark brand green, so the
+     button still reads as WhatsApp, and white on it measures 7.67:1. */
+  --whatsapp: #075e54;
+  --whatsapp-hover: #128c7e;
+
+  /* ── Type scale (fluid) ────────────────────────────────── */
+  --fs-display: clamp(2.75rem, 6vw, 4.5rem);
+  --fs-h2: clamp(1.875rem, 3.5vw, 2.75rem);
+  --fs-h3: clamp(1.25rem, 2vw, 1.5rem);
+  --fs-body-lg: 1.125rem;
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-mono: 0.8125rem;
+
+  /* ── Line heights ──────────────────────────────────────── */
+  --lh-display: 1.05;
+  --lh-body: 1.65;
+
+  /* ── Layout ────────────────────────────────────────────── */
+  --max-prose: 68ch;
+  --container-max: 1200px;
+  --container-bleed: 1440px;
+  --gutter: 72px;
+
+  /* ── Radius by role (HANDOVER §1.2, ceiling raised in §1.8) ─
+     --radius-md is the general ceiling at 8px.
+     --radius-lg (12px) is permitted ONLY on large media panels
+     and hero imagery. Nothing above 12px.
+     rounded-2xl / rounded-3xl remain banned outright, and
+     rounded-full only on avatars and pills. */
+  --radius-sm: 4px; /* buttons, inputs, tags */
+  --radius-md: 8px; /* cards, panels, images. General ceiling. */
+  --radius-lg: 12px; /* large media panels, hero imagery. Nothing else. */
+
+  /* ── Shadow (HANDOVER §1.2) ────────────────────────────────
+     --shadow-md is for genuinely elevated things only: open
+     dropdowns, the sticky mobile bar, modals. Not a grid of
+     cards. Cards get --shadow-sm OR a --rule border, never both.
+     Shadows stay neutral: no coloured or glowing shadows. */
+  --shadow-sm: 0 1px 2px rgb(19 26 30 / 0.06);
+  --shadow-md: 0 4px 12px -2px rgb(19 26 30 / 0.1);
+
+  /* ── Spacing by importance ─────────────────────────────── */
+  --space-hero: 96px;
+  --space-section: 64px;
+  --space-inner: 32px;
+
+  /* ── Motion (HANDOVER §1.3) ────────────────────────────── */
+  --motion-micro: 140ms; /* button/link/card colour transitions */
+  --motion-menu: 160ms; /* nav dropdowns and mega menus */
+  --motion-page: 150ms; /* route transition opacity fade */
+  --motion-accordion: 200ms; /* accordion height */
+  --motion-stamp: 180ms; /* the stamp impression */
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* ── Focus ring ────────────────────────────────────────── */
+  --focus-ring-color: var(--navy);
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+}

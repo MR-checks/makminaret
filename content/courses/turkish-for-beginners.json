@@ -1,0 +1,50 @@
+{
+  "title": "Turkish for beginners",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "summary": "A first course in Turkish for students arriving with no prior exposure, focused on the language you need in the first month: transport, shops, offices and forms.",
+  "format": "in-person",
+  "durationWeeks": 8,
+  "feeBand": "$200 to $400",
+  "certification": "Certificate of completion",
+  "curriculum": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "A first course in Turkish for students arriving with no prior exposure, focused on the language you need in the first month: transport, shops, offices and forms."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Placeholder curriculum. The module list, the contact hours and the assessment method must be confirmed with the academy before this page goes live."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "children": [
+        {
+          "text": "How cohorts run"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Cohorts start through the year rather than on fixed annual dates. Ask us what is next and we will tell you what is actually scheduled."
+        }
+      ]
+    }
+  ],
+  "whoItIsFor": "Incoming students, and family members arriving with them.",
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

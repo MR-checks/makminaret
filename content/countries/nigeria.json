@@ -1,0 +1,70 @@
+{
+  "name": "Nigeria",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "isoCode": "NG",
+  "dialCode": "+234",
+  "secondaryCertificate": "WAEC / NECO / SSCE",
+  "certificateNotes": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "WAEC, NECO and SSCE results are recognised routes, subject to denklik. Where a student holds results from more than one sitting, the combination needs handling carefully, and it is worth raising early rather than at submission."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Placeholder entry. Confirm current practice on combined sittings before publication."
+        }
+      ]
+    }
+  ],
+  "denklikRoute": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Denklik is the Turkish recognition of a foreign secondary qualification, and it is the step most likely to delay a Nigerian application. It runs alongside the university application rather than after it."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Certificates are authenticated in Nigeria before submission in Türkiye. Where results come from multiple sittings, expect additional scrutiny."
+        }
+      ]
+    }
+  ],
+  "denklikTimingNote": "Denklik typically takes several weeks, and the range is wide. Applications with results from more than one sitting generally take longer than single-sitting applications.",
+  "authenticationOffice": {
+    "name": "Ministry of Foreign Affairs",
+    "address": "Abuja",
+    "process": "Certificates and transcripts are authenticated before submission. Confirm the current document list directly, as requirements are revised periodically.",
+    "timingNote": "Turnaround varies considerably. Allow substantially more time than the minimum quoted at the counter."
+  },
+  "turkishEmbassy": {
+    "city": "Abuja",
+    "address": "Placeholder. Confirm the current embassy address before publication.",
+    "appointmentNotes": "Student visa appointments are booked in advance and become scarce ahead of the September intake. Book as soon as the acceptance letter is issued."
+  },
+  "flightRoutings": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Lagos and Abuja both have connections to Istanbul, with onward domestic connections within Türkiye. Fares vary widely by season and booking lead time."
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

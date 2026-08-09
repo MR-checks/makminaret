@@ -1,0 +1,68 @@
+{
+  "title": "Business Administration",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "university": "istanbul-aydin-university",
+  "level": "bachelor",
+  "field": "business",
+  "language": "English",
+  "durationYears": 4,
+  "tuitionBand": "$4,000 to $7,000",
+  "scholarshipAvailable": true,
+  "description": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "A four-year English-taught business degree covering management, finance, marketing and international trade, in a faculty with a large international cohort."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Placeholder description. The programme structure, module list and assessment pattern below are written to a realistic shape but have not been verified against the university's current catalogue, and must be replaced with the real syllabus before this page goes live."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Teaching runs across two semesters a year. The language of instruction is set at programme level rather than faculty level, so it should be confirmed for this specific programme before an application is submitted."
+        }
+      ]
+    }
+  ],
+  "entryRequirements": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "A completed secondary certificate with denklik, and evidence of English for this English-taught programme, either an accepted external test result or a pass in the university's own proficiency exam."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Where the programme is competitive, subject grades are examined rather than the aggregate alone."
+        }
+      ]
+    }
+  ],
+  "careerOutcomes": "Graduates enter management, finance and trade roles. Istanbul's position as a trading hub makes internships in import and export more accessible here than in most Turkish cities.",
+  "documentsRequired": [
+    "Secondary school certificate",
+    "Academic transcript",
+    "Passport, valid for the full duration of study where possible",
+    "Passport photographs",
+    "English proficiency evidence, where held"
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

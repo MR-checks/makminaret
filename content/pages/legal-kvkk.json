@@ -1,0 +1,93 @@
+{
+  "title": "KVKK notice",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "intro": "This is a standard draft, not legal advice. It requires review by a Turkish lawyer before launch, and a second opinion on the Ghana and Nigeria registration thresholds (MASTERPLAN §10.6).",
+  "sections": [
+    {
+      "heading": "Aydınlatma Metni",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "This notice is provided under Law No. 6698 on the Protection of Personal Data, the Turkish data protection regime that governs our processing as an entity registered and operating in Türkiye."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Placeholder draft. A Turkish-language version must be published alongside this one, and both require review by a Turkish lawyer before launch."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Data controller",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "MAK Minaret, registered in Türkiye. The registration number and registered address must be confirmed and stated here before publication."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Purpose and legal basis",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Personal data is processed for the purpose of responding to and advising on education enquiries, on the basis of the explicit consent given at the point of submission."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rights under Article 11",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "You have the right to learn whether your data is processed, to request information about the processing, to learn the purpose and whether it is used accordingly, to know any third parties to whom it is transferred, to request correction or deletion, and to object to conclusions drawn by automated analysis."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Requests should be sent to the email address published on our contact page and are answered within 30 days."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Registration thresholds",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Whether VERBİS registration applies to us in Türkiye, and whether registration with the Ghana Data Protection Commission or the Nigeria Data Protection Commission applies given that we market to residents of those countries, are open questions requiring legal advice rather than assumption."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

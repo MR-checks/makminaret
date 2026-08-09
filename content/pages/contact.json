@@ -1,0 +1,46 @@
+{
+  "title": "Contact",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "intro": "WhatsApp is the fastest way to reach us. The office is in Ankara and runs on Turkish time, which is ahead of Ghana and Nigeria.",
+  "sections": [
+    {
+      "heading": "How quickly we reply",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We reply within four working hours. Our office is open 09:00 to 18:00 in Türkiye, which is shown converted to your own local time in the footer of every page."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What to send us",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "For a first enquiry: what you want to study, roughly what your grades were, and what you can spend. That is enough for us to tell you something useful rather than something generic."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "You do not need documents yet. Nothing has to be scanned, translated or notarised before a first conversation."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

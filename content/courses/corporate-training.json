@@ -1,0 +1,50 @@
+{
+  "title": "Corporate training",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "summary": "Tailored training delivered for organisations rather than individuals, scoped around what the team actually needs. Content, duration and format are agreed before anything is scheduled.",
+  "format": "in-person",
+  "durationWeeks": null,
+  "feeBand": "On request",
+  "certification": "Certificate of completion",
+  "curriculum": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Tailored training delivered for organisations rather than individuals, scoped around what the team actually needs. Content, duration and format are agreed before anything is scheduled."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Placeholder curriculum. The module list, the contact hours and the assessment method must be confirmed with the academy before this page goes live."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "children": [
+        {
+          "text": "How cohorts run"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Cohorts start through the year rather than on fixed annual dates. Ask us what is next and we will tell you what is actually scheduled."
+        }
+      ]
+    }
+  ],
+  "whoItIsFor": "Organisations training a group.",
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "title": "Accommodation",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "intro": "Where students actually live, what each option costs relative to the others, and the trade-offs nobody mentions until you have signed something.",
+  "sections": [
+    {
+      "heading": "University dormitories",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "The cheapest and the simplest option, and the one we suggest for a first year. Rooms are usually shared, meals are often included, and the contract runs with the academic year so there is no separate deposit negotiation in a language you do not yet speak."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Places are finite and they go early. A student who waits until arrival to think about accommodation will usually end up in a shared flat by default rather than by choice."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Private dormitories",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "More expensive than university dormitories, generally with better facilities and more privacy. A reasonable middle option, and widely available in the larger university cities."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Shared flats",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Cheaper per person than a studio and the most common choice from the second year onwards, once a student knows the city and has people to share with. It requires a deposit, a contract, and usually a guarantor arrangement, which is why it is a difficult first-year option from abroad."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Studios",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "The most expensive option and the least common among the students we place. It suits postgraduate students and those arriving with family, and it is rarely the right answer for an eighteen-year-old arriving alone."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The thing to know about Istanbul",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Accommodation in Istanbul costs considerably more than in Ankara or a smaller university city, and the gap is large enough to change which universities are affordable overall. A cheaper tuition figure in an expensive city can total more than a higher one in a cheaper city."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Also check which campus your programme is actually taught on before signing anything. Istanbul is large, universities operate across multiple sites, and a daily cross-city commute is a real cost in both money and attendance."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "title": "The application process",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "intro": "Eight steps from first conversation to enrolment. The timings below are typical rather than promised, and the step that delays most applicants is denklik.",
+  "sections": [
+    {
+      "heading": "01. Eligibility review",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We look at your qualification, your grades and your budget, and tell you honestly whether the programme you want is in range. If it is not, we say which programmes are. This is usually a same-day conversation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "02. University and programme shortlist",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We put together a shortlist matched to your grades, your budget and the language you can study in. We apply to several institutions rather than one, because that is what puts you in a position to compare offers rather than accept whatever arrives."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "03. Document preparation",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Transcripts, certificate, passport, photographs and translations. Most delays at this stage are caused by a document that was laminated before it was stamped, or a name that does not match across documents. Both are avoidable if caught early."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "04. Denklik, the diploma recognition step",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Denklik is the Turkish recognition of your secondary certificate. It delays more applications than any other single step, and it runs in parallel with the university application rather than after it."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Start it as early as your results allow. Applications that begin denklik late are the ones that miss an intake."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "05. University application",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We submit to the shortlist and track each application. Where a university asks for something extra, we handle it rather than forwarding the request to you and waiting."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "06. Acceptance and tuition deposit",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Offers arrive, we go through them together, and you choose. A deposit secures the place and produces the acceptance letter the embassy will want to see."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "07. Student visa at the embassy",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "You apply at the Turkish embassy in your own country with the acceptance letter and the supporting document set. Appointment availability tightens considerably in the months before the September intake, so book as soon as the acceptance letter is issued."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "08. Arrival, ikamet and enrolment",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "You arrive, we meet you, and we handle enrolment and the ikamet residence permit application. This is the part that a local agent five thousand kilometres away cannot do, and it is the reason we operate from Ankara."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "How long the whole thing takes",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Plan on several months from first document to boarding pass, not several weeks. For a September intake, students who start in February or March are comfortable. Students who start in July are already late, and we will tell them so rather than take the fee."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

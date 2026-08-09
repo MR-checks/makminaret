@@ -1,0 +1,26 @@
+{
+  "question": "What is denklik and why does it take so long?",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "answer": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Denklik is the Turkish recognition of a secondary school qualification issued in another country. Without it, an acceptance letter cannot become an enrolment."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "It takes time because your certificate has to be authenticated in the country that issued it first, which is a separate process with its own queue, and only then can it be assessed in Türkiye. Starting it late is the most common reason a student misses an intake."
+        }
+      ]
+    }
+  ],
+  "category": "General",
+  "order": 1,
+  "showOnHomepage": true
+}

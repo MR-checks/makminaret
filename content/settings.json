@@ -1,0 +1,15 @@
+{
+  "brandName": "Minaret",
+  "legalName": "MAK Minaret",
+  "primaryPhone": "+233 24 010 1057",
+  "whatsappNumber": "233240101057",
+  "officePhone": "",
+  "email": "info@makminaret.com",
+  "registrationNumber": "",
+  "officeAddress": ["Ankara", "Türkiye"],
+  "officeMapsUrl": "",
+  "officeHours": "09:00 to 18:00 GMT+3",
+  "responseTimePromise": "We reply within 4 working hours.",
+  "socials": [],
+  "placeholderFields": ["legalName", "registrationNumber", "officeAddress", "officePhone"]
+}

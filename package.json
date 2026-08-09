@@ -1,26 +1,54 @@
 {
-  "name": "minaret-temp",
+  "name": "makminaret",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/generate-placeholders.mjs && tsx scripts/validate-content.ts",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint && node scripts/check-constraints.mjs",
+    "lint:constraints": "node scripts/check-constraints.mjs",
+    "placeholders": "node scripts/generate-placeholders.mjs",
+    "seed": "tsx scripts/seed-content.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
+    "@keystatic/core": "0.6.4",
+    "@keystatic/next": "5.0.4",
+    "clsx": "2.1.1",
+    "libphonenumber-js": "1.13.10",
+    "lucide-react": "1.30.0",
     "next": "16.3.0",
+    "next-intl": "4.13.5",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "resend": "6.18.1",
+    "tailwind-merge": "3.6.0",
+    "zod": "4.4.3"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "20.19.43",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.4",
+    "eslint": "9.39.5",
     "eslint-config-next": "16.3.0",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "husky": "9.1.7",
+    "lint-staged": "17.3.0",
+    "prettier": "3.9.6",
+    "tailwindcss": "4.3.3",
+    "tsx": "4.23.11",
+    "typescript": "5.9.3"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.css": [
+      "prettier --write"
+    ]
   }
 }

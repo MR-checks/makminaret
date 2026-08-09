@@ -1,0 +1,85 @@
+{
+  "title": "Student support",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "intro": "What we do after you land, which is the part that separates a consultancy in Ankara from an agent five thousand kilometres away.",
+  "sections": [
+    {
+      "heading": "Arrival",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We meet you, help you get to your accommodation, and get you a local SIM and a transport card on the first day. Small things, but they are the difference between a first week spent settling in and a first week spent lost."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Enrolment and the ikamet",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We go with you to enrolment and to the residence permit appointment. Both involve queues, forms and a language you do not speak yet, and both have consequences if they go wrong."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Banking and the practical set-up",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Opening a bank account, understanding what your student card gets you, and knowing which pharmacy near campus has someone who speaks English. This is the layer of knowledge that takes a new student a semester to build and takes us an afternoon to hand over."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "When something goes wrong",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "A requirement changes, a document is questioned, a deadline is missed, a student falls behind. These things happen, and they are the reason to work with someone who can walk into the relevant office rather than send an email into it."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We are in Ankara, not in Accra. When something needs a person in a room, there is a person in a room."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What we do not do",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We do not sit exams for anyone, we do not guarantee admission, and we do not promise a visa outcome. Anyone offering those things is describing something that is either impossible or fraudulent."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

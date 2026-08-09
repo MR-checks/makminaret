@@ -1,0 +1,88 @@
+{
+  "title": "Visa and residence",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "intro": "The student visa is issued in your country. The residence permit is issued after you arrive. They are different things and the second one catches people out.",
+  "sections": [
+    {
+      "heading": "The student visa",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "You apply at the Turkish embassy or consulate in your own country, with your acceptance letter and the supporting documents they specify. The visa gets you into Türkiye and it is tied to your studies."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Appointment availability is the practical constraint rather than the decision itself. Slots become scarce in the months before the September intake, so the appointment should be booked as soon as the acceptance letter exists, not once every other document is ready."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Ikamet, the residence permit",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Once you arrive you apply for a residence permit, the ikamet. This is a separate process handled inside Türkiye, and it is the one that most commonly goes wrong for students who came through an agent with no presence here."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "There is a window after arrival within which the application must be made. Missing it creates problems that are far more troublesome to fix than to avoid. We go with our students to the appointment rather than sending instructions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Health insurance",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Health cover is required and is part of the residence permit process rather than an optional extra. Budget for it as a fixed annual cost alongside the permit fee."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "If a visa is refused",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "It happens, and it is usually a document problem rather than a judgement about the student. A refusal is not necessarily the end of the route, and the first thing to establish is the stated reason."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We would rather tell an applicant that their file has a weakness before it is submitted than manage a refusal afterwards. That is the whole reason the document stage is as slow and as fussy as it is."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}
