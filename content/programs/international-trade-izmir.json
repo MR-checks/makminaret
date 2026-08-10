@@ -1,0 +1,68 @@
+{
+  "title": "International Trade and Finance",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "university": "izmir-university-of-economics",
+  "level": "bachelor",
+  "field": "business",
+  "language": "English",
+  "durationYears": 4,
+  "tuitionBand": "$5,000 to $8,000",
+  "scholarshipAvailable": true,
+  "description": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "A four-year English-taught degree covering trade, logistics and finance, in a port city where those things actually happen rather than being studied in the abstract."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Placeholder description. The programme structure, module list and assessment pattern below are written to a realistic shape but have not been verified against the university's current catalogue, and must be replaced with the real syllabus before this page goes live."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Teaching runs across two semesters a year. The language of instruction is set at programme level rather than faculty level, so it should be confirmed for this specific programme before an application is submitted."
+        }
+      ]
+    }
+  ],
+  "entryRequirements": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "A completed secondary certificate with denklik, and evidence of English for this English-taught programme, either an accepted external test result or a pass in the university's own proficiency exam."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Where the programme is competitive, subject grades are examined rather than the aggregate alone."
+        }
+      ]
+    }
+  ],
+  "careerOutcomes": "Graduates enter trade, logistics, banking and supply chain roles. Direct relevance for students whose families already trade between Türkiye and West Africa.",
+  "documentsRequired": [
+    "Secondary school certificate",
+    "Academic transcript",
+    "Passport, valid for the full duration of study where possible",
+    "Passport photographs",
+    "English proficiency evidence, where held"
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

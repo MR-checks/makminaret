@@ -1,8 +1,8 @@
 {
   "brandName": "Minaret",
   "legalName": "MAK Minaret",
-  "primaryPhone": "+233 24 010 1057",
-  "whatsappNumber": "233240101057",
+  "primaryPhone": "+233 53 979 9795",
+  "whatsappNumber": "233539799795",
   "officePhone": "",
   "email": "info@makminaret.com",
   "registrationNumber": "",
@@ -10,6 +10,11 @@
   "officeMapsUrl": "",
   "officeHours": "09:00 to 18:00 GMT+3",
   "responseTimePromise": "We reply within 4 working hours.",
-  "socials": [],
+  "socials": [
+    {
+      "label": "Facebook",
+      "url": "https://www.facebook.com/share/14jBjefQzit/"
+    }
+  ],
   "placeholderFields": ["legalName", "registrationNumber", "officeAddress", "officePhone"]
 }

@@ -4,6 +4,7 @@ import { getFields } from "@/lib/content/reader";
 import { ProgramFilterSidebar } from "@/components/programs/ProgramFilterSidebar";
 import { ProgramCard } from "@/components/programs/ProgramCard";
 import { Search } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 
 export const metadata = {
   title: "Program Finder | Minaret Educational Consultancy",
@@ -32,6 +33,10 @@ export default async function ProgramsPage({ searchParams }: Props) {
       name: f.entry.name,
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
+
+  // "Other" is a real answer, not a failed search: it means the visitor's
+  // subject is not on our shortlist, which is a prompt to talk to us.
+  const isOtherField = params.field === "other";
 
   // Apply filters
   let filteredPrograms = allPrograms;
@@ -123,12 +128,44 @@ export default async function ProgramsPage({ searchParams }: Props) {
                 ))}
               </div>
             ) : (
-              <div className="bg-white border border-slate/10 p-12 text-center flex flex-col items-center justify-center h-64">
-                <Search size={48} className="text-slate/30 mb-4" />
-                <h3 className="font-display text-xl text-navy mb-2">No programs found</h3>
-                <p className="font-sans text-slate">
-                  Try adjusting your filters or clearing them to see more options.
+              /*
+                An empty result is a conversation, not a dead end. The listing
+                here is a shortlist of what we place into rather than a catalogue
+                of everything in Türkiye, so "nothing matched" usually means
+                "ask us" rather than "it does not exist". Sending someone away
+                with only "adjust your filters" wastes the highest-intent
+                moment on the page.
+              */
+              <div className="rounded-md border border-rule bg-paper-raised p-10 text-center">
+                <Search
+                  size={40}
+                  aria-hidden="true"
+                  className="mx-auto mb-4 text-slate"
+                />
+                <h3 className="font-display text-xl text-navy">
+                  {isOtherField
+                    ? "Tell us what you are looking for"
+                    : "Nothing here matches that combination"}
+                </h3>
+                <p className="mx-auto mt-3 max-w-prose font-sans text-slate">
+                  {isOtherField
+                    ? "This list is a shortlist of programmes we place into, not a catalogue of everything on offer in Türkiye. If your subject is not here, it very likely still exists somewhere. Tell us what you want to study and we will tell you where it is taught, in which language, and what it costs."
+                    : "This list is a shortlist rather than a full catalogue, so a combination with no results does not mean the programme does not exist. Widen a filter, or ask us directly and we will check."}
                 </p>
+                <div className="mt-6 flex flex-wrap justify-center gap-3">
+                  <Link
+                    href="/eligibility"
+                    className="inline-flex min-h-11 items-center justify-center gap-2 rounded-sm bg-seal px-6 font-sans text-sm font-medium text-white transition-colors hover:bg-seal/90"
+                  >
+                    Tell us what you want to study
+                  </Link>
+                  <Link
+                    href="/programs"
+                    className="inline-flex min-h-11 items-center justify-center gap-2 rounded-sm border border-navy px-6 font-sans text-sm font-medium text-navy transition-colors hover:bg-sand"
+                  >
+                    Clear all filters
+                  </Link>
+                </div>
               </div>
             )}
           </main>

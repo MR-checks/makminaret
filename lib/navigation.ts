@@ -29,9 +29,9 @@ export const STUDY_MEGA_MENU: NavColumn[] = [
     heading: "Start here",
     links: [
       { label: "Why Türkiye", href: "/why-turkiye" },
-      { label: "Application process", href: "/application-process" },
       { label: "Entry requirements", href: "/entry-requirements" },
       { label: "From Ghana", href: "/from/ghana" },
+      { label: "Ghana community", href: "/from/ghana/community" },
       { label: "From Nigeria", href: "/from/nigeria" },
     ],
   },
@@ -40,7 +40,6 @@ export const STUDY_MEGA_MENU: NavColumn[] = [
     links: [
       { label: "Universities", href: "/universities" },
       { label: "Programs", href: "/programs" },
-      { label: "Program finder", href: "/programs" },
       { label: "Student stories", href: "/stories" },
     ],
   },
@@ -52,10 +51,20 @@ export const STUDY_MEGA_MENU: NavColumn[] = [
     ],
   },
   {
+    // Visa sits in its own column rather than under "after you arrive",
+    // because the visa is applied for at home before departure. Grouping it
+    // with arrival topics implied a sequence that is the wrong way round.
+    heading: "Process",
+    links: [
+      { label: "Application process", href: "/application-process" },
+      { label: "Visa and residence", href: "/visa-and-residence" },
+    ],
+  },
+  {
     heading: "After you arrive",
     links: [
-      { label: "Visa and residence", href: "/visa-and-residence" },
       { label: "Accommodation", href: "/accommodation" },
+      { label: "Health insurance", href: "/health-insurance" },
       { label: "Student support", href: "/student-support" },
     ],
   },
@@ -121,6 +130,8 @@ export const FOOTER_COLUMNS: NavColumn[] = [
       { label: "Tuition and costs", href: "/costs" },
       { label: "Application process", href: "/application-process" },
       { label: "Entry requirements", href: "/entry-requirements" },
+      { label: "Visa and residence", href: "/visa-and-residence" },
+      { label: "Health insurance", href: "/health-insurance" },
       { label: "Student support", href: "/student-support" },
     ],
   },

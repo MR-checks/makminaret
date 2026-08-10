@@ -114,7 +114,7 @@ function buildConfirmation(lead: Lead, reference: string) {
     "",
     "We reply within 4 working hours. Our office is open 09:00 to 18:00 in Türkiye.",
     "",
-    "If it is urgent, message us on WhatsApp: https://wa.me/233240101057",
+    "If it is urgent, message us on WhatsApp: https://wa.me/233539799795",
     "",
     "Minaret Educational Consultancy",
     "Ankara, Türkiye",

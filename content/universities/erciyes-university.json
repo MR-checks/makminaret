@@ -1,0 +1,123 @@
+{
+  "name": "Erciyes University",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "city": "Kayseri",
+  "type": "state",
+  "yokAccredited": true,
+  "foundedYear": 1978,
+  "languagesOfInstruction": ["Turkish", "English"],
+  "tuitionBand": "$400 to $2,000",
+  "overview": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Erciyes University is a state university in Kayseri, in central Anatolia. It is included here because it represents the genuinely affordable route, and that route deserves to be on the table rather than quietly omitted because private universities pay better."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "children": [
+        {
+          "text": "What the state route actually involves"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "State tuition is a fraction of private tuition, and Kayseri costs considerably less to live in than Istanbul. The trade-offs are real: most teaching is in Turkish, which means a language year before the degree begins, and admission typically runs through the YÖS entrance examination rather than on your certificate alone."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "That combination adds a year and requires more preparation. For a family where the private route simply does not add up, it is the difference between studying in Türkiye and not studying in Türkiye, and we would rather set it out plainly than pretend the only option is the expensive one."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "children": [
+        {
+          "text": "Kayseri"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "A large Anatolian city, industrial, conservative in character, and much cheaper than the coast. Fewer international students than Istanbul, which means more Turkish practice by necessity and a smaller ready-made community on arrival."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "children": [
+        {
+          "text": "An honest note"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Placeholder entry. YÖS requirements, quotas and the fee band must be confirmed before publication, and they change more often at state universities than at private ones."
+        }
+      ]
+    }
+  ],
+  "whoItSuits": "Students for whom cost is the deciding factor, who are willing to complete a Turkish language year first, and who want a large state university in a considerably cheaper city.",
+  "entryRequirements": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "A completed secondary certificate with denklik."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "YÖS is required for most programmes, and is a genuine filter rather than a formality."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Turkish at C1 for Turkish-taught programmes, which is most of them. Budget for a preparatory language year."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Quotas for international students are limited and vary by programme and by year."
+        }
+      ]
+    }
+  ],
+  "yosRequired": true,
+  "satAccepted": false,
+  "englishRequirement": "Programme dependent. Most teaching is in Turkish and requires Turkish at C1.",
+  "website": "https://www.erciyes.edu.tr/en/",
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

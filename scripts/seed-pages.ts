@@ -768,6 +768,122 @@ page("legal-kvkk", "KVKK notice", LAWYER_NOTE, [
   },
 ]);
 
+// ── Health insurance ────────────────────────────────────────
+
+page(
+  "health-insurance",
+  "Health insurance",
+  "Cover is required, it is tied to your residence permit, and it is the cost students most often leave out of their budget.",
+  [
+    {
+      heading: "It is not optional",
+      body: [
+        p(
+          "Health cover is a condition of the residence permit rather than a sensible extra. Without it in place, the ikamet application does not complete, so it belongs in your plan from the start and not as something to sort out later."
+        ),
+      ],
+    },
+    {
+      heading: "Your two routes",
+      body: [
+        p(
+          "International students can generally either enrol in the Turkish state scheme, or take private cover from an insurer. There is a window after arrival within which the state option can be taken up, and missing it usually means going private instead."
+        ),
+        p(
+          "The state scheme is typically the cheaper of the two and covers state hospitals. Private policies cost more, and in exchange usually mean shorter waits and easier access to private hospitals where English is more widely spoken."
+        ),
+        p(
+          "Placeholder detail. The enrolment window, the current premium levels and the exact scope of each option must be confirmed before this page goes live, and they are the kind of figures that change."
+        ),
+      ],
+    },
+    {
+      heading: "Budget for it as a fixed annual cost",
+      body: [
+        p(
+          "Whichever route you take, treat it as a known yearly cost alongside the residence permit fee rather than a variable. It is small next to tuition and it is the one people forget."
+        ),
+      ],
+    },
+    {
+      heading: "What we do",
+      body: [
+        p(
+          "We tell you which route suits your situation before you arrive, we go with you to sort it out in the first weeks, and we make sure it is in place before the residence permit appointment rather than after it."
+        ),
+        p(
+          "If you fall ill in your first month and have not sorted cover, that is an expensive problem. It is one of the specific things having someone here rather than in Accra actually prevents."
+        ),
+      ],
+    },
+  ]
+);
+
+// ── Ghana community ─────────────────────────────────────────
+
+page(
+  "ghana-community",
+  "The Ghanaian community in Türkiye",
+  "You will not be the only one. There is an established Ghanaian student community across the main university cities, and getting connected to it in the first month makes more difference than almost anything else we do.",
+  [
+    {
+      heading: "Why this matters more than it sounds",
+      body: [
+        p(
+          "The students who struggle are rarely the ones who found the coursework hard. They are the ones who spent the first semester alone, did not know who to ask about a form, and lost confidence before they found their feet."
+        ),
+        p(
+          "A community that already knows which office to go to, which shop sells the right ingredients and which lecturer is approachable removes most of that. It is the difference between a difficult first year and a fine one."
+        ),
+      ],
+    },
+    {
+      heading: "What actually exists",
+      body: [
+        p(
+          "Ghanaian students are present in Istanbul, Ankara and the other main university cities, with informal groups on WhatsApp, church and mosque communities, and student associations at the larger universities."
+        ),
+        p(
+          "Placeholder detail. The specific groups, associations and contacts must be confirmed and named here before this page goes live, with the permission of the people running them."
+        ),
+      ],
+    },
+    {
+      heading: "How we connect you",
+      body: [
+        p(
+          "Before you travel, we introduce you to students already at your university where they are willing to be introduced. Not a directory, an actual introduction to someone who was in your position a year ago."
+        ),
+        p(
+          "On arrival, we point you at the groups that are active rather than the ones that merely exist. There is a difference, and it is not visible from outside."
+        ),
+      ],
+    },
+    {
+      heading: "Practical things people ask about",
+      body: [
+        p(
+          "Where to find familiar food and ingredients, which neighbourhoods other students live in, how to send and receive money, where to worship, and how to get a Ghanaian SIM to keep working alongside a Turkish one."
+        ),
+        p(
+          "None of it is complicated once somebody tells you. All of it is frustrating to work out alone in a language you do not speak yet."
+        ),
+      ],
+    },
+    {
+      heading: "Bringing people together",
+      body: [
+        p(
+          "We are building this deliberately rather than leaving it to chance, because a connected community is also our best source of honest feedback about which universities actually treat international students well."
+        ),
+        p(
+          "If you are already studying here and want to be part of that, tell us. If you are applying, ask us to introduce you before you travel rather than after."
+        ),
+      ],
+    },
+  ]
+);
+
 // ── Offices ─────────────────────────────────────────────────
 
 write("content/offices", "ankara", {
@@ -787,44 +903,84 @@ write("content/offices", "ankara", {
 
 const courses: Array<[string, string, string, string, number, string, string, string]> = [
   [
-    "turkish-for-beginners",
-    "Turkish for beginners",
+    "tailoring",
+    "Tailoring",
     "in-person",
-    "A first course in Turkish for students arriving with no prior exposure, focused on the language you need in the first month: transport, shops, offices and forms.",
+    "Practical garment construction: pattern cutting, machine work, finishing and fitting. Taught hands-on in a workshop rather than from a book.",
     8,
-    "$200 to $400",
+    "On request",
     "Certificate of completion",
-    "Incoming students, and family members arriving with them.",
+    "People who want a trade they can earn from immediately, whether back home or here.",
   ],
   [
-    "academic-english",
-    "Academic English",
-    "hybrid",
-    "Preparation for university study in English, aimed at students who studied in English at school but have no certificate and need to pass a university proficiency exam.",
-    10,
-    "$250 to $500",
+    "fashion-design",
+    "Fashion Design",
+    "in-person",
+    "Design fundamentals alongside the making: sketching, fabric selection, construction and building a small collection. Pairs naturally with the tailoring course.",
+    12,
+    "On request",
     "Certificate of completion",
-    "Students facing a university proficiency exam on arrival.",
+    "Anyone who wants to design as well as sew, and who plans to sell their own work.",
   ],
   [
-    "digital-skills",
-    "Digital skills",
-    "online",
-    "Practical software and digital literacy for students and early-career professionals: documents, spreadsheets, presentations and the collaboration tools universities expect you to already know.",
+    "turban-making",
+    "Turban and Headwrap Making",
+    "in-person",
+    "Wrapping, styling, fabric handling and finishing for turbans and headwraps, including the styles most in demand for weddings and events.",
+    4,
+    "On request",
+    "Certificate of completion",
+    "People building a styling business, and salon owners adding a service.",
+  ],
+  [
+    "baking",
+    "Baking",
+    "in-person",
+    "Bread, pastry and cake work in a working kitchen: doughs, laminations, fillings, finishing and the production discipline a bakery actually runs on.",
+    8,
+    "On request",
+    "Certificate of completion",
+    "People opening a bakery or adding baked goods to an existing food business.",
+  ],
+  [
+    "culinary",
+    "Culinary Arts",
+    "in-person",
+    "Kitchen fundamentals through to service: knife work, stocks and sauces, Turkish and international dishes, kitchen hygiene and running a section under pressure.",
+    12,
+    "On request",
+    "Certificate of completion",
+    "People heading into professional kitchens, catering, or their own food business.",
+  ],
+  [
+    "entrepreneurship",
+    "Entrepreneurship",
+    "in-person",
+    "Turning a trade into a business: costing and pricing, sourcing, basic bookkeeping, and selling. Built to sit alongside a practical course rather than replace it.",
     6,
-    "$120 to $250",
+    "On request",
     "Certificate of completion",
-    "Students and staff who need the tools rather than the theory.",
+    "Anyone finishing a vocational course who intends to work for themselves.",
+  ],
+  [
+    "plumbing",
+    "Plumbing",
+    "in-person",
+    "Pipework, fittings, installation and fault-finding for domestic systems, taught practically with tools in hand.",
+    8,
+    "On request",
+    "Certificate of completion",
+    "People wanting a licensed trade with steady demand.",
   ],
   [
     "corporate-training",
-    "Corporate training",
+    "Corporate and Group Training",
     "in-person",
-    "Tailored training delivered for organisations rather than individuals, scoped around what the team actually needs. Content, duration and format are agreed before anything is scheduled.",
+    "Any of the courses above delivered for a group rather than individuals, scoped around what the team actually needs. Content, duration and format are agreed before anything is scheduled.",
     0,
     "On request",
     "Certificate of completion",
-    "Organisations training a group.",
+    "Organisations, cooperatives and associations training a group together.",
   ],
 ];
 
@@ -840,12 +996,26 @@ for (const [slug, title, format, summary, weeks, fee, cert, who] of courses) {
     certification: cert,
     curriculum: [
       p(summary),
+      h("How it is taught"),
       p(
-        "Placeholder curriculum. The module list, the contact hours and the assessment method must be confirmed with the academy before this page goes live."
+        "Hands-on, in a workshop or kitchen in Ankara, in small groups. These are practical trades and they are learned by doing them repeatedly under someone who already does them well."
       ),
-      h("How cohorts run"),
       p(
-        "Cohorts start through the year rather than on fixed annual dates. Ask us what is next and we will tell you what is actually scheduled."
+        "Instruction is in English with Turkish support. You do not need Turkish to take a course, though you will pick some up."
+      ),
+      h("Coming to Türkiye for a short course"),
+      p(
+        "Most people on these courses travel here for them. That means a short-stay visa rather than a student visa, and we handle the invitation letter and the supporting documents as part of the enrolment."
+      ),
+      p(
+        "We can also arrange accommodation for the duration. Tell us your dates and we will tell you what is available and what it costs."
+      ),
+      h("What you leave with"),
+      p(
+        "A certificate of completion and, more importantly, the skill itself. These courses are built around being able to do the work on the last day, not around passing an examination."
+      ),
+      p(
+        "Placeholder detail. The module breakdown, contact hours, workshop capacity and fees must be confirmed with the academy before this page goes live."
       ),
     ],
     whoItIsFor: who,

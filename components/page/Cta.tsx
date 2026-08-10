@@ -7,7 +7,7 @@ import { ArrowRight, MessageCircle } from "lucide-react";
  * every link carries context-aware prefilled text. That tells the sales team
  * where a lead came from with no tracking infrastructure at all.
  */
-export function whatsappHref(context: string, whatsappNumber = "233240101057") {
+export function whatsappHref(context: string, whatsappNumber = "233539799795") {
   return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(context)}`;
 }
 

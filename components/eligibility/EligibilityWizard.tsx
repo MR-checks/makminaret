@@ -53,16 +53,11 @@ const STEPS: Step[] = [
     ],
   },
   {
+    // Choices are injected from the content taxonomy at render time so this
+    // step, the homepage select and the programme finder stay in step.
     name: "field",
     question: "Which field?",
-    choices: [
-      { value: "medicine-and-health", label: "Medicine and health" },
-      { value: "engineering", label: "Engineering" },
-      { value: "business", label: "Business" },
-      { value: "computer-science", label: "Computer science" },
-      { value: "architecture", label: "Architecture" },
-      { value: "social-sciences", label: "Social sciences" },
-    ],
+    choices: [],
   },
   {
     name: "qualification",
@@ -169,23 +164,41 @@ function readSavedAnswers(): Record<string, string> {
  * lazy state initialiser rather than an effect, which avoids both a
  * setState-in-effect cascade and a hydration mismatch from restored answers.
  */
-export function EligibilityWizard({ programSlug }: { programSlug?: string }) {
+export function EligibilityWizard({
+  programSlug,
+  fields,
+}: {
+  programSlug?: string;
+  fields: Array<{ slug: string; name: string; description?: string }>;
+}) {
   const isClient = useIsClient();
-  if (!isClient) return <WizardSkeleton />;
-  return <Wizard programSlug={programSlug} />;
+  const steps = STEPS.map((step) =>
+    step.name === "field"
+      ? {
+          ...step,
+          choices: fields.map((f) => ({
+            value: f.slug,
+            label: f.name,
+            note: f.description,
+          })),
+        }
+      : step
+  );
+  if (!isClient) return <WizardSkeleton steps={steps} />;
+  return <Wizard programSlug={programSlug} steps={steps} />;
 }
 
-function WizardSkeleton() {
+function WizardSkeleton({ steps }: { steps: Step[] }) {
   return (
     <div className="mx-auto max-w-2xl">
       <p className="font-mono text-[0.8125rem] uppercase tracking-[0.04em] text-slate">
-        Step 1 of {STEPS.length}
+        Step 1 of {steps.length}
       </p>
       <h2 className="mt-6 font-display text-2xl tracking-tight text-navy md:text-3xl">
-        {STEPS[0].question}
+        {steps[0].question}
       </h2>
       <div className="mt-8 flex flex-col gap-3">
-        {STEPS[0].choices?.map((choice) => (
+        {steps[0].choices?.map((choice) => (
           <div
             key={choice.value}
             className="min-h-11 rounded-md border border-rule bg-paper-raised p-4 font-sans text-ink"
@@ -198,7 +211,7 @@ function WizardSkeleton() {
   );
 }
 
-function Wizard({ programSlug }: { programSlug?: string }) {
+function Wizard({ programSlug, steps }: { programSlug?: string; steps: Step[] }) {
   const [state, formAction, pending] = useActionState(submitEligibility, initialState);
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>(readSavedAnswers);
@@ -227,8 +240,8 @@ function Wizard({ programSlug }: { programSlug?: string }) {
     return <Result state={state} />;
   }
 
-  const current = STEPS[step];
-  const total = STEPS.length;
+  const current = steps[step];
+  const total = steps.length;
   const progress = Math.round(((step + 1) / total) * 100);
 
   const choose = (value: string) => {
@@ -299,7 +312,7 @@ function Wizard({ programSlug }: { programSlug?: string }) {
                 type="tel"
                 inputMode="tel"
                 autoComplete="tel"
-                placeholder="+233 24 010 1057"
+                placeholder="+233 53 979 9795"
                 required
                 describedBy={describedBy}
               />
