@@ -238,8 +238,8 @@ function NavSlot({
       </button>
 
       {open && item.kind === "mega" && (
-        <div className="absolute left-1/2 top-full z-50 mt-4 w-[min(72rem,calc(100vw-4rem))] -translate-x-1/2 rounded-md border border-rule bg-paper p-8 shadow-md">
-          <div className="grid grid-cols-2 gap-8 lg:grid-cols-5">
+        <div className="absolute left-1/2 top-full z-50 mt-4 w-[min(80rem,calc(100vw-4rem))] -translate-x-1/2 rounded-md border border-rule bg-paper p-8 shadow-md">
+          <div className="grid grid-cols-2 gap-8 lg:grid-cols-6">
             {item.columns.map((column) => (
               <div key={column.heading}>
                 <p className="font-mono text-[0.8125rem] uppercase tracking-[0.04em] text-slate">

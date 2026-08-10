@@ -1,0 +1,100 @@
+{
+  "title": "Baking",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "summary": "Bread, pastry and cake work in a working kitchen: doughs, laminations, fillings, finishing and the production discipline a bakery actually runs on.",
+  "format": "in-person",
+  "durationWeeks": 8,
+  "feeBand": "On request",
+  "certification": "Certificate of completion",
+  "curriculum": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Bread, pastry and cake work in a working kitchen: doughs, laminations, fillings, finishing and the production discipline a bakery actually runs on."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "children": [
+        {
+          "text": "How it is taught"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Hands-on, in a workshop or kitchen in Ankara, in small groups. These are practical trades and they are learned by doing them repeatedly under someone who already does them well."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Instruction is in English with Turkish support. You do not need Turkish to take a course, though you will pick some up."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "children": [
+        {
+          "text": "Coming to Türkiye for a short course"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Most people on these courses travel here for them. That means a short-stay visa rather than a student visa, and we handle the invitation letter and the supporting documents as part of the enrolment."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "We can also arrange accommodation for the duration. Tell us your dates and we will tell you what is available and what it costs."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "children": [
+        {
+          "text": "What you leave with"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "A certificate of completion and, more importantly, the skill itself. These courses are built around being able to do the work on the last day, not around passing an examination."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Placeholder detail. The module breakdown, contact hours, workshop capacity and fees must be confirmed with the academy before this page goes live."
+        }
+      ]
+    }
+  ],
+  "whoItIsFor": "People opening a bakery or adding baked goods to an existing food business.",
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

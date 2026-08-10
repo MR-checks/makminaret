@@ -26,7 +26,7 @@ export const bespokeCountryData: Record<string, CountryBespokeData> = {
       "Appointments typically book out 3-4 weeks in advance during peak season (July-August).",
 
     localContactName: "Our Accra Team",
-    localContactNumber: "+233 24 010 1057",
+    localContactNumber: "+233 53 979 9795",
   },
   nigeria: {
     documentAuthBuilding: "Ministry of Foreign Affairs & Ministry of Education",
@@ -41,7 +41,7 @@ export const bespokeCountryData: Record<string, CountryBespokeData> = {
       "Appointments can take 4-6 weeks to secure. Early booking is critical for September intakes.",
 
     localContactName: "Our Regional Team",
-    localContactNumber: "+233 24 010 1057", // Kept consistent as per Masterplan strategy (using the main WA number)
+    localContactNumber: "+233 53 979 9795", // Kept consistent as per Masterplan strategy (using the main WA number)
   },
 };
 

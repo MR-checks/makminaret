@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import {
   documentText,
   getFaqs,
+  getFields,
   getPages,
   getScholarships,
   getStories,
@@ -33,13 +34,16 @@ const DIVISIONS = [
 ];
 
 export default async function HomePage() {
-  const [programs, stories, scholarships, faqs, pages] = await Promise.all([
+  const [programs, stories, scholarships, faqs, pages, fieldEntries] = await Promise.all([
     getJoinedPrograms(),
     getStories(),
     getScholarships(),
     getFaqs(),
     getPages(),
+    getFields(),
   ]);
+
+  const fields = fieldEntries.map((f) => ({ slug: f.slug, name: f.entry.name }));
 
   const costsPage = pages.find((p) => p.slug === "costs");
   const reviewLabel = costsPage?.entry.reviewedOn
@@ -89,7 +93,7 @@ export default async function HomePage() {
           addressLocality: "Ankara",
           addressCountry: "TR",
         },
-        telephone: "+233240101057",
+        telephone: "+233539799795",
         email: "info@makminaret.com",
       },
       {
@@ -110,7 +114,7 @@ export default async function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <HeroSection />
+      <HeroSection fields={fields} />
       <ProcessSection />
 
       <Section

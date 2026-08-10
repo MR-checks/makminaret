@@ -7,7 +7,7 @@ import { CtaPanel } from "@/components/page/Cta";
 export const metadata: Metadata = {
   title: "Skills Academy",
   description:
-    "Short practical courses run from Ankara: Turkish for beginners, academic English, digital skills, and training delivered for organisations.",
+    "Short vocational courses in Ankara: tailoring, fashion design, turban making, baking, culinary arts, plumbing and entrepreneurship. Come to Türkiye, learn a trade, go home with it.",
 };
 
 const FORMAT_LABEL: Record<string, string> = {
@@ -23,8 +23,8 @@ export default async function SkillsAcademyPage() {
     <>
       <PageHero
         eyebrow="Minaret Skills Academy"
-        title="Short courses, run from Ankara"
-        intro="Education does not stop at university placement. These are the courses that make the first year easier, plus training delivered for organisations."
+        title="Learn a trade in Türkiye"
+        intro="Short, practical, hands-on courses in Ankara. Come for a few weeks, learn a skill properly, and go home able to earn from it. We handle the invitation letter, the visa paperwork and accommodation."
         trail={[{ label: "Skills Academy" }]}
       />
 
@@ -52,16 +52,26 @@ export default async function SkillsAcademyPage() {
           ))}
         </div>
 
-        <p className="mt-8 max-prose font-sans text-sm text-slate">
-          Cohorts start through the year rather than on fixed annual dates. Ask us what is
-          next and we will tell you what is actually scheduled.
-        </p>
+        <div className="mt-10 max-prose rounded-md border border-rule bg-paper-raised p-6">
+          <h3 className="font-display text-lg text-navy">Coming here for a course</h3>
+          <p className="mt-3 font-sans leading-relaxed text-ink-soft">
+            Most people on these courses travel to Türkiye for them. That is a short-stay
+            visa rather than a student visa, and it is a much lighter process: no denklik,
+            no transcripts, no academic assessment. We provide the invitation letter and
+            the supporting documents, and we can arrange accommodation for the dates you
+            are here.
+          </p>
+          <p className="mt-3 font-sans leading-relaxed text-ink-soft">
+            Cohorts run through the year rather than on fixed annual dates. Tell us
+            roughly when you can travel and we will tell you what is actually scheduled.
+          </p>
+        </div>
       </Section>
 
       <CtaPanel
         heading="Ask about a course."
-        body="Tell us what you need and which format suits you, and we will come back with what is running."
-        context="Hi, I would like to ask about a Skills Academy course."
+        body="Tell us which trade and roughly when you can travel. We will come back with what is running, what it costs, and what the visa involves."
+        context="Hi, I would like to ask about a Skills Academy vocational course in Türkiye."
       />
     </>
   );

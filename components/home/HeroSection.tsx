@@ -16,6 +16,9 @@ import { WhatsAppLink } from "@/components/page/Cta";
  *
  * The mini-form is three fields that deep-link into the wizard with the
  * answers pre-filled. It is not the wizard itself.
+ *
+ * The field list is passed in from the content layer rather than hardcoded, so
+ * this select, the wizard and the programme finder cannot drift apart.
  */
 
 const LEVELS = [
@@ -23,15 +26,6 @@ const LEVELS = [
   ["bachelor", "Bachelor's degree"],
   ["master", "Master's degree"],
   ["phd", "PhD"],
-];
-
-const FIELDS = [
-  ["medicine-and-health", "Medicine and health"],
-  ["engineering", "Engineering"],
-  ["business", "Business"],
-  ["computer-science", "Computer science"],
-  ["architecture", "Architecture"],
-  ["social-sciences", "Social sciences"],
 ];
 
 const COUNTRIES = [
@@ -44,7 +38,11 @@ const COUNTRIES = [
   "Other",
 ];
 
-export function HeroSection() {
+export function HeroSection({
+  fields,
+}: {
+  fields: Array<{ slug: string; name: string }>;
+}) {
   const router = useRouter();
   const [level, setLevel] = useState("");
   const [field, setField] = useState("");
@@ -114,9 +112,9 @@ export function HeroSection() {
                 className={control}
               >
                 <option value="">Field…</option>
-                {FIELDS.map(([value, label]) => (
-                  <option key={value} value={value}>
-                    {label}
+                {fields.map((f) => (
+                  <option key={f.slug} value={f.slug}>
+                    {f.name}
                   </option>
                 ))}
               </select>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { EligibilityWizard } from "@/components/eligibility/EligibilityWizard";
+import { getFields } from "@/lib/content/reader";
 import { PageHero, Section } from "@/components/page/PageChrome";
 
 export const metadata: Metadata = {
@@ -14,6 +15,12 @@ export default async function EligibilityPage({
   searchParams: Promise<{ program?: string }>;
 }) {
   const params = await searchParams;
+  const fieldEntries = await getFields();
+  const fields = fieldEntries.map((f) => ({
+    slug: f.slug,
+    name: f.entry.name,
+    description: f.entry.description ?? undefined,
+  }));
 
   return (
     <>
@@ -25,7 +32,7 @@ export default async function EligibilityPage({
       />
 
       <Section tone="paper">
-        <EligibilityWizard programSlug={params.program} />
+        <EligibilityWizard programSlug={params.program} fields={fields} />
       </Section>
     </>
   );

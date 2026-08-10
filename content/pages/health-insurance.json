@@ -1,0 +1,88 @@
+{
+  "title": "Health insurance",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "intro": "Cover is required, it is tied to your residence permit, and it is the cost students most often leave out of their budget.",
+  "sections": [
+    {
+      "heading": "It is not optional",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Health cover is a condition of the residence permit rather than a sensible extra. Without it in place, the ikamet application does not complete, so it belongs in your plan from the start and not as something to sort out later."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Your two routes",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "International students can generally either enrol in the Turkish state scheme, or take private cover from an insurer. There is a window after arrival within which the state option can be taken up, and missing it usually means going private instead."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "The state scheme is typically the cheaper of the two and covers state hospitals. Private policies cost more, and in exchange usually mean shorter waits and easier access to private hospitals where English is more widely spoken."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Placeholder detail. The enrolment window, the current premium levels and the exact scope of each option must be confirmed before this page goes live, and they are the kind of figures that change."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Budget for it as a fixed annual cost",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Whichever route you take, treat it as a known yearly cost alongside the residence permit fee rather than a variable. It is small next to tuition and it is the one people forget."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What we do",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We tell you which route suits your situation before you arrive, we go with you to sort it out in the first weeks, and we make sure it is in place before the residence permit appointment rather than after it."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "If you fall ill in your first month and have not sorted cover, that is an expensive problem. It is one of the specific things having someone here rather than in Accra actually prevents."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

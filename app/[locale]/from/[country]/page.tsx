@@ -206,13 +206,26 @@ export default async function CountryLandingPage({
               locally.
             </p>
 
+            {p.country === "ghana" && (
+              <Link
+                href="/from/ghana/community"
+                className="mb-6 block rounded-sm border border-paper/25 p-4 transition-colors hover:bg-paper/10"
+              >
+                <span className="font-mono text-[0.8125rem] uppercase tracking-[0.04em] text-gold">
+                  You will not be the only one
+                </span>
+                <span className="mt-2 block font-sans text-sm text-white/85">
+                  Meet the Ghanaian student community in Türkiye
+                </span>
+              </Link>
+            )}
+
             <div className="flex flex-col gap-3">
               <Link
                 href={WA_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ backgroundColor: "#25D366", color: "white" }}
-                className="flex items-center justify-center gap-2 w-full h-12 font-sans font-medium hover:opacity-90 transition-opacity rounded-md"
+                className="flex items-center justify-center gap-2 w-full min-h-11 h-12 font-sans font-medium text-white bg-[var(--whatsapp)] hover:bg-[var(--whatsapp-hover)] transition-colors rounded-sm"
               >
                 Chat on WhatsApp
               </Link>

@@ -54,6 +54,144 @@ for (const dir of [
 
 const universities = [
   {
+    slug: "ankara-medipol-university",
+    name: "Ankara Medipol University",
+    city: "Ankara",
+    type: "foundation",
+    foundedYear: 2018,
+    tuitionBand: "$4,000 to $18,000",
+    languages: ["English", "Turkish"],
+    yos: false,
+    sat: true,
+    english: "IELTS 6.0, TOEFL iBT 72, or the university's own proficiency exam",
+    site: "https://www.ankaramedipol.edu.tr/en",
+    whoItSuits:
+      "Students who want the capital rather than Istanbul: lower living costs, a shorter commute, and proximity to the ministries and embassies that handle denklik and residence paperwork.",
+    overview: doc(
+      p(
+        "Ankara Medipol University is a foundation university in the Turkish capital. For our students the practical argument for Ankara over Istanbul is straightforward: it costs less to live in, it is easier to move around, and it is where the offices that process your paperwork actually are."
+      ),
+      h("Why the capital matters for an international student"),
+      p(
+        "Denklik, residence permits and embassy business all happen in Ankara. A student here is a short journey from the offices that decide those things rather than a flight or a long bus ride away. Our own office is in Ankara for the same reason."
+      ),
+      p(
+        "Ankara is also a government and university city rather than a tourist one. It is quieter than Istanbul, the pace is slower, and the student population is proportionally larger. Some students find that focusing; others find it dull. It is worth being honest with yourself about which you are."
+      ),
+      h("Cost"),
+      p(
+        "Accommodation and daily living cost noticeably less than in Istanbul. Across a four-year degree that gap is large enough to change which universities are affordable overall, and it is the single most under-weighted factor in the decisions we see families make."
+      ),
+      h("Teaching and language"),
+      p(
+        "English-taught and Turkish-taught programmes both run, set per programme rather than per faculty. The same rule applies as everywhere: check the language of instruction for the specific programme before applying."
+      ),
+      h("An honest note"),
+      p(
+        "Placeholder entry. The faculty list, the campus detail and the fee band above are written to a realistic shape and must be verified against the university's current prospectus before this page goes live."
+      )
+    ),
+    entry: doc(
+      p(
+        "A completed secondary certificate with denklik. WASSCE, WAEC, NECO and SSCE are recognised routes."
+      ),
+      p(
+        "Health sciences programmes assess science subject grades directly and are the most competitive route here."
+      ),
+      p("YÖS is not generally required. SAT is accepted where held."),
+      p(
+        "English-taught programmes require an accepted test result or a pass in the university's own proficiency exam."
+      )
+    ),
+  },
+  {
+    slug: "izmir-university-of-economics",
+    name: "Izmir University of Economics",
+    city: "Izmir",
+    type: "foundation",
+    foundedYear: 2001,
+    tuitionBand: "$5,000 to $12,000",
+    languages: ["English"],
+    yos: false,
+    sat: true,
+    english: "IELTS 6.0, TOEFL iBT 72, or the university's own proficiency exam",
+    site: "https://www.ieu.edu.tr/en",
+    whoItSuits:
+      "Students who want an English-medium environment on the Aegean coast, with a smaller and calmer setting than Istanbul and a strong lean toward business, economics and communication.",
+    overview: doc(
+      p(
+        "Izmir University of Economics is a foundation university in Izmir, on the Aegean coast. Izmir is Türkiye's third city and it has a distinctly different feel from both Istanbul and Ankara: coastal, milder, and generally described by students as the easiest of the three to settle into."
+      ),
+      h("English as the working language"),
+      p(
+        "This institution teaches predominantly in English, which removes the language-year question that complicates so many applications. For a student who wants to start their degree immediately rather than after a preparatory year, that is a material advantage."
+      ),
+      h("Character and cost"),
+      p(
+        "Izmir sits between Istanbul and the smaller Anatolian cities on cost. More expensive than Kayseri or Eskişehir, noticeably cheaper than Istanbul. The student culture is strong and the city is walkable in a way Istanbul is not."
+      ),
+      h("An honest note"),
+      p(
+        "Placeholder entry. Programme availability and the fee band must be confirmed against the current prospectus before publication."
+      )
+    ),
+    entry: doc(
+      p("A completed secondary certificate with denklik."),
+      p(
+        "Evidence of English is required for every programme here, since the institution teaches in English throughout."
+      ),
+      p("YÖS is not generally required. SAT is accepted where held.")
+    ),
+  },
+  {
+    slug: "erciyes-university",
+    name: "Erciyes University",
+    city: "Kayseri",
+    type: "state",
+    foundedYear: 1978,
+    tuitionBand: "$400 to $2,000",
+    languages: ["Turkish", "English"],
+    yos: true,
+    sat: false,
+    english:
+      "Programme dependent. Most teaching is in Turkish and requires Turkish at C1.",
+    site: "https://www.erciyes.edu.tr/en/",
+    whoItSuits:
+      "Students for whom cost is the deciding factor, who are willing to complete a Turkish language year first, and who want a large state university in a considerably cheaper city.",
+    overview: doc(
+      p(
+        "Erciyes University is a state university in Kayseri, in central Anatolia. It is included here because it represents the genuinely affordable route, and that route deserves to be on the table rather than quietly omitted because private universities pay better."
+      ),
+      h("What the state route actually involves"),
+      p(
+        "State tuition is a fraction of private tuition, and Kayseri costs considerably less to live in than Istanbul. The trade-offs are real: most teaching is in Turkish, which means a language year before the degree begins, and admission typically runs through the YÖS entrance examination rather than on your certificate alone."
+      ),
+      p(
+        "That combination adds a year and requires more preparation. For a family where the private route simply does not add up, it is the difference between studying in Türkiye and not studying in Türkiye, and we would rather set it out plainly than pretend the only option is the expensive one."
+      ),
+      h("Kayseri"),
+      p(
+        "A large Anatolian city, industrial, conservative in character, and much cheaper than the coast. Fewer international students than Istanbul, which means more Turkish practice by necessity and a smaller ready-made community on arrival."
+      ),
+      h("An honest note"),
+      p(
+        "Placeholder entry. YÖS requirements, quotas and the fee band must be confirmed before publication, and they change more often at state universities than at private ones."
+      )
+    ),
+    entry: doc(
+      p("A completed secondary certificate with denklik."),
+      p(
+        "YÖS is required for most programmes, and is a genuine filter rather than a formality."
+      ),
+      p(
+        "Turkish at C1 for Turkish-taught programmes, which is most of them. Budget for a preparatory language year."
+      ),
+      p(
+        "Quotas for international students are limited and vary by programme and by year."
+      )
+    ),
+  },
+  {
     slug: "istanbul-aydin-university",
     name: "Istanbul Aydın University",
     city: "Istanbul",
@@ -264,42 +402,81 @@ for (const u of universities) {
 
 // ── Fields of study ─────────────────────────────────────────
 
-const fieldsOfStudy = [
+const fieldsOfStudy: Array<[string, string, string, string]> = [
   [
     "medicine-and-health",
     "Medicine and Health",
     "Stethoscope",
-    "Medicine, dentistry, pharmacy, nursing and the allied health professions.",
+    "Medicine, dentistry, pharmacy, nursing, physiotherapy and the allied health professions.",
   ],
   [
     "engineering",
-    "engineering",
+    "Engineering",
     "Cog",
-    "Civil, mechanical, electrical, software and computer engineering.",
-  ],
-  [
-    "business",
-    "business",
-    "Briefcase",
-    "Business administration, management, economics, finance and international trade.",
+    "Civil, mechanical, electrical, industrial and biomedical engineering.",
   ],
   [
     "computer-science",
-    "Computer Science",
+    "Computer Science and IT",
     "Code",
-    "Computer science, software engineering, information systems and data.",
+    "Computer science, software engineering, information systems, data and cybersecurity.",
+  ],
+  [
+    "business",
+    "Business and Economics",
+    "Briefcase",
+    "Business administration, management, economics, finance, accounting and international trade.",
   ],
   [
     "architecture",
-    "architecture",
+    "Architecture and Design",
     "Compass",
-    "Architecture, interior architecture and urban design.",
+    "Architecture, interior architecture, urban design and industrial design.",
   ],
+  ["law", "Law", "Scale", "Law, international law and political science."],
   [
     "social-sciences",
-    "Social Sciences",
+    "Social Sciences and Humanities",
     "Users",
-    "Law, psychology, international relations, communications and education.",
+    "Psychology, sociology, international relations, history and languages.",
+  ],
+  [
+    "education",
+    "Education",
+    "GraduationCap",
+    "Teacher training, educational sciences and English language teaching.",
+  ],
+  [
+    "natural-sciences",
+    "Natural Sciences",
+    "FlaskConical",
+    "Biology, chemistry, physics, mathematics and molecular biology.",
+  ],
+  [
+    "communication",
+    "Communication and Media",
+    "Radio",
+    "Journalism, public relations, advertising, radio, television and cinema.",
+  ],
+  [
+    "aviation",
+    "Aviation",
+    "Plane",
+    "Pilot training, aviation management and aircraft maintenance.",
+  ],
+  [
+    "tourism",
+    "Tourism and Hospitality",
+    "UtensilsCrossed",
+    "Tourism management, hotel management and gastronomy.",
+  ],
+  // Kept last on purpose. A finder that cannot express "mine is not on this
+  // list" pushes people into a wrong answer or out of the funnel entirely.
+  [
+    "other",
+    "Other, tell us what",
+    "HelpCircle",
+    "Something not listed here. Tell us what you are looking for and we will say whether it exists in Türkiye and where.",
   ],
 ];
 for (const [slug, name, icon, description] of fieldsOfStudy) {
@@ -309,6 +486,90 @@ for (const [slug, name, icon, description] of fieldsOfStudy) {
 // ── Programs ────────────────────────────────────────────────
 
 const programs = [
+  {
+    slug: "pharmacy-ankara-medipol",
+    title: "Pharmacy",
+    uni: "ankara-medipol-university",
+    field: "medicine-and-health",
+    level: "bachelor",
+    years: 5,
+    band: "$8,000 to $12,000",
+    lang: "English",
+    blurb:
+      "A five-year professional degree in pharmacy taught in English, in the capital. Less oversubscribed than medicine while leading to a regulated profession with a clear route back home.",
+    outcomes:
+      "Graduates practise as pharmacists subject to the licensing process in the country they register in, and the degree also opens industry and regulatory roles.",
+  },
+  {
+    slug: "nursing-ankara-medipol",
+    title: "Nursing",
+    uni: "ankara-medipol-university",
+    field: "medicine-and-health",
+    level: "bachelor",
+    years: 4,
+    band: "$4,000 to $7,000",
+    lang: "English",
+    blurb:
+      "A four-year English-taught nursing degree with clinical placement built into the later years. One of the more attainable routes into health sciences, and one where demand at home is consistently strong.",
+    outcomes:
+      "Graduates register as nurses subject to their own country's council requirements. Demand is high in most of the markets our students return to.",
+  },
+  {
+    slug: "international-trade-izmir",
+    title: "International Trade and Finance",
+    uni: "izmir-university-of-economics",
+    field: "business",
+    level: "bachelor",
+    years: 4,
+    band: "$5,000 to $8,000",
+    lang: "English",
+    blurb:
+      "A four-year English-taught degree covering trade, logistics and finance, in a port city where those things actually happen rather than being studied in the abstract.",
+    outcomes:
+      "Graduates enter trade, logistics, banking and supply chain roles. Direct relevance for students whose families already trade between Türkiye and West Africa.",
+  },
+  {
+    slug: "psychology-izmir",
+    title: "Psychology",
+    uni: "izmir-university-of-economics",
+    field: "social-sciences",
+    level: "bachelor",
+    years: 4,
+    band: "$5,000 to $8,000",
+    lang: "English",
+    blurb:
+      "A four-year English-taught psychology degree. Worth checking the licensing route at home early, because practising as a psychologist is regulated in most countries.",
+    outcomes:
+      "Graduates enter research, human resources and further clinical training. Clinical practice requires postgraduate qualification and local registration.",
+  },
+  {
+    slug: "civil-engineering-erciyes",
+    title: "Civil Engineering",
+    uni: "erciyes-university",
+    field: "engineering",
+    level: "bachelor",
+    years: 4,
+    band: "$600 to $1,200",
+    lang: "Turkish",
+    blurb:
+      "A state university civil engineering degree taught in Turkish, at a fraction of private tuition. Requires YÖS and a Turkish language year first, which is the trade-off for the price.",
+    outcomes:
+      "Graduates enter construction and infrastructure. Students planning to practise at home should check their engineering council's recognition route before applying.",
+  },
+  {
+    slug: "computer-engineering-erciyes",
+    title: "Computer Engineering",
+    uni: "erciyes-university",
+    field: "computer-science",
+    level: "bachelor",
+    years: 4,
+    band: "$600 to $1,200",
+    lang: "Turkish",
+    blurb:
+      "The cheapest realistic route into a computing degree in Türkiye. Turkish-taught, YÖS required, language year first, and priced accordingly.",
+    outcomes:
+      "Graduates work in software and systems roles. The work is portable, and Turkish adds a second labour market rather than limiting you to one.",
+  },
   {
     slug: "medicine-medipol",
     title: "Medicine",
@@ -814,8 +1075,8 @@ writeFileSync(
     {
       brandName: "Minaret",
       legalName: "MAK Minaret",
-      primaryPhone: "+233 24 010 1057",
-      whatsappNumber: "233240101057",
+      primaryPhone: "+233 53 979 9795",
+      whatsappNumber: "233539799795",
       officePhone: "",
       email: "info@makminaret.com",
       registrationNumber: "",
@@ -823,7 +1084,9 @@ writeFileSync(
       officeMapsUrl: "",
       officeHours: "09:00 to 18:00 GMT+3",
       responseTimePromise: "We reply within 4 working hours.",
-      socials: [],
+      socials: [
+        { label: "Facebook", url: "https://www.facebook.com/share/14jBjefQzit/" },
+      ],
       placeholderFields: [
         "legalName",
         "registrationNumber",
