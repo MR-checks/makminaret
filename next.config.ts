@@ -4,6 +4,25 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 
 const nextConfig: NextConfig = {
+  /**
+   * Ship the content directory with the server bundle.
+   *
+   * lib/content/reader.ts calls createReader(process.cwd(), config), which
+   * reads /content off the filesystem at request time. Nothing imports those
+   * JSON files, so Next.js's output file tracing has no reason to include
+   * them, and on Vercel the function bundle shipped without them: every
+   * collection read as empty in production while working perfectly in local
+   * dev and in `next start`, where the whole repo is on disk.
+   *
+   * The symptom was subtle. Pages still rendered, because the layout and
+   * navigation are ordinary TypeScript. Only the parts driven by content went
+   * missing: no courses, no programmes, no socials, and 404s on every detail
+   * route whose params come from a collection.
+   */
+  outputFileTracingIncludes: {
+    "/**": ["./content/**/*"],
+  },
+
   // lucide-react is imported in 40 files. Barrel-file optimisation keeps that
   // from pulling the whole icon set into the client bundle.
   experimental: {
