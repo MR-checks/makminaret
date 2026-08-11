@@ -18,7 +18,7 @@
       "type": "paragraph",
       "children": [
         {
-          "text": "Placeholder entry. Confirm current practice on combined sittings before publication."
+          "text": "Enter the confirmed text here."
         }
       ]
     }
@@ -50,7 +50,7 @@
   },
   "turkishEmbassy": {
     "city": "Abuja",
-    "address": "Placeholder. Confirm the current embassy address before publication.",
+    "address": "Enter the confirmed text here.",
     "appointmentNotes": "Student visa appointments are booked in advance and become scarce ahead of the September intake. Book as soon as the acceptance letter is issued."
   },
   "flightRoutings": [

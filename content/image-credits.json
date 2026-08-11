@@ -1,5 +1,5 @@
 {
-  "$comment": "Image licence register and shot list (HANDOVER §1.5, §3.6). Every image shipped on the site has an entry here recording its source URL, photographer and licence. Entries with file: null are open slots: they describe what the page needs and double as the brief for the real photo shoot in MASTERPLAN §6.9.",
+  "$comment": "Internal image licence register and shot list. Not rendered on the site. Every shipped image records its source URL, photographer and licence. Entries with file: null are open slots and double as the brief for the real photo shoot.",
   "rules": {
     "permittedSources": ["Unsplash", "Pexels", "Pixabay"],
     "permittedSubjects": "Place and atmosphere only: Turkish campuses, Istanbul and Ankara streets, architecture, textures, study desks, documents.",
@@ -75,7 +75,7 @@
       "slot": "stories.*",
       "file": null,
       "placeholder": true,
-      "brief": "Real placed students, named, with signed release. MASTERPLAN §6.9 shot list item 1.",
+      "brief": "Real placed students, named, with signed release. shot list item 1.",
       "usedBy": "app/[locale]/stories",
       "status": "open. Stock people are never permitted here under any circumstances. The cards render an explicit 'photograph pending consent' block instead."
     }
