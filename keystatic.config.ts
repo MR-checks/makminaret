@@ -369,8 +369,21 @@ export default config({
       schema: {
         name: fields.slug({ name: { label: "Name" } }),
         placeholder,
+        reviewedOn,
         icon: fields.text({ label: "Icon (Lucide name)" }),
         description: fields.text({ label: "Description", multiline: true }),
+        // Subjects, not university programmes. We publish what can be studied
+        // rather than whose campus it sits on, because naming institutions we
+        // have no written agreement with promotes them at the expense of the
+        // ones we do.
+        subjects: fields.array(fields.text({ label: "Subject" }), {
+          label: "Undergraduate subjects",
+          itemLabel: (props) => props.value,
+        }),
+        mastersSubjects: fields.array(fields.text({ label: "Subject" }), {
+          label: "Master's subjects",
+          itemLabel: (props) => props.value,
+        }),
       },
     }),
     scholarships: collection({

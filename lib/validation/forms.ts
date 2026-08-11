@@ -129,13 +129,12 @@ export type FormState = {
 
 export type Verdict = "eligible" | "conditional" | "not-recommended";
 
+/** A suggested subject within a field. No institution is named. */
 export type MatchedProgram = {
+  /** The field slug, used to deep-link back into the finder. */
   slug: string;
   title: string;
-  university: string;
-  city: string;
-  tuitionBand: string;
-  language: string;
+  field: string;
 };
 
 /** Flattens a ZodError into the field-keyed shape the forms render. */

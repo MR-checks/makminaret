@@ -7,6 +7,10 @@ import { reader } from "../lib/content/reader";
 const INTENTIONALLY_EMPTY: Record<string, string> = {
   team: "A fabricated colleague is an invented person (HANDOVER §5). Named profiles land when real ones exist.",
   partners: "MASTERPLAN §4.4 permits only accreditation marks that can be evidenced.",
+  universities:
+    "Only institutions we hold a written agreement with may be named. Publishing the rest promotes them at the expense of our actual partners, and MASTERPLAN §3.1 treats an unevidenced affiliation as a legal exposure rather than a taste issue. Add partners here as contracts are signed.",
+  programs:
+    "Superseded by subjects on the fields collection. We publish what can be studied rather than whose campus it sits on.",
 };
 
 /**

@@ -1,8 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getSiteUrl } from "@/lib/site-mode";
 import {
-  getUniversities,
-  getPrograms,
   getScholarships,
   getArticles,
   getCountries,
@@ -20,22 +18,18 @@ import {
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const siteUrl = getSiteUrl();
 
-  const [universities, programs, scholarships, articles, countries, services] =
-    await Promise.all([
-      getUniversities(),
-      getPrograms(),
-      getScholarships(),
-      getArticles(),
-      getCountries(),
-      getServices(),
-    ]);
+  const [scholarships, articles, countries, services] = await Promise.all([
+    getScholarships(),
+    getArticles(),
+    getCountries(),
+    getServices(),
+  ]);
 
   const reviewed = (entry: { reviewedOn?: string | null }) =>
     entry.reviewedOn ? new Date(entry.reviewedOn) : new Date();
 
   const staticPaths = [
     ["", 1.0],
-    ["/universities", 0.9],
     ["/programs", 0.9],
     ["/scholarships", 0.8],
     ["/skills-academy", 0.6],
@@ -50,18 +44,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority,
-    })),
-    ...universities.map((u) => ({
-      url: `${siteUrl}/universities/${u.slug}`,
-      lastModified: reviewed(u.entry),
-      changeFrequency: "yearly" as const,
-      priority: 0.8,
-    })),
-    ...programs.map((p) => ({
-      url: `${siteUrl}/programs/${p.slug}`,
-      lastModified: reviewed(p.entry),
-      changeFrequency: "yearly" as const,
-      priority: 0.8,
     })),
     ...scholarships.map((s) => ({
       url: `${siteUrl}/scholarships/${s.slug}`,

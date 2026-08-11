@@ -1,0 +1,29 @@
+{
+  "name": "Engineering and Technology",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "icon": "Cog",
+  "description": "Widely taught in English, with strong laboratory and project components. The most portable set of qualifications on this list.",
+  "subjects": [
+    "Computer Engineering",
+    "Software Engineering and Software Development",
+    "Artificial Intelligence Engineering",
+    "Electrical and Electronics Engineering",
+    "Biomedical Engineering",
+    "Civil Engineering",
+    "Mechanical Engineering",
+    "Industrial Engineering",
+    "Chemical Engineering",
+    "Mechatronics Engineering",
+    "Environmental Engineering",
+    "Food Engineering",
+    "Materials Science and Nanotechnology Engineering",
+    "Genetics and Bioengineering",
+    "Information Systems and Technologies",
+    "Information Security Technology",
+    "Management Information Systems",
+    "Mathematics",
+    "Physics"
+  ],
+  "mastersSubjects": []
+}

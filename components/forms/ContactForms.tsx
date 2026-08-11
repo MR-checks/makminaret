@@ -19,6 +19,7 @@ import {
   TextInput,
 } from "./FormKit";
 import { WhatsAppLink } from "@/components/page/Cta";
+import { COUNTRY_OPTIONS } from "@/lib/countries";
 
 const initial: FormState = { ok: false };
 
@@ -49,16 +50,6 @@ function Success({ state, message }: { state: FormState; message: string }) {
     </div>
   );
 }
-
-const COUNTRIES = [
-  "Ghana",
-  "Nigeria",
-  "Kenya",
-  "Cameroon",
-  "Uganda",
-  "Tanzania",
-  "Other",
-];
 
 export function ContactForm() {
   const [state, action, pending] = useActionState(submitContact, initial);
@@ -110,9 +101,9 @@ export function ContactForm() {
         {({ id, describedBy }) => (
           <SelectInput id={id} name="country" defaultValue="" describedBy={describedBy}>
             <option value="">Choose a country</option>
-            {COUNTRIES.map((c) => (
-              <option key={c} value={c}>
-                {c}
+            {COUNTRY_OPTIONS.map((c) => (
+              <option key={c.value} value={c.value}>
+                {c.value}
               </option>
             ))}
           </SelectInput>
@@ -185,9 +176,9 @@ export function CallbackForm() {
         {({ id, describedBy }) => (
           <SelectInput id={id} name="country" defaultValue="" describedBy={describedBy}>
             <option value="">Choose a country</option>
-            {COUNTRIES.map((c) => (
-              <option key={c} value={c}>
-                {c}
+            {COUNTRY_OPTIONS.map((c) => (
+              <option key={c.value} value={c.value}>
+                {c.value}
               </option>
             ))}
           </SelectInput>

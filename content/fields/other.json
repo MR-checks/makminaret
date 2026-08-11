@@ -1,6 +1,9 @@
 {
-  "name": "Other, tell us what",
+  "name": "Something else, tell us what",
   "placeholder": true,
+  "reviewedOn": "2026-08-01",
   "icon": "HelpCircle",
-  "description": "Something not listed here. Tell us what you are looking for and we will say whether it exists in Türkiye and where."
+  "description": "Not everything is on this list, and some things are deliberately left off because they do not transfer home well. Tell us what you want to study and we will tell you honestly whether it is worth doing here.",
+  "subjects": [],
+  "mastersSubjects": []
 }

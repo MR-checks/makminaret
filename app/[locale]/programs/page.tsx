@@ -1,176 +1,92 @@
-import React from "react";
-import { getJoinedPrograms } from "@/lib/data/programs";
-import { getFields } from "@/lib/content/reader";
-import { ProgramFilterSidebar } from "@/components/programs/ProgramFilterSidebar";
-import { ProgramCard } from "@/components/programs/ProgramCard";
-import { Search } from "lucide-react";
+import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
+import { ArrowRight } from "lucide-react";
+import { getCourses, getFields } from "@/lib/content/reader";
+import { PageHero, ReviewStamp, Section } from "@/components/page/PageChrome";
+import { CtaPanel } from "@/components/page/Cta";
+import { SubjectFinder } from "@/components/programs/SubjectFinder";
 
-export const metadata = {
-  title: "Program Finder | Minaret Educational Consultancy",
+export const metadata: Metadata = {
+  title: "What you can study",
   description:
-    "Search and filter university programs in Türkiye. Find the exact match for your budget, field, and requirements.",
+    "Subjects taught in Türkiye, by field and by level. Tell us what you want to study and we will tell you honestly whether it is worth doing here.",
 };
 
-type Props = {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
-};
+/**
+ * Subjects, not university listings.
+ *
+ * This page used to name institutions. It no longer does: presenting
+ * universities we hold no written agreement with advertises them for free at
+ * the expense of the ones we actually have contracts with, and MASTERPLAN §3.1
+ * already treats an unevidenced affiliation as a legal exposure rather than a
+ * matter of taste. Which university a student ends up at is the outcome of a
+ * consultation, not a browse.
+ *
+ * There are deliberately no per-subject detail pages either. 124 near-identical
+ * templated pages is the exact pattern §3.4 warns against.
+ */
+export default async function ProgramsPage() {
+  const [fieldEntries, courses] = await Promise.all([getFields(), getCourses()]);
 
-export default async function ProgramsPage({ searchParams }: Props) {
-  // Await search params in Next.js 15
-  const params = await searchParams;
-
-  // Fetch data
-  const [allPrograms, allFields] = await Promise.all([getJoinedPrograms(), getFields()]);
-
-  // Extract unique cities for the filter
-  const availableCities = Array.from(new Set(allPrograms.map((p) => p.city))).sort();
-
-  // Format fields for the filter
-  const availableFields = allFields
+  const fields = fieldEntries
     .map((f) => ({
       slug: f.slug,
       name: f.entry.name,
+      description: f.entry.description ?? "",
+      subjects: [...(f.entry.subjects ?? [])],
+      mastersSubjects: [...(f.entry.mastersSubjects ?? [])],
+      reviewedOn: f.entry.reviewedOn ?? null,
     }))
-    .sort((a, b) => a.name.localeCompare(b.name));
+    // "Something else" belongs last wherever it appears.
+    .sort((a, b) => (a.slug === "other" ? 1 : b.slug === "other" ? -1 : 0));
 
-  // "Other" is a real answer, not a failed search: it means the visitor's
-  // subject is not on our shortlist, which is a prompt to talk to us.
-  const isOtherField = params.field === "other";
+  const vocational = courses.map((c) => ({
+    slug: c.slug,
+    title: c.entry.title,
+    summary: c.entry.summary ?? "",
+  }));
 
-  // Apply filters
-  let filteredPrograms = allPrograms;
-
-  const filterLevel = params.level as string;
-  if (filterLevel) {
-    filteredPrograms = filteredPrograms.filter((p) => p.level === filterLevel);
-  }
-
-  const filterField = params.field as string;
-  if (filterField) {
-    filteredPrograms = filteredPrograms.filter((p) => p.fieldSlug === filterField);
-  }
-
-  const filterCity = params.city as string;
-  if (filterCity) {
-    filteredPrograms = filteredPrograms.filter((p) => p.city === filterCity);
-  }
-
-  const filterLanguage = params.language as string;
-  if (filterLanguage) {
-    filteredPrograms = filteredPrograms.filter((p) => p.language === filterLanguage);
-  }
-
-  const filterType = params.type as string;
-  if (filterType) {
-    filteredPrograms = filteredPrograms.filter((p) => p.universityType === filterType);
-  }
-
-  const filterYos = params.yos as string;
-  if (filterYos === "no") {
-    filteredPrograms = filteredPrograms.filter((p) => p.yosRequired === false);
-  }
-
-  const filterScholarship = params.scholarship as string;
-  if (filterScholarship === "yes") {
-    filteredPrograms = filteredPrograms.filter((p) => p.scholarshipAvailable === true);
-  }
-
-  const filterTuition = params.tuition as string;
-  if (filterTuition) {
-    filteredPrograms = filteredPrograms.filter((p) => {
-      if (filterTuition === "<1000") return p.tuitionFrom < 1000;
-      if (filterTuition === "1000-3000")
-        return p.tuitionFrom >= 1000 && p.tuitionFrom <= 3000;
-      if (filterTuition === "3000-10000")
-        return p.tuitionFrom > 3000 && p.tuitionFrom <= 10000;
-      if (filterTuition === ">10000") return p.tuitionFrom > 10000;
-      return true;
-    });
-  }
+  const reviewedOn = fields.find((f) => f.reviewedOn)?.reviewedOn ?? null;
 
   return (
-    <div className="bg-sand min-h-screen py-16 px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="mb-12">
-          <h1 className="font-display text-4xl md:text-5xl text-navy mb-4">
-            Program Finder
-          </h1>
-          <p className="font-sans text-lg text-slate max-w-2xl">
-            Filter through our verified partner universities to find the exact program for
-            your budget and background.
+    <>
+      <PageHero
+        eyebrow="Choose"
+        title="What you can study"
+        intro="Subjects taught in Türkiye, grouped by field. Some things are deliberately not on this list, because they do not transfer home well and we would rather say so than sell you years you cannot use."
+        trail={[{ label: "What you can study" }]}
+      />
+
+      <Section tone="paper">
+        <SubjectFinder fields={fields} vocational={vocational} />
+        <ReviewStamp date={reviewedOn} className="mt-10" />
+      </Section>
+
+      <Section tone="sand" heading="Why there are no university names here">
+        <div className="max-prose">
+          <p className="font-sans leading-relaxed text-ink-soft">
+            Most consultancy sites list institutions they have no agreement with, because
+            a long list looks reassuring. We are not doing that. Naming a university we do
+            not represent advertises it for free at the expense of the ones we actually
+            hold contracts with, and it implies a relationship that does not exist.
           </p>
+          <p className="mt-4 font-sans leading-relaxed text-ink-soft">
+            Which university suits you depends on your grades, your budget, the language
+            you can study in and the city you can afford to live in. That is a
+            conversation, and it is the one we are useful for. Tell us the subject and we
+            will come back with a shortlist matched to your file.
+          </p>
+          <Link
+            href="/eligibility"
+            className="mt-6 inline-flex min-h-11 items-center gap-2 rounded-sm bg-seal px-6 font-sans text-sm font-medium text-white transition-colors hover:bg-seal/90"
+          >
+            Tell us what you want to study
+            <ArrowRight size={16} aria-hidden="true" />
+          </Link>
         </div>
+      </Section>
 
-        <div className="flex flex-col lg:flex-row gap-12">
-          {/* Sidebar */}
-          <aside className="w-full lg:w-72 shrink-0">
-            <ProgramFilterSidebar
-              availableFields={availableFields}
-              availableCities={availableCities}
-            />
-          </aside>
-
-          {/* Results Area */}
-          <main className="flex-1">
-            <div className="mb-6 pb-4 border-b border-slate/10 flex justify-between items-end">
-              <h2 className="font-display text-2xl text-navy">
-                {filteredPrograms.length}{" "}
-                {filteredPrograms.length === 1 ? "Program" : "Programs"} Found
-              </h2>
-            </div>
-
-            {filteredPrograms.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6">
-                {filteredPrograms.map((program) => (
-                  <ProgramCard key={program.slug} program={program} />
-                ))}
-              </div>
-            ) : (
-              /*
-                An empty result is a conversation, not a dead end. The listing
-                here is a shortlist of what we place into rather than a catalogue
-                of everything in Türkiye, so "nothing matched" usually means
-                "ask us" rather than "it does not exist". Sending someone away
-                with only "adjust your filters" wastes the highest-intent
-                moment on the page.
-              */
-              <div className="rounded-md border border-rule bg-paper-raised p-10 text-center">
-                <Search
-                  size={40}
-                  aria-hidden="true"
-                  className="mx-auto mb-4 text-slate"
-                />
-                <h3 className="font-display text-xl text-navy">
-                  {isOtherField
-                    ? "Tell us what you are looking for"
-                    : "Nothing here matches that combination"}
-                </h3>
-                <p className="mx-auto mt-3 max-w-prose font-sans text-slate">
-                  {isOtherField
-                    ? "This list is a shortlist of programmes we place into, not a catalogue of everything on offer in Türkiye. If your subject is not here, it very likely still exists somewhere. Tell us what you want to study and we will tell you where it is taught, in which language, and what it costs."
-                    : "This list is a shortlist rather than a full catalogue, so a combination with no results does not mean the programme does not exist. Widen a filter, or ask us directly and we will check."}
-                </p>
-                <div className="mt-6 flex flex-wrap justify-center gap-3">
-                  <Link
-                    href="/eligibility"
-                    className="inline-flex min-h-11 items-center justify-center gap-2 rounded-sm bg-seal px-6 font-sans text-sm font-medium text-white transition-colors hover:bg-seal/90"
-                  >
-                    Tell us what you want to study
-                  </Link>
-                  <Link
-                    href="/programs"
-                    className="inline-flex min-h-11 items-center justify-center gap-2 rounded-sm border border-navy px-6 font-sans text-sm font-medium text-navy transition-colors hover:bg-sand"
-                  >
-                    Clear all filters
-                  </Link>
-                </div>
-              </div>
-            )}
-          </main>
-        </div>
-      </div>
-    </div>
+      <CtaPanel />
+    </>
   );
 }

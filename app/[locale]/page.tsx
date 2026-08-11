@@ -9,7 +9,6 @@ import {
   getScholarships,
   getStories,
 } from "@/lib/content/reader";
-import { getJoinedPrograms } from "@/lib/data/programs";
 import { getSiteUrl } from "@/lib/site-mode";
 import { Card, Section } from "@/components/page/PageChrome";
 import { CostTable } from "@/components/blocks/CostTable";
@@ -34,8 +33,7 @@ const DIVISIONS = [
 ];
 
 export default async function HomePage() {
-  const [programs, stories, scholarships, faqs, pages, fieldEntries] = await Promise.all([
-    getJoinedPrograms(),
+  const [stories, scholarships, faqs, pages, fieldEntries] = await Promise.all([
     getStories(),
     getScholarships(),
     getFaqs(),
@@ -43,7 +41,13 @@ export default async function HomePage() {
     getFields(),
   ]);
 
-  const fields = fieldEntries.map((f) => ({ slug: f.slug, name: f.entry.name }));
+  const fields = fieldEntries.map((f) => ({
+    slug: f.slug,
+    name: f.entry.name,
+    description: f.entry.description ?? "",
+    subjectCount:
+      (f.entry.subjects?.length ?? 0) + (f.entry.mastersSubjects?.length ?? 0),
+  }));
 
   const costsPage = pages.find((p) => p.slug === "costs");
   const reviewLabel = costsPage?.entry.reviewedOn
@@ -53,7 +57,9 @@ export default async function HomePage() {
       })
     : "recently";
 
-  const topPrograms = programs.slice(0, 3);
+  // Fields rather than named university programmes: we only publish
+  // institutions we hold a written agreement with.
+  const topFields = fields.filter((f) => f.slug !== "other").slice(0, 6);
 
   const topStories = (
     await Promise.all(
@@ -117,29 +123,16 @@ export default async function HomePage() {
       <HeroSection fields={fields} />
       <ProcessSection />
 
-      <Section
-        tone="sand"
-        eyebrow="Choose"
-        heading="Programmes we place into"
-        id="programs"
-      >
-        <div className="grid gap-6 md:grid-cols-3">
-          {topPrograms.map((program) => (
-            <Card key={program.slug} className="hover:border-navy">
-              <p className="font-mono text-[0.8125rem] uppercase tracking-[0.04em] text-slate">
-                {program.level}
-              </p>
-              <h3 className="mt-2 font-display text-lg text-navy">
-                <Link href={`/programs/${program.slug}`}>{program.title}</Link>
+      <Section tone="sand" eyebrow="Choose" heading="What you can study" id="fields">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {topFields.map((field) => (
+            <Card key={field.slug} className="hover:border-navy">
+              <h3 className="font-display text-lg text-navy">
+                <Link href={`/programs#${field.slug}`}>{field.name}</Link>
               </h3>
-              <p className="mt-1 font-sans text-sm text-slate">
-                {program.universityName}
-              </p>
-              <p className="mt-4 font-mono text-[0.8125rem] text-ink-soft">
-                {program.tuitionBand} per year
-              </p>
-              <p className="font-mono text-[0.8125rem] text-slate">
-                {program.city} · taught in {program.language}
+              <p className="mt-2 font-sans text-sm text-ink-soft">{field.description}</p>
+              <p className="mt-4 font-mono text-[0.8125rem] uppercase tracking-[0.04em] text-slate">
+                {field.subjectCount} subjects
               </p>
             </Card>
           ))}
@@ -148,7 +141,7 @@ export default async function HomePage() {
           href="/programs"
           className="mt-8 inline-flex min-h-11 items-center gap-2 rounded-sm border border-navy px-5 font-sans text-sm font-medium text-navy transition-colors hover:bg-paper"
         >
-          Open the full finder
+          Browse every subject
           <ArrowRight size={16} aria-hidden="true" />
         </Link>
       </Section>
