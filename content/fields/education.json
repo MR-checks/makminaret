@@ -1,6 +1,17 @@
 {
   "name": "Education",
   "placeholder": true,
+  "reviewedOn": "2026-08-01",
   "icon": "GraduationCap",
-  "description": "Teacher training, educational sciences and English language teaching."
+  "description": "Teaching qualifications are registered nationally, so confirm your own country's route to the classroom before you apply.",
+  "subjects": [
+    "Primary Education",
+    "Preschool and Early Childhood Education",
+    "Special Education",
+    "Guidance and Psychological Counselling",
+    "Mathematics Education",
+    "Science Education",
+    "Computer Education and Instructional Technology"
+  ],
+  "mastersSubjects": []
 }

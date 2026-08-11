@@ -17,6 +17,7 @@ import {
 import { StampResult } from "./StampResult";
 import { WhatsAppLink } from "@/components/page/Cta";
 import { useIsClient } from "@/lib/use-is-client";
+import { COUNTRY_OPTIONS } from "@/lib/countries";
 
 /**
  * The eligibility wizard (MASTERPLAN §3.2).
@@ -46,9 +47,13 @@ const STEPS: Step[] = [
     name: "level",
     question: "What do you want to study?",
     choices: [
-      { value: "foundation", label: "Foundation or language year" },
+      {
+        value: "vocational",
+        label: "Vocational studies",
+        note: "Short practical courses you travel here for",
+      },
       { value: "bachelor", label: "Bachelor's degree" },
-      { value: "master", label: "Master's degree" },
+      { value: "master", label: "Master's" },
       { value: "phd", label: "PhD" },
     ],
   },
@@ -131,15 +136,8 @@ const STEPS: Step[] = [
   {
     name: "citizenship",
     question: "What is your country of citizenship?",
-    choices: [
-      { value: "Ghana", label: "Ghana" },
-      { value: "Nigeria", label: "Nigeria" },
-      { value: "Kenya", label: "Kenya" },
-      { value: "Cameroon", label: "Cameroon" },
-      { value: "Uganda", label: "Uganda" },
-      { value: "Tanzania", label: "Tanzania" },
-      { value: "Other", label: "Somewhere else" },
-    ],
+    // Populated from the full country list at render time.
+    choices: [],
   },
   {
     name: "contact",
@@ -172,18 +170,25 @@ export function EligibilityWizard({
   fields: Array<{ slug: string; name: string; description?: string }>;
 }) {
   const isClient = useIsClient();
-  const steps = STEPS.map((step) =>
-    step.name === "field"
-      ? {
-          ...step,
-          choices: fields.map((f) => ({
-            value: f.slug,
-            label: f.name,
-            note: f.description,
-          })),
-        }
-      : step
-  );
+  const steps = STEPS.map((step) => {
+    if (step.name === "field") {
+      return {
+        ...step,
+        choices: fields.map((f) => ({
+          value: f.slug,
+          label: f.name,
+          note: f.description,
+        })),
+      };
+    }
+    if (step.name === "citizenship") {
+      return {
+        ...step,
+        choices: COUNTRY_OPTIONS.map((c) => ({ value: c.value, label: c.value })),
+      };
+    }
+    return step;
+  });
   if (!isClient) return <WizardSkeleton steps={steps} />;
   return <Wizard programSlug={programSlug} steps={steps} />;
 }
@@ -463,21 +468,22 @@ function Result({ state }: { state: FormState }) {
       {state.matches && state.matches.length > 0 && (
         <div className="mt-10">
           <h3 className="font-display text-2xl tracking-tight text-navy">
-            Programmes worth looking at
+            Subjects worth looking at
           </h3>
+          <p className="mt-3 max-prose font-sans text-slate">
+            We match you to a university once we have seen your file. These are the
+            subjects in range.
+          </p>
           <div className="mt-6 grid gap-4">
             {state.matches.map((match) => (
               <Link
-                key={match.slug}
-                href={`/programs/${match.slug}`}
+                key={`${match.slug}-${match.title}`}
+                href={`/programs#${match.slug}`}
                 className="flex flex-col gap-1 rounded-md border border-rule bg-paper-raised p-5 transition-colors hover:border-navy"
               >
                 <span className="font-display text-lg text-navy">{match.title}</span>
-                <span className="font-sans text-sm text-slate">
-                  {match.university}, {match.city}
-                </span>
-                <span className="font-mono text-[0.8125rem] text-ink-soft">
-                  {match.tuitionBand} per year, taught in {match.language}
+                <span className="font-mono text-[0.8125rem] uppercase tracking-[0.04em] text-slate">
+                  {match.field}
                 </span>
               </Link>
             ))}

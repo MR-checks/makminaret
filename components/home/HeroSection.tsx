@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRouter } from "@/i18n/navigation";
 import { ArrowRight } from "lucide-react";
 import { WhatsAppLink } from "@/components/page/Cta";
+import { COUNTRY_OPTIONS } from "@/lib/countries";
 
 /**
  * Homepage hero (MASTERPLAN §3.1 section 1).
@@ -22,20 +23,10 @@ import { WhatsAppLink } from "@/components/page/Cta";
  */
 
 const LEVELS = [
-  ["foundation", "Foundation or language year"],
+  ["vocational", "Vocational studies"],
   ["bachelor", "Bachelor's degree"],
-  ["master", "Master's degree"],
+  ["master", "Master's"],
   ["phd", "PhD"],
-];
-
-const COUNTRIES = [
-  "Ghana",
-  "Nigeria",
-  "Kenya",
-  "Cameroon",
-  "Uganda",
-  "Tanzania",
-  "Other",
 ];
 
 export function HeroSection({
@@ -131,11 +122,20 @@ export function HeroSection({
                 className={control}
               >
                 <option value="">My country…</option>
-                {COUNTRIES.map((c) => (
-                  <option key={c} value={c}>
-                    {c}
-                  </option>
-                ))}
+                <optgroup label="Most common">
+                  {COUNTRY_OPTIONS.filter((c) => c.group === "priority").map((c) => (
+                    <option key={c.value} value={c.value}>
+                      {c.value}
+                    </option>
+                  ))}
+                </optgroup>
+                <optgroup label="All countries">
+                  {COUNTRY_OPTIONS.filter((c) => c.group === "all").map((c) => (
+                    <option key={c.value} value={c.value}>
+                      {c.value}
+                    </option>
+                  ))}
+                </optgroup>
               </select>
             </div>
 

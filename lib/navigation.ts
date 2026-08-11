@@ -38,8 +38,7 @@ export const STUDY_MEGA_MENU: NavColumn[] = [
   {
     heading: "Choose",
     links: [
-      { label: "Universities", href: "/universities" },
-      { label: "Programs", href: "/programs" },
+      { label: "What you can study", href: "/programs" },
       { label: "Student stories", href: "/stories" },
     ],
   },
@@ -124,8 +123,7 @@ export const FOOTER_COLUMNS: NavColumn[] = [
     heading: "Minaret Educational Consultancy",
     links: [
       { label: "Why Türkiye", href: "/why-turkiye" },
-      { label: "Universities", href: "/universities" },
-      { label: "Programs", href: "/programs" },
+      { label: "What you can study", href: "/programs" },
       { label: "Scholarships", href: "/scholarships" },
       { label: "Tuition and costs", href: "/costs" },
       { label: "Application process", href: "/application-process" },

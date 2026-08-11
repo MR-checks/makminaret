@@ -16,7 +16,7 @@ import {
   type Verdict,
 } from "@/lib/validation/forms";
 import { hashConsentText, saveLead, type Lead } from "@/lib/leads/store";
-import { getJoinedPrograms } from "@/lib/data/programs";
+import { getFields } from "@/lib/content/reader";
 
 /**
  * Server actions for every public form (MASTERPLAN §9.1).
@@ -134,40 +134,30 @@ function decideVerdict(input: {
   return { verdict: "eligible", reasons };
 }
 
+/**
+ * Suggest subjects within the chosen field rather than named university
+ * programmes. Which university a student ends up at is the outcome of a
+ * consultation, and we only name institutions we hold agreements with.
+ */
 async function matchPrograms(input: {
   level: string;
   field: string;
-  budget: string;
 }): Promise<MatchedProgram[]> {
-  const programs = await getJoinedPrograms();
-  const ceilings: Record<string, number> = {
-    "under-3000": 3000,
-    "under-5000": 5000,
-    "5000-10000": 10000,
-    "10000-20000": 20000,
-    "over-20000": Number.MAX_SAFE_INTEGER,
-  };
-  const ceiling = ceilings[input.budget] ?? Number.MAX_SAFE_INTEGER;
+  const fields = await getFields();
+  const chosen = fields.find((f) => f.slug === input.field);
+  if (!chosen) return [];
 
-  const scored = programs
-    .map((program) => {
-      let score = 0;
-      if (program.level === input.level) score += 2;
-      if (program.fieldSlug === input.field) score += 3;
-      if (program.tuitionFrom <= ceiling) score += 2;
-      return { program, score };
-    })
-    .filter((entry) => entry.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 5);
+  const source =
+    input.level === "bachelor"
+      ? chosen.entry.subjects
+      : (chosen.entry.mastersSubjects?.length ?? 0) > 0
+        ? chosen.entry.mastersSubjects
+        : chosen.entry.subjects;
 
-  return scored.map(({ program }) => ({
-    slug: program.slug,
-    title: program.title,
-    university: program.universityName,
-    city: program.city,
-    tuitionBand: program.tuitionBand,
-    language: program.language,
+  return [...(source ?? [])].slice(0, 6).map((subject) => ({
+    slug: chosen.slug,
+    title: subject,
+    field: chosen.entry.name,
   }));
 }
 
@@ -200,7 +190,7 @@ export async function submitEligibility(
       language: data.language,
       budget: data.budget,
       intake: data.intake,
-      matchedPrograms: matches.map((m) => m.slug),
+      suggestedSubjects: matches.map((m) => m.title).join(", "),
       fromProgram: data.programSlug,
     },
     ...(await consentFields(data.marketingConsent === "on")),

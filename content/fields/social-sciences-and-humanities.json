@@ -1,0 +1,23 @@
+{
+  "name": "Social Sciences and Humanities",
+  "placeholder": true,
+  "reviewedOn": "2026-08-01",
+  "icon": "Users",
+  "description": "Check the recognition route at home before applying for anything leading to a regulated profession, psychology in particular.",
+  "subjects": [
+    "Psychology",
+    "International Relations",
+    "Political Science",
+    "Political Science and International Relations",
+    "Sociology",
+    "Public Administration",
+    "History",
+    "Philosophy",
+    "Anthropology",
+    "Islamic Studies",
+    "English Language and Literature",
+    "Translation and Interpreting",
+    "Russian Language and Literature"
+  ],
+  "mastersSubjects": []
+}
