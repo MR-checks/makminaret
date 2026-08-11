@@ -18,7 +18,7 @@
       "type": "paragraph",
       "children": [
         {
-          "text": "Placeholder entry. The grade mapping used here must be confirmed against current practice before publication."
+          "text": "Enter the confirmed text here."
         }
       ]
     }
@@ -50,7 +50,7 @@
   },
   "turkishEmbassy": {
     "city": "Accra",
-    "address": "Placeholder. Confirm the current embassy address before publication.",
+    "address": "Enter the confirmed text here.",
     "appointmentNotes": "Student visa appointments are booked in advance and availability tightens considerably in the months before the September intake. Book as soon as your acceptance letter is issued rather than waiting until the documents are complete."
   },
   "flightRoutings": [

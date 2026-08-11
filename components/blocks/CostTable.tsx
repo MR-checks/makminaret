@@ -53,23 +53,58 @@ const CostTable = React.forwardRef<HTMLDivElement, CostTableProps>(
         )}
         {...props}
       >
-        <div className="overflow-x-auto">
+        {/*
+          Two presentations of the same data. A four-column money table cannot
+          fit a 320px screen, and the horizontal scrollbar it produced hid two
+          of the three columns behind a gesture most people never make. Below
+          sm it stacks into one block per cost type; from sm up it is the table.
+        */}
+        <div className="sm:hidden">
+          {bands.map((band) => (
+            <div
+              key={band.label}
+              className="border-b border-[var(--rule)] px-5 py-4 last:border-b-0"
+            >
+              <p className="font-sans font-medium text-[var(--ink)]">{band.label}</p>
+              <dl className="mt-3 flex flex-col gap-2">
+                {(
+                  [
+                    ["State university", band.state],
+                    ["Private university", band.private],
+                    ["Private, Medicine", band.medicine],
+                  ] as const
+                ).map(([label, value]) => (
+                  <div key={label} className="flex items-baseline justify-between gap-4">
+                    <dt className="font-mono text-[0.75rem] uppercase tracking-[0.04em] text-[var(--slate)]">
+                      {label}
+                    </dt>
+                    <dd className="text-right font-mono text-sm text-[var(--ink-soft)]">
+                      {value}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          ))}
+        </div>
+
+        <div className="hidden sm:block">
           <table className="w-full text-left text-sm">
             <caption className="sr-only">
               Indicative annual study costs in US dollars, by university type
             </caption>
             <thead className="bg-[var(--paper-raised)] font-mono text-[0.8125rem] uppercase tracking-[0.04em] text-[var(--slate)] border-b border-[var(--rule)]">
               <tr>
-                <th scope="col" className="px-6 py-4 font-normal">
+                <th scope="col" className="px-4 py-4 font-normal md:px-6">
                   <span className="sr-only">Cost type</span>
                 </th>
-                <th scope="col" className="px-6 py-4 font-normal text-right">
+                <th scope="col" className="px-4 py-4 font-normal text-right md:px-6">
                   State university
                 </th>
-                <th scope="col" className="px-6 py-4 font-normal text-right">
+                <th scope="col" className="px-4 py-4 font-normal text-right md:px-6">
                   Private university
                 </th>
-                <th scope="col" className="px-6 py-4 font-normal text-right">
+                <th scope="col" className="px-4 py-4 font-normal text-right md:px-6">
                   Private, Medicine
                 </th>
               </tr>
@@ -79,17 +114,17 @@ const CostTable = React.forwardRef<HTMLDivElement, CostTableProps>(
                 <tr key={band.label} className="transition-colors hover:bg-[var(--sand)]">
                   <th
                     scope="row"
-                    className="px-6 py-4 text-[var(--ink)] font-medium text-left"
+                    className="px-4 py-4 text-[var(--ink)] font-medium text-left md:px-6"
                   >
                     {band.label}
                   </th>
-                  <td className="px-6 py-4 font-mono text-right text-[var(--ink-soft)]">
+                  <td className="px-4 py-4 font-mono text-right text-[var(--ink-soft)] md:px-6">
                     {band.state}
                   </td>
-                  <td className="px-6 py-4 font-mono text-right text-[var(--ink-soft)]">
+                  <td className="px-4 py-4 font-mono text-right text-[var(--ink-soft)] md:px-6">
                     {band.private}
                   </td>
-                  <td className="px-6 py-4 font-mono text-right text-[var(--ink-soft)]">
+                  <td className="px-4 py-4 font-mono text-right text-[var(--ink-soft)] md:px-6">
                     {band.medicine}
                   </td>
                 </tr>
@@ -98,7 +133,7 @@ const CostTable = React.forwardRef<HTMLDivElement, CostTableProps>(
           </table>
         </div>
 
-        <div className="border-t border-[var(--rule)] bg-[var(--paper-raised)] px-6 py-4">
+        <div className="border-t border-[var(--rule)] bg-[var(--paper-raised)] px-5 py-4 md:px-6">
           <p className="font-mono text-[0.8125rem] uppercase tracking-[0.04em] text-[var(--slate)]">
             Figures reviewed {reviewedOn}. Ranges, not quotes.
           </p>

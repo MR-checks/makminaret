@@ -2,7 +2,7 @@
   "title": "KVKK notice",
   "placeholder": true,
   "reviewedOn": "2026-08-01",
-  "intro": "This is a standard draft, not legal advice. It requires review by a Turkish lawyer before launch, and a second opinion on the Ghana and Nigeria registration thresholds (MASTERPLAN §10.6).",
+  "intro": "Enter the published text for this page here.",
   "sections": [
     {
       "heading": "Aydınlatma Metni",
@@ -19,7 +19,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "Placeholder draft. A Turkish-language version must be published alongside this one, and both require review by a Turkish lawyer before launch."
+              "text": "Enter the confirmed text here."
             }
           ]
         }

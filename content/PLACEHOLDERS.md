@@ -9,109 +9,109 @@ replaced with something real before `SITE_MODE=live` will build.
 
 ## articles
 
-| Entry                                                   | File                                                                            | Fields to replace |
-| ------------------------------------------------------- | ------------------------------------------------------------------------------- | ----------------- |
-| state-versus-private-universities-in-turkiye            | `content/articles/state-versus-private-universities-in-turkiye.json`            | body, excerpt     |
-| what-denklik-is-and-why-it-takes-so-long                | `content/articles/what-denklik-is-and-why-it-takes-so-long.json`                | body, excerpt     |
-| what-wassce-and-waec-results-mean-for-turkish-admission | `content/articles/what-wassce-and-waec-results-mean-for-turkish-admission.json` | body, excerpt     |
+| Entry | File | Fields to replace |
+|---|---|---|
+| state-versus-private-universities-in-turkiye | `content/articles/state-versus-private-universities-in-turkiye.json` | body, excerpt |
+| what-denklik-is-and-why-it-takes-so-long | `content/articles/what-denklik-is-and-why-it-takes-so-long.json` | body, excerpt |
+| what-wassce-and-waec-results-mean-for-turkish-admission | `content/articles/what-wassce-and-waec-results-mean-for-turkish-admission.json` | body, excerpt |
 
 ## countries
 
-| Entry   | File                             | Fields to replace              |
-| ------- | -------------------------------- | ------------------------------ |
-| ghana   | `content/countries/ghana.json`   | certificateNotes, denklikRoute |
+| Entry | File | Fields to replace |
+|---|---|---|
+| ghana | `content/countries/ghana.json` | certificateNotes, denklikRoute |
 | nigeria | `content/countries/nigeria.json` | certificateNotes, denklikRoute |
 
 ## courses
 
-| Entry              | File                                      | Fields to replace |
-| ------------------ | ----------------------------------------- | ----------------- |
-| baking             | `content/courses/baking.json`             | summary           |
-| corporate-training | `content/courses/corporate-training.json` | summary           |
-| culinary           | `content/courses/culinary.json`           | summary           |
-| entrepreneurship   | `content/courses/entrepreneurship.json`   | summary           |
-| fashion-design     | `content/courses/fashion-design.json`     | summary           |
-| plumbing           | `content/courses/plumbing.json`           | summary           |
-| tailoring          | `content/courses/tailoring.json`          | summary           |
-| turban-making      | `content/courses/turban-making.json`      | summary           |
+| Entry | File | Fields to replace |
+|---|---|---|
+| baking | `content/courses/baking.json` | summary |
+| corporate-training | `content/courses/corporate-training.json` | summary |
+| culinary | `content/courses/culinary.json` | summary |
+| entrepreneurship | `content/courses/entrepreneurship.json` | summary |
+| fashion-design | `content/courses/fashion-design.json` | summary |
+| plumbing | `content/courses/plumbing.json` | summary |
+| tailoring | `content/courses/tailoring.json` | summary |
+| turban-making | `content/courses/turban-making.json` | summary |
 
 ## faqs
 
-| Entry                           | File                                                | Fields to replace |
-| ------------------------------- | --------------------------------------------------- | ----------------- |
-| can-i-work-while-studying       | `content/faqs/can-i-work-while-studying.json`       | all               |
-| cheapest-realistic-total        | `content/faqs/cheapest-realistic-total.json`        | all               |
-| do-i-need-to-speak-turkish      | `content/faqs/do-i-need-to-speak-turkish.json`      | all               |
-| do-i-need-yos                   | `content/faqs/do-i-need-yos.json`                   | all               |
-| is-my-degree-recognised-at-home | `content/faqs/is-my-degree-recognised-at-home.json` | all               |
-| what-does-your-fee-cover        | `content/faqs/what-does-your-fee-cover.json`        | all               |
-| what-if-my-visa-is-refused      | `content/faqs/what-if-my-visa-is-refused.json`      | all               |
-| what-is-denklik                 | `content/faqs/what-is-denklik.json`                 | all               |
+| Entry | File | Fields to replace |
+|---|---|---|
+| can-i-work-while-studying | `content/faqs/can-i-work-while-studying.json` | all |
+| cheapest-realistic-total | `content/faqs/cheapest-realistic-total.json` | all |
+| do-i-need-to-speak-turkish | `content/faqs/do-i-need-to-speak-turkish.json` | all |
+| do-i-need-yos | `content/faqs/do-i-need-yos.json` | all |
+| is-my-degree-recognised-at-home | `content/faqs/is-my-degree-recognised-at-home.json` | all |
+| what-does-your-fee-cover | `content/faqs/what-does-your-fee-cover.json` | all |
+| what-if-my-visa-is-refused | `content/faqs/what-if-my-visa-is-refused.json` | all |
+| what-is-denklik | `content/faqs/what-is-denklik.json` | all |
 
 ## fields
 
-| Entry                          | File                                                 | Fields to replace |
-| ------------------------------ | ---------------------------------------------------- | ----------------- |
-| agriculture-and-related        | `content/fields/agriculture-and-related.json`        | description       |
-| business-economics-and-finance | `content/fields/business-economics-and-finance.json` | description       |
-| communication-and-media        | `content/fields/communication-and-media.json`        | description       |
-| education                      | `content/fields/education.json`                      | description       |
-| engineering-and-technology     | `content/fields/engineering-and-technology.json`     | description       |
-| medicine-and-healthcare        | `content/fields/medicine-and-healthcare.json`        | description       |
-| other                          | `content/fields/other.json`                          | description       |
-| social-sciences-and-humanities | `content/fields/social-sciences-and-humanities.json` | description       |
+| Entry | File | Fields to replace |
+|---|---|---|
+| agriculture-and-related | `content/fields/agriculture-and-related.json` | description |
+| business-economics-and-finance | `content/fields/business-economics-and-finance.json` | description |
+| communication-and-media | `content/fields/communication-and-media.json` | description |
+| education | `content/fields/education.json` | description |
+| engineering-and-technology | `content/fields/engineering-and-technology.json` | description |
+| medicine-and-healthcare | `content/fields/medicine-and-healthcare.json` | description |
+| other | `content/fields/other.json` | description |
+| social-sciences-and-humanities | `content/fields/social-sciences-and-humanities.json` | description |
 
 ## offices
 
-| Entry  | File                          | Fields to replace |
-| ------ | ----------------------------- | ----------------- |
-| ankara | `content/offices/ankara.json` | all               |
+| Entry | File | Fields to replace |
+|---|---|---|
+| ankara | `content/offices/ankara.json` | all |
 
 ## pages
 
-| Entry               | File                                     | Fields to replace |
-| ------------------- | ---------------------------------------- | ----------------- |
-| about               | `content/pages/about.json`               | all               |
-| accommodation       | `content/pages/accommodation.json`       | all               |
-| application-process | `content/pages/application-process.json` | all               |
-| careers             | `content/pages/careers.json`             | all               |
-| contact             | `content/pages/contact.json`             | all               |
-| costs               | `content/pages/costs.json`               | all               |
-| entry-requirements  | `content/pages/entry-requirements.json`  | all               |
-| ghana-community     | `content/pages/ghana-community.json`     | all               |
-| health-insurance    | `content/pages/health-insurance.json`    | all               |
-| legal-cookies       | `content/pages/legal-cookies.json`       | all               |
-| legal-kvkk          | `content/pages/legal-kvkk.json`          | all               |
-| legal-privacy       | `content/pages/legal-privacy.json`       | all               |
-| legal-terms         | `content/pages/legal-terms.json`         | all               |
-| student-support     | `content/pages/student-support.json`     | all               |
-| visa-and-residence  | `content/pages/visa-and-residence.json`  | all               |
-| why-turkiye         | `content/pages/why-turkiye.json`         | all               |
+| Entry | File | Fields to replace |
+|---|---|---|
+| about | `content/pages/about.json` | all |
+| accommodation | `content/pages/accommodation.json` | all |
+| application-process | `content/pages/application-process.json` | all |
+| careers | `content/pages/careers.json` | all |
+| contact | `content/pages/contact.json` | all |
+| costs | `content/pages/costs.json` | all |
+| entry-requirements | `content/pages/entry-requirements.json` | all |
+| ghana-community | `content/pages/ghana-community.json` | all |
+| health-insurance | `content/pages/health-insurance.json` | all |
+| legal-cookies | `content/pages/legal-cookies.json` | all |
+| legal-kvkk | `content/pages/legal-kvkk.json` | all |
+| legal-privacy | `content/pages/legal-privacy.json` | all |
+| legal-terms | `content/pages/legal-terms.json` | all |
+| student-support | `content/pages/student-support.json` | all |
+| visa-and-residence | `content/pages/visa-and-residence.json` | all |
+| why-turkiye | `content/pages/why-turkiye.json` | all |
 
 ## scholarships
 
-| Entry                    | File                                                 | Fields to replace         |
-| ------------------------ | ---------------------------------------------------- | ------------------------- |
-| turkiye-burslari         | `content/scholarships/turkiye-burslari.json`         | eligibility, coverageBand |
+| Entry | File | Fields to replace |
+|---|---|---|
+| turkiye-burslari | `content/scholarships/turkiye-burslari.json` | eligibility, coverageBand |
 | university-merit-waivers | `content/scholarships/university-merit-waivers.json` | eligibility, coverageBand |
 
 ## services
 
-| Entry                  | File                                           | Fields to replace |
-| ---------------------- | ---------------------------------------------- | ----------------- |
-| book-publishing        | `content/services/book-publishing.json`        | whatWeDo, summary |
-| business-consultancy   | `content/services/business-consultancy.json`   | whatWeDo, summary |
-| educational-materials  | `content/services/educational-materials.json`  | whatWeDo, summary |
+| Entry | File | Fields to replace |
+|---|---|---|
+| book-publishing | `content/services/book-publishing.json` | whatWeDo, summary |
+| business-consultancy | `content/services/business-consultancy.json` | whatWeDo, summary |
+| educational-materials | `content/services/educational-materials.json` | whatWeDo, summary |
 | import-export-advisory | `content/services/import-export-advisory.json` | whatWeDo, summary |
-| printing               | `content/services/printing.json`               | whatWeDo, summary |
-| school-supplies        | `content/services/school-supplies.json`        | whatWeDo, summary |
+| printing | `content/services/printing.json` | whatWeDo, summary |
+| school-supplies | `content/services/school-supplies.json` | whatWeDo, summary |
 
 ## stories
 
-| Entry                         | File                                                 | Fields to replace |
-| ----------------------------- | ---------------------------------------------------- | ----------------- |
-| placeholder-story-engineering | `content/stories/placeholder-story-engineering.json` | quote             |
-| placeholder-story-health      | `content/stories/placeholder-story-health.json`      | quote             |
+| Entry | File | Fields to replace |
+|---|---|---|
+| placeholder-story-engineering | `content/stories/placeholder-story-engineering.json` | quote |
+| placeholder-story-health | `content/stories/placeholder-story-health.json` | quote |
 
 ## settings.json
 
