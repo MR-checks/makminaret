@@ -176,10 +176,11 @@ export function HeroSection({
           />
           <figcaption className="mt-6 rounded-md border border-paper/15 bg-navy-deep p-6">
             <p className="font-mono text-[0.8125rem] uppercase tracking-[0.04em] text-gold">
-              Based in Ankara, Türkiye
+              Based in Türkiye
             </p>
             <p className="mt-3 font-display text-xl leading-snug md:text-2xl">
-              We are in Ankara, not in Accra. We handle your file from inside Türkiye.
+              We handle your file from inside Türkiye, where the offices that decide it
+              are.
             </p>
           </figcaption>
         </figure>

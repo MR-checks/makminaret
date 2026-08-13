@@ -141,29 +141,47 @@ export async function saveLead(lead: Lead): Promise<SaveLeadResult> {
   const confirmation = buildConfirmation(lead, reference);
 
   try {
-    const sends: Array<Promise<unknown>> = [
-      resend.emails.send({
-        from: FROM,
-        to: NOTIFY_TO,
-        subject: notification.subject,
-        text: notification.body,
-        // So a counsellor can reply straight from the inbox (§9.2).
-        ...(lead.email ? { replyTo: lead.email } : {}),
-      }),
-    ];
+    // Resend resolves with { data, error } rather than throwing on an API
+    // rejection, so the error field has to be read explicitly. Awaiting alone
+    // reports a refused send as a success and loses the lead silently.
+    const notified = await resend.emails.send({
+      from: FROM,
+      to: NOTIFY_TO,
+      subject: notification.subject,
+      text: notification.body,
+      // So a counsellor can reply straight from the inbox (§9.2).
+      ...(lead.email ? { replyTo: lead.email } : {}),
+    });
 
-    if (lead.email) {
-      sends.push(
-        resend.emails.send({
-          from: FROM,
-          to: lead.email,
-          subject: confirmation.subject,
-          text: confirmation.body,
-        })
+    if (notified.error) {
+      console.error(
+        `[leads] ${reference} was not delivered to ${NOTIFY_TO}:`,
+        notified.error,
+        "\n",
+        notification.body
       );
+      return { reference, delivered: false };
     }
 
-    await Promise.all(sends);
+    if (lead.email) {
+      // The applicant's own confirmation is a courtesy, and Resend refuses it
+      // while the sending domain is unverified. A failure here must not mark a
+      // lead we have already captured as undelivered.
+      const confirmed = await resend.emails.send({
+        from: FROM,
+        to: lead.email,
+        subject: confirmation.subject,
+        text: confirmation.body,
+      });
+
+      if (confirmed.error) {
+        console.error(
+          `[leads] Confirmation to the applicant for ${reference} was refused:`,
+          confirmed.error
+        );
+      }
+    }
+
     return { reference, delivered: true };
   } catch (error) {
     // Never let a delivery failure strand the visitor with no route to us.
