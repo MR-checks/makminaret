@@ -16,5 +16,5 @@
       "url": "https://www.facebook.com/share/14jBjefQzit/"
     }
   ],
-  "placeholderFields": ["registrationNumber", "officeAddress", "officePhone"]
+  "placeholderFields": ["officeAddress", "officePhone"]
 }

@@ -7,7 +7,7 @@ import { CtaPanel } from "@/components/page/Cta";
 export const metadata: Metadata = {
   title: "Offices",
   description:
-    "We operate from Ankara, Türkiye. Being inside the country is the reason we can handle denklik, enrolment and the residence permit in person.",
+    "Where we work from, and how to visit. Being inside Türkiye is the reason we can handle denklik, enrolment and the residence permit in person.",
 };
 
 export default async function OfficesPage() {
@@ -18,7 +18,7 @@ export default async function OfficesPage() {
       <PageHero
         eyebrow="About Minaret"
         title="Where we are"
-        intro="Ankara, Türkiye. Not Accra, not Lagos. That is the difference between forwarding your documents and handling them."
+        intro="Having someone inside Türkiye is the difference between forwarding your documents and handling them."
         trail={[{ label: "About", href: "/about" }, { label: "Offices" }]}
       />
 

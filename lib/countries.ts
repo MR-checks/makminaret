@@ -10,11 +10,10 @@
 export const PRIORITY_COUNTRIES = [
   "Ghana",
   "Nigeria",
-  "Kenya",
+  "Côte d'Ivoire",
+  "Sierra Leone",
   "Cameroon",
-  "Uganda",
-  "Tanzania",
-  "Türkiye",
+  "Gambia",
 ] as const;
 
 export const ALL_COUNTRIES = [
