@@ -1,8 +1,8 @@
 {
   "title": "Privacy policy",
   "placeholder": true,
-  "reviewedOn": "2026-08-01",
-  "intro": "Enter the published text for this page here.",
+  "reviewedOn": "2026-08-13",
+  "intro": "What we collect when you contact us, why we hold it, where it goes, and how to get it back or have it deleted. Written to be read rather than to be clicked past.",
   "sections": [
     {
       "heading": "Who controls your data",
@@ -11,7 +11,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "MAK Minaret, operating as Minaret Educational Consultancy, registered and operating in Ankara, Türkiye, is the data controller for the personal data described here."
+              "text": "MAK Minaret Enterprise, registered in Ghana and operating in both Ghana and Türkiye, is responsible for the personal data described here. Our contact details are on the contact page, and a data protection request sent to the published email address reaches the people who can act on it."
             }
           ]
         },
@@ -19,7 +19,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "Enter the confirmed text here."
+              "text": "We operate across two jurisdictions, and the data protection regimes of both may apply to you: Ghana's Data Protection Act, 2012 (Act 843), and, because we operate in Türkiye, Law No. 6698 on the Protection of Personal Data. If you are in Nigeria, the Nigeria Data Protection Act 2023 is also relevant. Where these give you different rights, we apply whichever is stronger rather than whichever is easier for us."
             }
           ]
         }
@@ -32,7 +32,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "When you complete the eligibility check or any other form on this site, we collect the details you enter: your name, contact details, country, and the answers describing your educational background and budget. We use them to respond to your enquiry and to advise you on your options."
+              "text": "When you complete the eligibility check or any other form on this site, we collect the details you enter: your name, email address, WhatsApp or phone number, country, the subject you are interested in, your message, and, in the eligibility check, the answers describing your educational background and budget. We use them to respond to your enquiry and to advise you on your options."
             }
           ]
         },
@@ -40,7 +40,15 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "We do not run advertising or analytics trackers on this site, so we do not build a profile of your browsing."
+              "text": "We also record the time you gave consent and a fingerprint of the exact consent wording shown to you on that day, so that what you agreed to can be established later rather than assumed."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We do not run advertising or analytics trackers on this site, so we do not build a profile of your browsing, and we do not buy or sell contact lists."
             }
           ]
         }
@@ -53,7 +61,36 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "We process enquiry data on the basis of your explicit consent, given at the point of submission. Marketing communication requires a separate, unbundled consent which you may give or withhold independently, and neither box is pre-ticked."
+              "text": "We process enquiry data on the basis of your explicit consent, given at the point of submission. Marketing communication requires a separate, unbundled consent which you may give or withhold independently, and neither box is pre-ticked. Refusing marketing does not affect the advice you receive."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Who else handles it",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We keep no database of enquiries. A submitted form becomes an email, and that email is what we work from. Three providers are therefore involved, and we would rather name them than describe them vaguely as partners."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Vercel hosts this website and processes the form submission in transit. Resend delivers the resulting email. Google provides the mailbox the enquiry lands in and where it is then stored. If you choose to contact us over WhatsApp instead of the form, that conversation is carried by Meta on its own terms, which we do not control."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "None of these providers is permitted to use your data for their own purposes. We do not share your details with universities or any other third party without telling you first and obtaining your agreement."
             }
           ]
         }
@@ -66,7 +103,15 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "An enquiry that does not become an application is retained for 24 months and then deleted. An application record is retained for as long as we are advising you and for a defined period afterwards."
+              "text": "An enquiry that does not become an application is retained for 24 months and then deleted. An application record is retained for as long as we are advising you, and for a defined period afterwards so that we can answer questions about what was submitted on your behalf."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "You can ask us to delete your data sooner than this, and we will unless we are required to keep a specific record."
             }
           ]
         }
@@ -79,7 +124,28 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "If you are in Ghana or Nigeria, your personal data is transferred to Türkiye, where we operate, and to our transactional email provider. This transfer is a necessary part of providing the service you asked for, and it is named here explicitly rather than buried."
+              "text": "If you are in Ghana, Nigeria or elsewhere in West Africa, your personal data is transferred to Türkiye, where part of our team works, and to the providers named above, which operate outside your country. This transfer is a necessary part of providing the service you asked for, and it is named here explicitly rather than buried."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Keeping it secure",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "The site is served over HTTPS and form submissions are encrypted in transit. Access to the enquiry mailbox is limited to the people who handle enquiries, and it is protected by two-factor authentication."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "No system is perfect, and anyone who tells you otherwise is selling something. If a breach affects your data we will tell you and the relevant authority, rather than wait to be asked."
             }
           ]
         }
@@ -92,7 +158,28 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "Under Article 11 of KVKK, and equivalently under Ghanaian and Nigerian data protection law, you may ask what we hold about you, ask us to correct it, ask us to delete it, and withdraw consent at any time. Write to us and we will respond within 30 days."
+              "text": "You may ask what we hold about you, ask us to correct it, ask us to delete it, ask for a copy of it, object to how we are using it, and withdraw consent at any time. Withdrawing consent does not undo processing that already happened lawfully."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Write to the email address on our contact page and we will respond within 30 days. There is no charge for this. If you are not satisfied with our response, you can complain to the data protection authority in your country: the Data Protection Commission in Ghana, the Nigeria Data Protection Commission in Nigeria, or the Personal Data Protection Authority in Türkiye."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Changes to this policy",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "If this policy changes materially, the date stamped on this page changes with it, and anyone whose data we are actively holding is told directly rather than being expected to re-read the page."
             }
           ]
         }
@@ -100,7 +187,7 @@
     }
   ],
   "seo": {
-    "title": "",
-    "description": ""
+    "title": "Privacy policy",
+    "description": "What Minaret collects when you enquire, who processes it, how long it is kept, and how to have it corrected or deleted."
   }
 }

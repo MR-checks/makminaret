@@ -1,8 +1,8 @@
 {
   "title": "KVKK notice",
   "placeholder": true,
-  "reviewedOn": "2026-08-01",
-  "intro": "Enter the published text for this page here.",
+  "reviewedOn": "2026-08-13",
+  "intro": "The information notice required under Turkish personal data protection law, for students and families whose data we handle in connection with our work in Türkiye.",
   "sections": [
     {
       "heading": "Aydınlatma Metni",
@@ -11,7 +11,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "This notice is provided under Law No. 6698 on the Protection of Personal Data, the Turkish data protection regime that governs our processing as an entity registered and operating in Türkiye."
+              "text": "This notice is provided under Law No. 6698 on the Protection of Personal Data (KVKK), which governs the processing of personal data in Türkiye."
             }
           ]
         },
@@ -19,7 +19,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "Enter the confirmed text here."
+              "text": "We are registered in Ghana and operate in Türkiye. Turkish law can apply to processing carried out through that activity even where the registered entity sits elsewhere, and we would rather give you this notice than argue about whether we had to."
             }
           ]
         }
@@ -32,7 +32,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "MAK Minaret, registered in Türkiye. The registration number and registered address must be confirmed and stated here before publication."
+              "text": "MAK Minaret Enterprise, registered in Ghana, operating in Ghana and Türkiye. Contact details are on the contact page."
             }
           ]
         }
@@ -45,7 +45,20 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "Personal data is processed for the purpose of responding to and advising on education enquiries, on the basis of the explicit consent given at the point of submission."
+              "text": "Personal data is processed for the purpose of responding to and advising on education enquiries, preparing and submitting applications on your instruction, and supporting enrolment and residence formalities after arrival. The basis is the explicit consent given at the point of submission."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What is processed and to whom it is transferred",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Identity and contact details, your educational background, and the content of your enquiry. Data is transferred to our email and hosting providers as described in the privacy policy, and, where you instruct us to submit an application, to the institution you are applying to and to the authorities responsible for recognition, visa and residence."
             }
           ]
         }
@@ -58,7 +71,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "You have the right to learn whether your data is processed, to request information about the processing, to learn the purpose and whether it is used accordingly, to know any third parties to whom it is transferred, to request correction or deletion, and to object to conclusions drawn by automated analysis."
+              "text": "You have the right to learn whether your data is processed, to request information about the processing, to learn the purpose and whether it is used accordingly, to know any third parties to whom it is transferred, to request correction or deletion, to request that correction or deletion be notified to those third parties, to object to conclusions drawn by automated analysis, and to claim compensation for damage caused by unlawful processing."
             }
           ]
         },
@@ -79,7 +92,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "Whether VERBİS registration applies to us in Türkiye, and whether registration with the Ghana Data Protection Commission or the Nigeria Data Protection Commission applies given that we market to residents of those countries, are open questions requiring legal advice rather than assumption."
+              "text": "Whether VERBİS registration applies to us in Türkiye, and whether registration with the Ghana Data Protection Commission or the Nigeria Data Protection Commission applies given that we advise residents of those countries, are questions for our advisers rather than for assumption. They are being confirmed, and this notice is updated when they are."
             }
           ]
         }
@@ -87,7 +100,7 @@
     }
   ],
   "seo": {
-    "title": "",
-    "description": ""
+    "title": "KVKK notice",
+    "description": "Aydınlatma metni: how Minaret processes personal data under Law No. 6698, and your rights under Article 11."
   }
 }

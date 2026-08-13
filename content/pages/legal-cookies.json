@@ -1,8 +1,8 @@
 {
   "title": "Cookie policy",
   "placeholder": true,
-  "reviewedOn": "2026-08-01",
-  "intro": "Enter the published text for this page here.",
+  "reviewedOn": "2026-08-13",
+  "intro": "A short page, because there is little to report. This site sets no tracking cookies and runs no analytics.",
   "sections": [
     {
       "heading": "We do not track you",
@@ -43,12 +43,46 @@
               "text": "A dismissal of the preview notice is stored for the length of your browsing session so it does not reappear on every page."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Both are strictly necessary for the feature you are using, and neither identifies you. Clearing your browser data removes them."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Things we deliberately did not embed",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "We use a static map image rather than a live map embed, and a plain form rather than a third-party scheduling widget. Both alternatives would have set third-party cookies and slowed the site on a mid-range phone, for no benefit to you."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Questions",
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "If you want to know exactly what this site stores in your browser, ask us through the contact page and we will tell you plainly."
+            }
+          ]
         }
       ]
     }
   ],
   "seo": {
-    "title": "",
-    "description": ""
+    "title": "Cookie policy",
+    "description": "Minaret sets no tracking cookies and runs no analytics. What is stored in your browser, and why."
   }
 }
