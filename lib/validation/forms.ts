@@ -123,6 +123,12 @@ export type FormState = {
   delivered?: boolean;
   /** Field-keyed messages, plus `_form` for anything global. */
   errors?: Record<string, string>;
+  /**
+   * What the visitor typed, echoed back so a rejected submission refills the
+   * form instead of emptying it. React resets an uncontrolled form once the
+   * action resolves, so the values have to make the round trip.
+   */
+  values?: Record<string, string>;
   verdict?: Verdict;
   matches?: MatchedProgram[];
 };

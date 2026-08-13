@@ -2,7 +2,7 @@
   "title": "KVKK notice",
   "placeholder": true,
   "reviewedOn": "2026-08-13",
-  "intro": "The information notice required under Turkish personal data protection law, for students and families whose data we handle in connection with our work in Türkiye.",
+  "intro": "The information notice required under Turkish personal data protection law.",
   "sections": [
     {
       "heading": "Aydınlatma Metni",
@@ -11,7 +11,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "This notice is provided under Law No. 6698 on the Protection of Personal Data (KVKK), which governs the processing of personal data in Türkiye."
+              "text": "This notice is given under Law No. 6698 on the Protection of Personal Data (KVKK), which governs the processing of personal data in Türkiye."
             }
           ]
         },
@@ -19,7 +19,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "We are registered in Ghana and operate in Türkiye. Turkish law can apply to processing carried out through that activity even where the registered entity sits elsewhere, and we would rather give you this notice than argue about whether we had to."
+              "text": "We are registered in Ghana and operate in Türkiye. Turkish law can apply to processing carried out through that activity, and we would rather give you this notice than argue about whether we had to."
             }
           ]
         }
@@ -45,20 +45,20 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "Personal data is processed for the purpose of responding to and advising on education enquiries, preparing and submitting applications on your instruction, and supporting enrolment and residence formalities after arrival. The basis is the explicit consent given at the point of submission."
+              "text": "To answer your enquiry, to advise you, and, on your instruction, to prepare and submit an application and support enrolment and residence formalities. The basis is the explicit consent you give when you submit."
             }
           ]
         }
       ]
     },
     {
-      "heading": "What is processed and to whom it is transferred",
+      "heading": "What is processed",
       "body": [
         {
           "type": "paragraph",
           "children": [
             {
-              "text": "Identity and contact details, your educational background, and the content of your enquiry. Data is transferred to our email and hosting providers as described in the privacy policy, and, where you instruct us to submit an application, to the institution you are applying to and to the authorities responsible for recognition, visa and residence."
+              "text": "Your identity and contact details, your educational background, and the content of your enquiry. Where you instruct us to apply, the relevant details go to the institution and to the authorities responsible for recognition, visa and residence."
             }
           ]
         }
@@ -71,7 +71,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "You have the right to learn whether your data is processed, to request information about the processing, to learn the purpose and whether it is used accordingly, to know any third parties to whom it is transferred, to request correction or deletion, to request that correction or deletion be notified to those third parties, to object to conclusions drawn by automated analysis, and to claim compensation for damage caused by unlawful processing."
+              "text": "You may learn whether your data is processed, request information about it, learn its purpose and whether it is used accordingly, know who it has been transferred to, request correction or deletion, object to conclusions drawn by automated analysis, and claim compensation for damage caused by unlawful processing."
             }
           ]
         },
@@ -79,7 +79,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "Requests should be sent to the email address published on our contact page and are answered within 30 days."
+              "text": "Requests go to the email address on our contact page and are answered within 30 days."
             }
           ]
         }
@@ -92,7 +92,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "Whether VERBİS registration applies to us in Türkiye, and whether registration with the Ghana Data Protection Commission or the Nigeria Data Protection Commission applies given that we advise residents of those countries, are questions for our advisers rather than for assumption. They are being confirmed, and this notice is updated when they are."
+              "text": "Whether VERBİS registration applies to us, and whether registration with the Ghanaian or Nigerian data protection authorities applies, are being confirmed with our advisers. This notice is updated when they are."
             }
           ]
         }
