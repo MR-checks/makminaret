@@ -10,6 +10,7 @@ import {
   ConsentFields,
   Field,
   FormError,
+  FormValues,
   SelectInput,
   SubmitButton,
   TextInput,
@@ -284,77 +285,81 @@ function Wizard({ programSlug, steps }: { programSlug?: string; steps: Step[] })
       {current.help && <p className="mt-3 font-sans text-slate">{current.help}</p>}
 
       {current.kind === "contact" ? (
-        <form action={formAction} className="mt-8 flex flex-col gap-6">
-          <AbuseControls />
-          {Object.entries(answers).map(([key, value]) => (
-            <input key={key} type="hidden" name={key} value={value} />
-          ))}
-          {programSlug && <input type="hidden" name="programSlug" value={programSlug} />}
-
-          <Field label="Your name" name="name" required error={state.errors?.name}>
-            {({ id, describedBy }) => (
-              <TextInput
-                id={id}
-                name="name"
-                autoComplete="name"
-                required
-                describedBy={describedBy}
-              />
+        <FormValues values={state.values}>
+          <form action={formAction} className="mt-8 flex flex-col gap-6">
+            <AbuseControls />
+            {Object.entries(answers).map(([key, value]) => (
+              <input key={key} type="hidden" name={key} value={value} />
+            ))}
+            {programSlug && (
+              <input type="hidden" name="programSlug" value={programSlug} />
             )}
-          </Field>
 
-          <Field
-            label="WhatsApp number"
-            name="phone"
-            required
-            hint="Include your country code, for example +233 or +234."
-            error={state.errors?.phone}
-          >
-            {({ id, describedBy }) => (
-              <TextInput
-                id={id}
-                name="phone"
-                type="tel"
-                inputMode="tel"
-                autoComplete="tel"
-                placeholder="+233 53 979 9795"
-                required
-                describedBy={describedBy}
-              />
-            )}
-          </Field>
+            <Field label="Your name" name="name" required error={state.errors?.name}>
+              {({ id, describedBy }) => (
+                <TextInput
+                  id={id}
+                  name="name"
+                  autoComplete="name"
+                  required
+                  describedBy={describedBy}
+                />
+              )}
+            </Field>
 
-          <Field label="Email" name="email" required error={state.errors?.email}>
-            {({ id, describedBy }) => (
-              <TextInput
-                id={id}
-                name="email"
-                type="email"
-                autoComplete="email"
-                required
-                describedBy={describedBy}
-              />
-            )}
-          </Field>
-
-          <ConsentFields error={state.errors?.consent} />
-          <FormError message={state.errors?._form} />
-
-          <div className="flex flex-wrap items-center gap-3">
-            <button
-              type="button"
-              onClick={() => setStep(step - 1)}
-              className="inline-flex min-h-11 items-center gap-2 rounded-sm border border-navy px-5 font-sans text-sm font-medium text-navy transition-colors hover:bg-sand"
+            <Field
+              label="WhatsApp number"
+              name="phone"
+              required
+              hint="Include your country code, for example +233 or +234."
+              error={state.errors?.phone}
             >
-              <ArrowLeft size={16} aria-hidden="true" /> Back
-            </button>
-            <SubmitButton pending={pending}>See my result</SubmitButton>
-          </div>
-          <p className="font-sans text-sm text-slate">
-            Free. No documents needed yet. We will tell you honestly if this route does
-            not suit you.
-          </p>
-        </form>
+              {({ id, describedBy }) => (
+                <TextInput
+                  id={id}
+                  name="phone"
+                  type="tel"
+                  inputMode="tel"
+                  autoComplete="tel"
+                  placeholder="+233 53 979 9795"
+                  required
+                  describedBy={describedBy}
+                />
+              )}
+            </Field>
+
+            <Field label="Email" name="email" required error={state.errors?.email}>
+              {({ id, describedBy }) => (
+                <TextInput
+                  id={id}
+                  name="email"
+                  type="email"
+                  autoComplete="email"
+                  required
+                  describedBy={describedBy}
+                />
+              )}
+            </Field>
+
+            <ConsentFields error={state.errors?.consent} />
+            <FormError message={state.errors?._form} />
+
+            <div className="flex flex-wrap items-center gap-3">
+              <button
+                type="button"
+                onClick={() => setStep(step - 1)}
+                className="inline-flex min-h-11 items-center gap-2 rounded-sm border border-navy px-5 font-sans text-sm font-medium text-navy transition-colors hover:bg-sand"
+              >
+                <ArrowLeft size={16} aria-hidden="true" /> Back
+              </button>
+              <SubmitButton pending={pending}>See my result</SubmitButton>
+            </div>
+            <p className="font-sans text-sm text-slate">
+              Free. No documents needed yet. We will tell you honestly if this route does
+              not suit you.
+            </p>
+          </form>
+        </FormValues>
       ) : (
         <>
           <div className="mt-8 flex flex-col gap-3">
@@ -457,10 +462,16 @@ function Result({ state }: { state: FormState }) {
           Reference {state.reference}
         </p>
 
-        {state.delivered === false && (
+        {state.delivered === false ? (
           <p className="mx-auto mt-4 max-w-md rounded-sm border border-warning p-3 text-center font-sans text-sm text-ink-soft">
-            We could not send the confirmation email just now. Your reference above is
-            still valid, so message us on WhatsApp and quote it.
+            We could not send the confirmation email just now. Your answers did reach us
+            and your reference above is still valid, so message us on WhatsApp and quote
+            it.
+          </p>
+        ) : (
+          <p className="mx-auto mt-4 max-w-md rounded-sm border border-rule p-3 text-center font-sans text-sm text-ink-soft">
+            Sent. Your answers are with our team, and a confirmation is on its way to
+            your email. We reply within four working hours.
           </p>
         )}
       </div>

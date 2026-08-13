@@ -30,10 +30,26 @@ async function runChain<S extends z.ZodType>(
   formData: FormData
 ): Promise<{ ok: false; state: FormState } | { ok: true; data: z.infer<S> }> {
   const raw = Object.fromEntries(formData.entries());
+
+  // Echoed back on every rejection so the visitor never retypes a form. The
+  // abuse controls are stripped: the honeypot must stay empty and the timing
+  // stamp is reissued on the next render.
+  const values: Record<string, string> = {};
+  for (const [key, value] of Object.entries(raw)) {
+    // React's own action plumbing rides along in the FormData under $-prefixed
+    // keys. Echoing those back would bloat the state for no purpose.
+    if (key.startsWith("$")) continue;
+    if (key === "company" || key === "renderedAt") continue;
+    if (typeof value === "string") values[key] = value;
+  }
+
   const parsed = schema.safeParse(raw);
 
   if (!parsed.success) {
-    return { ok: false, state: { ok: false, errors: toFieldErrors(parsed.error) } };
+    return {
+      ok: false,
+      state: { ok: false, errors: toFieldErrors(parsed.error), values },
+    };
   }
 
   const data = parsed.data as { company: string; renderedAt: number };
@@ -43,13 +59,17 @@ async function runChain<S extends z.ZodType>(
   if (data.company) {
     return {
       ok: false,
-      state: { ok: false, errors: { _form: "Could not submit. Please try again." } },
+      state: {
+        ok: false,
+        errors: { _form: "Could not submit. Please try again." },
+        values,
+      },
     };
   }
 
   const timingError = checkTiming(data.renderedAt);
   if (timingError) {
-    return { ok: false, state: { ok: false, errors: { _form: timingError } } };
+    return { ok: false, state: { ok: false, errors: { _form: timingError }, values } };
   }
 
   return { ok: true, data: parsed.data };

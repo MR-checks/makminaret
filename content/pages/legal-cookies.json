@@ -32,7 +32,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "The eligibility check saves your answers in your browser's local storage so that you can leave and come back without starting again. That data stays on your device and is cleared when you submit. It is not a cookie and it is not sent anywhere until you submit the form."
+              "text": "The eligibility check saves your answers in your browser so that you can leave and come back without starting again. That stays on your device and is cleared when you submit."
             }
           ]
         },
@@ -40,7 +40,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "A dismissal of the preview notice is stored for the length of your browsing session so it does not reappear on every page."
+              "text": "A dismissal of the preview notice is remembered for the length of your visit so it does not reappear on every page."
             }
           ]
         },
@@ -55,13 +55,13 @@
       ]
     },
     {
-      "heading": "Things we deliberately did not embed",
+      "heading": "Things we deliberately left out",
       "body": [
         {
           "type": "paragraph",
           "children": [
             {
-              "text": "We use a static map image rather than a live map embed, and a plain form rather than a third-party scheduling widget. Both alternatives would have set third-party cookies and slowed the site on a mid-range phone, for no benefit to you."
+              "text": "We use a static map image rather than a live map embed, and a plain form rather than a booking widget. Both alternatives would have set third-party cookies and slowed the site on a mid-range phone, for no benefit to you."
             }
           ]
         }

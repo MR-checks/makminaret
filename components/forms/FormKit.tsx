@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useId, useRef } from "react";
+import React, { useContext, useEffect, useId, useRef } from "react";
 import { CONSENT_TEXT, MARKETING_CONSENT_TEXT } from "@/lib/validation/forms";
 
 /**
@@ -10,6 +10,33 @@ import { CONSENT_TEXT, MARKETING_CONSENT_TEXT } from "@/lib/validation/forms";
  * to the field with aria-describedby, inputs use --border-input rather than
  * --rule, and touch targets clear 44px (MASTERPLAN §12).
  */
+
+/**
+ * The values a rejected submission came back with. React empties an
+ * uncontrolled form as soon as the action resolves, so a refused submission
+ * would otherwise wipe everything the visitor typed and punish them for one
+ * bad field. Controls read their own value out of here by name, which keeps
+ * the refill in one place rather than on every call site.
+ */
+const SubmittedValues = React.createContext<Record<string, string> | undefined>(
+  undefined
+);
+
+export function FormValues({
+  values,
+  children,
+}: {
+  values?: Record<string, string>;
+  children: React.ReactNode;
+}) {
+  return <SubmittedValues.Provider value={values}>{children}</SubmittedValues.Provider>;
+}
+
+function useSubmitted(name?: string): string | undefined {
+  const values = useContext(SubmittedValues);
+  if (!name || !values) return undefined;
+  return values[name];
+}
 
 export function Field({
   label,
@@ -64,9 +91,11 @@ export function TextInput(
   props: React.InputHTMLAttributes<HTMLInputElement> & { describedBy?: string }
 ) {
   const { describedBy, className, ...rest } = props;
+  const submitted = useSubmitted(rest.name);
   return (
     <input
       {...rest}
+      defaultValue={rest.defaultValue ?? submitted}
       aria-describedby={describedBy}
       className={`${controlClass} ${className ?? ""}`}
     />
@@ -77,9 +106,15 @@ export function SelectInput(
   props: React.SelectHTMLAttributes<HTMLSelectElement> & { describedBy?: string }
 ) {
   const { describedBy, className, children, ...rest } = props;
+  const submitted = useSubmitted(rest.name);
   return (
     <select
       {...rest}
+      // React applies a select's defaultValue on mount and ignores it on every
+      // update, so a refilled choice needs the element rebuilt. Keying on the
+      // returned value remounts it exactly once, when a rejection comes back.
+      key={submitted ?? ""}
+      defaultValue={submitted ?? rest.defaultValue}
       aria-describedby={describedBy}
       className={`${controlClass} ${className ?? ""}`}
     >
@@ -92,9 +127,11 @@ export function TextArea(
   props: React.TextareaHTMLAttributes<HTMLTextAreaElement> & { describedBy?: string }
 ) {
   const { describedBy, className, ...rest } = props;
+  const submitted = useSubmitted(rest.name);
   return (
     <textarea
       {...rest}
+      defaultValue={rest.defaultValue ?? submitted}
       aria-describedby={describedBy}
       className={`${controlClass} min-h-32 py-3 ${className ?? ""}`}
     />
@@ -150,6 +187,10 @@ export function AbuseControls() {
 export function ConsentFields({ error }: { error?: string }) {
   const consentId = useId();
   const marketingId = useId();
+  // Ticking these again after an unrelated field was rejected is the most
+  // irritating part of a re-submission, so they survive it too.
+  const consented = useSubmitted("consent") !== undefined;
+  const marketing = useSubmitted("marketingConsent") !== undefined;
   return (
     <fieldset className="flex flex-col gap-4 rounded-md border border-rule p-4">
       <legend className="px-2 font-mono text-[0.8125rem] uppercase tracking-[0.04em] text-slate">
@@ -160,6 +201,7 @@ export function ConsentFields({ error }: { error?: string }) {
           id={consentId}
           type="checkbox"
           name="consent"
+          defaultChecked={consented}
           className="mt-1 h-5 w-5 shrink-0 rounded-sm border-border-input"
         />
         <label htmlFor={consentId} className="font-sans text-sm text-ink-soft">
@@ -171,6 +213,7 @@ export function ConsentFields({ error }: { error?: string }) {
           id={marketingId}
           type="checkbox"
           name="marketingConsent"
+          defaultChecked={marketing}
           className="mt-1 h-5 w-5 shrink-0 rounded-sm border-border-input"
         />
         <label htmlFor={marketingId} className="font-sans text-sm text-ink-soft">

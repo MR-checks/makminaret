@@ -2,7 +2,7 @@
   "title": "Terms of service",
   "placeholder": true,
   "reviewedOn": "2026-08-13",
-  "intro": "What we do, what we cannot promise, what we charge for, and what we expect from you. These terms govern your use of this website and our advisory services.",
+  "intro": "What we do, what no consultancy can promise, and what we expect from you.",
   "sections": [
     {
       "heading": "What we provide",
@@ -11,7 +11,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "We provide advisory and application support services for students seeking admission to universities in Türkiye, along with the vocational courses and business services described elsewhere on this site. We are a consultancy. We are not a university, we do not make admission decisions, and we do not issue visas."
+              "text": "Advisory and application support for students seeking admission to universities in Türkiye, along with the courses and business services described elsewhere on this site. We are a consultancy. We are not a university, we do not make admission decisions, and we do not issue visas."
             }
           ]
         }
@@ -24,7 +24,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "We cannot guarantee admission to any institution, the award of any scholarship, or the issue of any visa or residence permit. Those decisions are made by universities, by scholarship bodies and by the Turkish authorities respectively."
+              "text": "We cannot guarantee admission, a scholarship, or a visa. Those decisions belong to universities, scholarship bodies and the Turkish authorities."
             }
           ]
         },
@@ -40,7 +40,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "Costs shown on this site are indicative bands carrying the date they were last reviewed. They are not quotations and they are not offers. Tuition and government fees change, and exchange rates change faster."
+              "text": "Costs shown on this site are indicative bands carrying the date they were last reviewed. They are not quotations."
             }
           ]
         }
@@ -61,20 +61,20 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "Third-party costs are separate from our fee and are always payable by you: university application and tuition charges, document authentication and translation, visa and residence permit fees, health insurance and travel. We do not add a margin to these, and we will tell you when a payment is owed to somebody other than us."
+              "text": "University, authentication, translation, visa and insurance charges are separate and payable by you. We do not add a margin to them."
             }
           ]
         }
       ]
     },
     {
-      "heading": "Cancellation and refunds",
+      "heading": "Cancellation",
       "body": [
         {
           "type": "paragraph",
           "children": [
             {
-              "text": "You may end the engagement at any time by telling us in writing. What has already been paid to a university, an authority or a translator cannot be recovered, because we no longer hold it. How the balance of our own fee is treated is set out in the written agreement you sign at the start, so that it is agreed before it matters rather than argued about afterwards."
+              "text": "You may end the engagement at any time in writing. Money already paid to a university, an authority or a translator cannot be recovered, because we no longer hold it. How our own fee is treated is set out in the agreement you sign at the start."
             }
           ]
         }
@@ -87,7 +87,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "The information and documents you give us must be accurate and genuine. A fabricated or altered document ends the engagement immediately and without refund, and we report it where we are required to."
+              "text": "The information and documents you give us must be accurate and genuine. A fabricated or altered document ends the engagement immediately and without refund."
             }
           ]
         },
@@ -95,7 +95,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "You are also responsible for meeting the deadlines we give you. Document authentication and denklik run on queues we do not control, and a late start is the most common reason a student misses an intake."
+              "text": "You are also responsible for meeting the deadlines we give you. Authentication and denklik run on queues we do not control, and a late start is the most common reason a student misses an intake."
             }
           ]
         }
@@ -108,7 +108,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "The content of this site is provided for information. We keep it accurate and stamp pages with the date they were last reviewed, but requirements set by universities and by the Turkish authorities change, and you should confirm anything decision-critical with us directly before acting on it."
+              "text": "Pages carry the date they were last reviewed. Requirements change, so confirm anything decision-critical with us directly before acting on it."
             }
           ]
         }
@@ -121,7 +121,7 @@
           "type": "paragraph",
           "children": [
             {
-              "text": "The law governing these terms and the forum for any dispute are set out in the written agreement you sign, and are stated there rather than left to be inferred from a website footer."
+              "text": "Set out in the written agreement you sign, rather than left to be inferred from a website footer."
             }
           ]
         }
@@ -130,6 +130,6 @@
   ],
   "seo": {
     "title": "Terms of service",
-    "description": "What Minaret provides, what no consultancy can guarantee, how fees and refunds work, and what we expect from you."
+    "description": "What Minaret provides, what no consultancy can guarantee, how fees work, and what we expect from you."
   }
 }
