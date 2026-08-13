@@ -1,6 +1,6 @@
 {
   "brandName": "Minaret",
-  "legalName": "MAK Minaret",
+  "legalName": "MAK Minaret Enterprise",
   "primaryPhone": "+233 53 979 9795",
   "whatsappNumber": "233539799795",
   "officePhone": "",
@@ -16,5 +16,5 @@
       "url": "https://www.facebook.com/share/14jBjefQzit/"
     }
   ],
-  "placeholderFields": ["legalName", "registrationNumber", "officeAddress", "officePhone"]
+  "placeholderFields": ["registrationNumber", "officeAddress", "officePhone"]
 }
