@@ -470,8 +470,9 @@ function Result({ state }: { state: FormState }) {
           </p>
         ) : (
           <p className="mx-auto mt-4 max-w-md rounded-sm border border-rule p-3 text-center font-sans text-sm text-ink-soft">
-            Sent. Your answers are with our team, and a confirmation is on its way to
-            your email. We reply within four working hours.
+            Sent. Your answers are with our team
+            {state.confirmed ? ", and a confirmation is on its way to your email" : ""}.
+            We reply within four working hours.
           </p>
         )}
       </div>

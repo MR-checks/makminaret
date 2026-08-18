@@ -86,8 +86,8 @@ async function consentFields(marketing: boolean) {
 }
 
 async function dispatch(lead: Lead): Promise<FormState> {
-  const { reference, delivered } = await saveLead(lead);
-  return { ok: true, reference, delivered };
+  const { reference, delivered, confirmed } = await saveLead(lead);
+  return { ok: true, reference, delivered, confirmed };
 }
 
 // ── Eligibility ─────────────────────────────────────────────

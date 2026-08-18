@@ -42,8 +42,8 @@ function Success({ state, message }: { state: FormState; message: string }) {
         </p>
       ) : (
         <p className="mt-4 rounded-sm border border-rule p-3 font-sans text-sm text-ink-soft">
-          Sent. Your message is with our team, and a confirmation is on its way to your
-          email.
+          Sent. Your message is with our team
+          {state.confirmed ? ", and a confirmation is on its way to your email" : ""}.
         </p>
       )}
       <div className="mt-6">
