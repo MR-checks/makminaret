@@ -32,6 +32,10 @@ export type SaveLeadResult = {
   /** False when the notification could not be sent. The caller must still show
    *  the reference and the WhatsApp route rather than a bare error (§9.2). */
   delivered: boolean;
+  /** True only when the applicant's own confirmation actually went out. The
+   *  result screen promises that email, so it must not claim one that Resend
+   *  refused. Stays false until a sending domain is verified. */
+  confirmed: boolean;
 };
 
 const FROM = process.env.RESEND_FROM ?? "Minaret <onboarding@resend.dev>";
@@ -133,7 +137,7 @@ export async function saveLead(lead: Lead): Promise<SaveLeadResult> {
       `[leads] RESEND_API_KEY is not set. Lead ${reference} was not emailed.\n` +
         buildNotification(lead, reference).body
     );
-    return { reference, delivered: false };
+    return { reference, delivered: false, confirmed: false };
   }
 
   const resend = new Resend(apiKey);
@@ -160,32 +164,36 @@ export async function saveLead(lead: Lead): Promise<SaveLeadResult> {
         "\n",
         notification.body
       );
-      return { reference, delivered: false };
+      return { reference, delivered: false, confirmed: false };
     }
+
+    let confirmed = false;
 
     if (lead.email) {
       // The applicant's own confirmation is a courtesy, and Resend refuses it
       // while the sending domain is unverified. A failure here must not mark a
       // lead we have already captured as undelivered.
-      const confirmed = await resend.emails.send({
+      const sentConfirmation = await resend.emails.send({
         from: FROM,
         to: lead.email,
         subject: confirmation.subject,
         text: confirmation.body,
       });
 
-      if (confirmed.error) {
+      if (sentConfirmation.error) {
         console.error(
           `[leads] Confirmation to the applicant for ${reference} was refused:`,
-          confirmed.error
+          sentConfirmation.error
         );
+      } else {
+        confirmed = true;
       }
     }
 
-    return { reference, delivered: true };
+    return { reference, delivered: true, confirmed };
   } catch (error) {
     // Never let a delivery failure strand the visitor with no route to us.
     console.error(`[leads] Failed to deliver ${reference}:`, error);
-    return { reference, delivered: false };
+    return { reference, delivered: false, confirmed: false };
   }
 }

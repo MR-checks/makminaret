@@ -121,6 +121,8 @@ export type FormState = {
   ok: boolean;
   reference?: string;
   delivered?: boolean;
+  /** True only when the applicant's confirmation email actually went out. */
+  confirmed?: boolean;
   /** Field-keyed messages, plus `_form` for anything global. */
   errors?: Record<string, string>;
   /**
