@@ -53,3 +53,13 @@ next-env.d.ts
 # scripts/check-constraints.mjs meaningful in CI.
 /MASTERPLAN.md
 /HANDOVER.md
+
+# AI tool configs
+.claude/
+AGENTS.md
+HANDOFF.md
+
+# docs & examples not for the repo
+README.md
+assets/README.md
+.env.example
